@@ -1,0 +1,111 @@
+@font-face{font-family:"Inter";src:url("/fondid/inter-regular.woff") format("woff");font-weight:400;font-display:swap}
+@font-face{font-family:"Inter";src:url("/fondid/inter-semibold.woff") format("woff");font-weight:600;font-display:swap}
+@font-face{font-family:"Inter Display";src:url("/fondid/interdisplay-extrabold.woff") format("woff");font-weight:800;font-display:swap}
+:root{
+  --pind:#E4E6E5;
+  --taust:#F7F8F7;
+  --tekst:#24282C;
+  --vaiketekst:#4A5157;
+  --aktsent:#7A4E8C;
+  --tume:#24282C;
+  --joon:#C9CDCD;
+  --paise-korgus:80px;
+}
+*{box-sizing:border-box}
+[hidden]{display:none !important}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--taust);color:var(--tekst);font-family:"Inter",system-ui,sans-serif;font-size:17px;line-height:1.55}
+a{color:inherit;text-underline-offset:4px}
+:focus-visible{outline:3px solid var(--aktsent);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+section[id]{scroll-margin-top:16px}
+h1,h2{font-family:"Inter Display","Inter",system-ui,sans-serif;font-weight:800;letter-spacing:-.025em}
+
+.teip{background:var(--aktsent);color:#fff;font-size:14px;line-height:1.4;position:relative;z-index:3;clip-path:polygon(0 0,100% 0,99.4% 50%,100% 100%,0 100%,.6% 50%)}
+.teip .wrap{display:flex;gap:16px;justify-content:space-between;align-items:center;padding-top:9px;padding-bottom:9px;flex-wrap:wrap}
+.teip a{color:#fff;font-weight:600}
+
+header.top{position:absolute;left:0;right:0;z-index:2}
+header.top .wrap{display:flex;justify-content:space-between;align-items:center;min-height:var(--paise-korgus)}
+.logo{font-family:"Inter Display","Inter",sans-serif;font-weight:800;font-size:21px;letter-spacing:-.01em;text-decoration:none;line-height:1.15}
+.logo small{display:block;font-family:"Inter",sans-serif;font-weight:400;font-size:12.5px;color:var(--vaiketekst);letter-spacing:0}
+nav a{display:inline-flex;align-items:center;min-height:44px;padding:0 10px;font-weight:600;font-size:15px;text-decoration:none}
+nav a:hover{text-decoration:underline}
+
+.sein{position:relative;min-height:min(92vh,760px);display:flex;align-items:flex-end;overflow:hidden;background:var(--pind)}
+.sein svg.tekstuur{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.sein .pahtel{position:absolute;inset:0;pointer-events:none;background:linear-gradient(105deg,transparent 0 46%,rgba(247,248,247,.94) 46.2% 100%)}
+.sein .wrap{position:relative;width:100%;padding-bottom:72px;padding-top:calc(var(--paise-korgus) + 60px);display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.sein .tekst{grid-column:2}
+h1{font-size:clamp(38px,5.8vw,72px);line-height:1;margin:0 0 22px}
+.lead{font-size:19px;max-width:30em;margin:0 0 30px;color:#363C41}
+.nupud{display:flex;gap:14px;flex-wrap:wrap}
+.nupp{display:inline-flex;align-items:center;min-height:52px;padding:0 24px;font-weight:600;font-size:16px;text-decoration:none;border-radius:2px}
+.nupp.pea{background:var(--tume);color:#fff}
+.nupp.pea:hover{background:#000}
+.nupp.teine{border:2px solid var(--tume)}
+.nupp.teine:hover{background:var(--tume);color:#fff}
+
+.plokk{padding:96px 0}
+h2{font-size:clamp(28px,3.4vw,40px);line-height:1.05;margin:0 0 14px}
+.sissejuhatus{max-width:36em;color:var(--vaiketekst);margin:0 0 44px}
+.teenused{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;border-top:2px solid var(--tekst)}
+.teenus{padding-top:20px}
+.teenus h3{font-size:19px;font-weight:600;margin:0 0 8px}
+.teenus p{margin:0;font-size:15.5px;color:var(--vaiketekst)}
+
+.tood{background:var(--pind)}
+.galerii{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.kohataide{aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;padding:12px;
+  background:repeating-linear-gradient(135deg,#D3D7D7 0 14px,#DDE0E0 14px 28px);border:1px dashed #9AA2A6}
+.kohataide span{background:var(--taust);padding:4px 10px;font-size:14px;color:var(--vaiketekst);overflow-wrap:anywhere}
+
+.kaik{background:var(--tume);color:#E9ECEC}
+.kaik .sissejuhatus{color:#B4BCC1}
+.sammud{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);border-top:2px solid #4A5157}
+.sammud li{padding:22px 22px 0 0;position:relative}
+.sammud li::before{content:"";position:absolute;top:-2px;left:0;height:2px;width:40%;background:#9DB4D6}
+.sammud .nr{font-family:"Inter Display","Inter",sans-serif;font-weight:800;font-size:15px;color:#B9CBE6;display:block;margin-bottom:10px}
+.sammud h3{font-size:18px;font-weight:600;margin:0 0 6px;color:#fff}
+.sammud p{margin:0;font-size:15px;color:#B4BCC1}
+
+.faktid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin:28px 0 0}
+.faktid div{border-top:2px solid var(--tekst);padding-top:16px}
+.faktid dt{font-family:"Inter Display","Inter",sans-serif;font-weight:800;font-size:clamp(26px,3vw,36px);letter-spacing:-.02em;line-height:1.1}
+.faktid dd{margin:6px 0 0;color:var(--vaiketekst)}
+
+.kontakt{padding-top:24px}
+.kontaktid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin:0}
+.kontaktid div{background:var(--pind);padding:22px}
+.kontaktid dt{color:var(--vaiketekst);font-size:15px;margin-bottom:6px}
+.kontaktid dd{margin:0;font-weight:600;font-size:18px;overflow-wrap:anywhere}
+.kontaktid a{display:inline-block;min-height:44px;line-height:44px}
+
+footer{border-top:1px solid var(--joon);padding:28px 0;font-size:14px;color:var(--vaiketekst)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer p{margin:0}
+
+@media (max-width:1024px){
+  .teenused{grid-template-columns:repeat(2,1fr)}
+  .sammud{grid-template-columns:repeat(3,1fr);row-gap:28px}
+}
+@media (max-width:768px){
+  .sein .wrap{grid-template-columns:1fr}
+  .sein .tekst{grid-column:1}
+  .sein .pahtel{background:linear-gradient(180deg,transparent 0 22%,rgba(247,248,247,.95) 40% 100%)}
+  .galerii{grid-template-columns:repeat(2,1fr)}
+  .sammud{grid-template-columns:1fr;border-top:0}
+  .sammud li{padding:18px 0;border-top:2px solid #4A5157}
+  .faktid,.kontaktid{grid-template-columns:1fr;gap:16px}
+  nav a:not(:last-child){display:none}
+}
+@media (max-width:480px){
+  body{font-size:16px}
+  .wrap{padding:0 16px}
+  .plokk{padding:72px 0}
+  .teenused{grid-template-columns:1fr;gap:0}
+  .teenus{padding:18px 0;border-bottom:1px solid var(--joon)}
+  .galerii{grid-template-columns:1fr 1fr;gap:10px}
+  .kohataide span{font-size:12px}
+}
