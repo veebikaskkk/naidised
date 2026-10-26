@@ -3,14 +3,15 @@
 Avaploki funktsioon saab firma andmed (a) ja kujunduse (d) ning tagastab (html, css).
 Värvid on muutujatena; kontroll.py arvutab kontrasti üle.
 """
-from sisu import E, teenused, tel_link, tel_lyhike
+from sisu import E, teenused, tel_link, tel_lyhike, kat
 
 
 def nupud(a, hele=False):
     t0 = a["telefonid"][0]
-    siht = "kontakt" if a["pakett"] == "500" else "#kontakt"
+    k = kat(a)
+    siht = k.get("nupp_siht") or ("kontakt" if a["pakett"] == "500" else "#kontakt")
     return (f'<div class="nupud"><a class="nupp pea" href="tel:{tel_link(t0)}">Helista {E(tel_lyhike(t0))}</a>'
-            f'<a class="nupp teine" href="{siht}">Küsi hinnapakkumist</a></div>')
+            f'<a class="nupp teine" href="{siht}">{E(k.get("nupp", "Küsi hinnapakkumist"))}</a></div>')
 
 
 def lead(a):

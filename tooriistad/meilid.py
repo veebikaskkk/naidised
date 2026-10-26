@@ -39,13 +39,18 @@ def meil(a, s):
         hind = ("Hind on 500 € ühekordselt. Selle eest saate mitmelehelise kodulehe nagu näidisel: avaleht ning eraldi "
                 "lehed teenuste, tehtud tööde ja hinnapäringu vormiga. Majutus ja haldus maksab 100 € aastas, nii et "
                 "teie ei pea tehnilise poole pärast muretsema.")
+    elif a["pakett"] == "400":
+        hind = ("Hind on 400 € ühekordselt. Selle eest saate kodulehe koos broneerimiskalendriga: klient valib teenuse, "
+                "päeva ja kellaaja ning broneering jõuab teie e-postile. Majutus ja haldus maksab 100 € aastas, nii et "
+                "teie ei pea tehnilise poole pärast muretsema.")
     else:
         hind = ("Hind on 250 € ühekordselt. Majutus ja haldus maksab 75 € aastas, nii et teie ei pea tehnilise "
                 "poole pärast muretsema.")
     pealkiri = f"Tegin {lyhi} {le} näidis-kodulehe"
     sissejuhatus = f"Märkasin, et {lyhi} {al} pole veel oma kodulehte ja tegin teile proovimiseks ühe valmis."
-    keskel = ("Seal on teie teenused ja kontaktid ning see töötab ka telefonis. Kui see meeldib, paneme selle teie "
-              "oma aadressile üles ja lisame pildid teie päris töödest.")
+    keskel = ("Seal on teie teenused, broneerimiskalender ja kontaktid ning see töötab ka telefonis." if a["pakett"] == "400" else
+              "Seal on teie teenused ja kontaktid ning see töötab ka telefonis.")
+    keskel += " Kui see meeldib, paneme selle teie oma aadressile üles ja lisame pildid teie päris töödest."
     lopp = "Kui see teid ei huvita, vastake lihtsalt ei ja ma rohkem ei kirjuta."
     domeen = a.get("domeen") or ""
     aadress = f" Valmis lehel on teie oma aadress, näiteks {domeen}." if domeen else ""

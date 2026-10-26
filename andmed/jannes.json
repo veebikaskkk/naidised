@@ -1,0 +1,24 @@
+{
+  "nimi": "Jannes OÜ",
+  "lyhinimi": "Jannes",
+  "vorm": "OÜ",
+  "registrikood": "12479798",
+  "emtak": "43211",
+  "telefonid": [
+    "+372 5012375",
+    "+372 55610101"
+  ],
+  "email": "jannesoy@gmail.com",
+  "piirkond": "Viljandimaa",
+  "piirkond_kus": "Viljandimaal",
+  "linn_kus": "Viljandimaal",
+  "aasta": "2013",
+  "tootajaid": 2,
+  "sissejuhatus": "Teeme elektritöid Viljandimaal: juhtmestik, kilbid, valgustus ja rikked. Enne tööd vaatame objekti üle ja ütleme hinna.",
+  "pakett": "500",
+  "kategooria": "elekter",
+  "teenused_voti": "",
+  "kujundus": "e-jannes",
+  "domeen": "janneselekter.ee",
+  "kaive": "304002"
+}

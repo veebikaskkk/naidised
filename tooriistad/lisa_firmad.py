@@ -30,6 +30,9 @@ SISSEJUHATUS = {
     "95311": "Hooldame ja remondime autosid {kus}. Enne tööd vaatame auto üle ja ütleme, mida on vaja teha ja mis see maksab.",
     "95311-rehv": "Vahetame, tasakaalustame ja parandame rehve {kus}. Samal käigul vaatame üle ka pidurid ja veermiku.",
     "95311-kere": "Parandame autokeresid ja värvime {kus}. Enne tööd vaatame kahju üle ja lepime hinna kokku.",
+    "96211": "Lõikame, värvime ja teeme soenguid {kus}. Broneeri aeg otse kalendrist või helista.",
+    "96211-meeste": "Meeste juukselõikus ja habe {kus}. Broneeri aeg otse kalendrist või helista.",
+    "43211": "Teeme elektritöid {kus}: juhtmestik, kilbid, valgustus ja rikked. Enne tööd vaatame objekti üle ja ütleme hinna.",
     "95311-detail": "Peseme, poleerime ja puhastame autosid {kus}, nii seest kui väljast.",
 }
 
@@ -61,6 +64,16 @@ def sissejuhatus(emtak, kus):
     return SISSEJUHATUS["433"].format(kus=kus)
 
 
+def kategooria(emtak):
+    if emtak.startswith(("9531", "452")):
+        return "auto"
+    if emtak.startswith("962"):
+        return "juuksur"
+    if emtak.startswith("4321"):
+        return "elekter"
+    return "viimistlus"
+
+
 def main(paev):
     firmad = json.loads(pathlib.Path(paev).read_text(encoding="utf-8"))
     for x in firmad:
@@ -77,10 +90,12 @@ def main(paev):
             "email": x["email"].split(";")[0].strip(), "piirkond": piirkond, "piirkond_kus": piirkond_kus,
             "linn_kus": linn_kus, "aasta": (x.get("registreeritud") or "")[-4:], "tootajaid": tootajaid or None,
             "sissejuhatus": sissejuhatus(x.get("teenused_voti") or x["emtak_kood"], piirkond_kus), "pakett": x["pakett"],
-            "kategooria": "auto" if x["emtak_kood"].startswith(("9531", "452")) else "viimistlus",
+            "kategooria": kategooria(x["emtak_kood"]),
             "teenused_voti": x.get("teenused_voti", ""),
             "kujundus": x["kujundus"], "domeen": x.get("domeen", ""), "kaive": x.get("kaive", ""),
         }
+        if x.get("h1"):
+            andmed["h1"] = x["h1"]
         (juur / "andmed" / f"{s}.json").write_text(json.dumps(andmed, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         print(s, x["pakett"], x["kujundus"])
 

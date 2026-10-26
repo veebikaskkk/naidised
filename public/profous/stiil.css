@@ -61,6 +61,30 @@ p{margin:0 0 1em}
 .tekst-leht h2{font-size:26px;margin-top:32px}
 @media (max-width:900px){.kontaktid{grid-template-columns:1fr}.teenus-pikk{grid-template-columns:1fr;gap:8px}.galerii-suur{grid-template-columns:1fr 1fr}}
 @media (max-width:480px){body{font-size:16px}.wrap{padding:0 18px}.plokk{padding:72px 0}.galerii-suur{gap:10px}.kohataide span{font-size:12px}}
+.vorm-yhel{margin-top:40px;max-width:720px}
+.vorm-yhel h3{font-size:26px;font-family:var(--pea),sans-serif;font-weight:var(--pea-kaal);letter-spacing:var(--pea-ls);margin:0 0 4px}
+.sek-broneeri{background:var(--surface)}
+.broneering{display:grid;gap:28px;max-width:860px}
+.b-samm{border:0;margin:0;padding:0;min-width:0}
+.b-samm legend{font-family:var(--pea),sans-serif;font-weight:var(--pea-kaal);font-size:20px;margin-bottom:12px;padding:0}
+.kiibid{display:flex;flex-wrap:wrap;gap:10px}
+.kiip{position:relative;display:inline-flex;cursor:pointer}
+.kiip input{position:absolute;opacity:0;width:1px;height:1px}
+.kiip span{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;min-height:48px;min-width:64px;padding:6px 16px;border:1.5px solid var(--line-tugev);border-radius:min(var(--raadius),14px);background:var(--bg);color:var(--fg);font-weight:600;font-size:15.5px;line-height:1.2;text-align:center}
+.kiip span small{font-weight:400;font-size:13px;color:var(--muted)}
+.kiip input:checked+span{background:var(--accent);color:var(--accent-fg);border-color:var(--accent)}
+.kiip input:checked+span small{color:var(--accent-fg)}
+.kiip input:focus-visible+span{outline:3px solid var(--fookus);outline-offset:2px}
+.kiip input:disabled+span{opacity:.4;cursor:not-allowed}
+.kiibid.paevad{display:grid;grid-template-columns:repeat(auto-fill,minmax(68px,1fr))}
+.kiibid.paevad .kiip span{width:100%}
+.b-kuup{display:grid;gap:6px;font-weight:600}
+.b-kuup input,.b-kontakt input{font:inherit;font-size:16px;padding:12px 14px;border:1.5px solid var(--line-tugev);background:var(--bg);color:var(--fg);border-radius:min(var(--raadius),12px);width:100%}
+.b-kontakt{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.b-kontakt label{display:block;font-weight:600;font-size:15px;margin-bottom:6px}
+.broneering .markus{font-size:14px;color:var(--muted);margin:10px 0 0}
+.broneering .nupp{justify-self:start}
+@media (max-width:560px){.b-kontakt{grid-template-columns:1fr}.kiip span{min-width:56px;padding:6px 12px}}
 
 
 .plokk-alumine{padding-bottom:104px}

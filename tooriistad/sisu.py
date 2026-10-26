@@ -95,6 +95,52 @@ TEENUSED.update({
     ],
 })
 
+TEENUSED["96211"] = [
+    ("Lõikus", "Naiste, meeste ja laste juukselõikus.",
+     "Lõikame naiste, meeste ja laste juukseid. Enne lõikust räägime läbi, mida soovid, ja vaatame, mis sinu juustele ja näokujule sobib. Kui sul on pilt soovitud soengust, too see kaasa."),
+    ("Värvimine", "Toonimine, värvimine ja triibud.",
+     "Värvime ja toonime juukseid ning teeme triipe. Tooni valime koos sinuga ja räägime enne läbi, kui palju aega töö võtab ja kuidas värvi hiljem hoida."),
+    ("Soengud", "Pidulikud ja igapäevased soengud.",
+     "Teeme soenguid pidupäevaks, pulmaks ja tavaliseks päevaks. Pidulikule soengule on hea tulla puhaste ja kuivade juustega."),
+    ("Juuksehooldus", "Hooldused kuivadele ja kahjustatud juustele.",
+     "Teeme juuksehooldusi ja soovitame, kuidas juukseid kodus hoida. Ütleme ausalt, milline hooldus sinu juustele päriselt vajalik on."),
+]
+TEENUSED["96211-meeste"] = [
+    ("Meeste lõikus", "Kääride ja masinaga lõikus.",
+     "Lõikame meeste juukseid kääride ja masinaga. Enne lõikust räägime läbi, kui lühikeseks ja mis kujuga, et tulemus oleks just selline, nagu soovid."),
+    ("Masinalõikus", "Kiire ja ühtlane lõikus masinaga.",
+     "Kui soovid lihtsat ja kiiret lõikust, teeme selle masinaga ühtlase pikkusega või üleminekuga."),
+    ("Habe", "Habeme piiramine ja kujundamine.",
+     "Piirame ja kujundame habet, et see sobiks näokuju ja soenguga kokku."),
+    ("Laste lõikus", "Juukselõikus lastele.",
+     "Lõikame ka laste juukseid. Võtame aega, et lapsel oleks toolis rahulik olla."),
+]
+TEENUSED["43211"] = [
+    ("Elektripaigaldus", "Juhtmestik majadesse, korteritesse ja äripindadele.",
+     "Ehitame uut elektripaigaldist ja uuendame vana: juhtmestik, pistikupesad, lülitid ja ühendused. Enne tööd vaatame objekti üle ja lepime kokku, kuhu mis tuleb."),
+    ("Elektrikilbid", "Kilpide paigaldus ja vahetus.",
+     "Paigaldame ja vahetame elektrikilpe ning kaitselüliteid. Vana kilbi vahetus on sageli esimene samm, kui maja elekter vajab uuendamist."),
+    ("Valgustus", "Sise- ja välisvalgustuse paigaldus.",
+     "Paigaldame laevalgustid, süvisvalgustid, LED-ribad ja välisvalgustuse. Valgustuse asukohad lepime kokku enne, kui seinad kinni pannakse."),
+    ("Rikked ja remont", "Rikete otsimine ja parandus.",
+     "Kui kaitse lööb välja või midagi ei tööta, otsime rikke põhjuse üles ja parandame selle. Ütleme enne parandust, mida on vaja teha."),
+]
+
+SAMMUD_JUUKSUR = [
+    ("Broneering", "Vali kalendrist teenus ja sobiv aeg või helista."),
+    ("Kinnitus", "Kinnitame aja telefoni või e-posti teel."),
+    ("Jutuajamine", "Enne tööd räägime läbi, mida soovid."),
+    ("Töö", "Teeme kokkulepitud töö rahulikult ja hoolikalt."),
+    ("Nõuanne", "Soovitame, kuidas tulemust kodus hoida."),
+]
+SAMMUD_ELEKTER = [
+    ("Ülevaatus", "Vaatame objekti üle ja kuulame, mida on vaja."),
+    ("Pakkumine", "Saad pakkumise koos töömahu ja ajakavaga."),
+    ("Töö", "Teeme töö kokkulepitud ajal ja koristame enda järelt."),
+    ("Kontroll", "Kontrollime enne üleandmist, et kõik töötab."),
+    ("Üleandmine", "Anname töö üle ja räägime läbi, mida tehti."),
+]
+
 KATEGOORIAD = {
     "viimistlus": dict(
         tood="Siia tulevad teie enda tööde fotod. Viimistlustööd müüvad pildid paremini kui ükski tekst.",
@@ -108,6 +154,20 @@ KATEGOORIAD = {
         vorm_naide="Näiteks: Toyota Avensis 2012, pidurid kriuksuvad",
         teeb="hooldab ja remondib autosid",
         sammud="auto"),
+    "juuksur": dict(
+        tood="Siia tulevad teie tehtud soengute ja salongi fotod. Juuksuri juurde tullakse piltide järgi.",
+        kontakt="Helista, kirjuta või broneeri aeg kalendrist.",
+        vorm_naide="",
+        teeb="lõikab, värvib ja teeb soenguid",
+        sammud="juuksur", kontakt_pk="Kontakt", nupp="Broneeri aeg", nupp_siht="#broneeri", tiitel="juuksur",
+        teenused_sissejuhatus="Vali teenus ja broneeri aeg otse kalendrist.",
+        kaik_sissejuhatus="Aja saad broneerida kalendrist, telefoni teel või kirjutades."),
+    "elekter": dict(
+        tood="Siia tulevad teie tehtud tööde fotod: kilbid, valgustus ja objektid.",
+        kontakt="Helista või kirjuta. Kirjelda lühidalt, mis objektiga on tegu ja mida on vaja teha.",
+        vorm_naide="Näiteks: eramaja, vaja vahetada elektrikilp ja lisada pistikupesi",
+        teeb="teeb elektritöid",
+        sammud="elekter", tiitel="elektritööd"),
 }
 
 SAMMUD_AUTO = [
@@ -124,7 +184,7 @@ def kat(a):
 
 
 def sammud(a):
-    return SAMMUD_AUTO if kat(a)["sammud"] == "auto" else SAMMUD
+    return {"auto": SAMMUD_AUTO, "juuksur": SAMMUD_JUUKSUR, "elekter": SAMMUD_ELEKTER}.get(kat(a)["sammud"], SAMMUD)
 
 
 SAMMUD = [

@@ -2,8 +2,9 @@
 
 Näidislehed potentsiaalsetele klientidele. Avaldatakse Cloudflare Workerina aadressil naidised.veebikask.workers.dev.
 
-- `andmed/<slug>.json`: firma andmed (avalik Äriregistri info), pakett (500 = mitmeleheline, 250 = üheleheline) ja kujundus
-- `tooriistad/kujundused.py`: kujundused, igaüks oma avaploki, fontide ja värvidega
+- `andmed/<slug>.json`: firma andmed (avalik Äriregistri info), pakett (500 = mitmeleheline, 400 = üheleheline broneerimiskalendriga, 250 = üheleheline päringuvormiga) ja kujundus
+- `tooriistad/kujundused*.py`: kujundused valdkonniti (viimistlus, auto, juuks, elekter), igaüks oma avaploki, fontide ja värvidega
+- `tooriistad/vahend.py`: palett, mis kontrollib kontrasti juba loomisel
 - `tooriistad/kujundus.py`: lehtede ehitaja (sektsioonid, alamlehed, vorm, privaatsus)
 - `tooriistad/genereeri.py`: ehitab `public/<slug>/` kõigist andmefailidest
 - `tooriistad/kontroll.py`: master prompti kontrollnimekiri, peab andma "KÕIK KORRAS"

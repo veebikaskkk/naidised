@@ -11,7 +11,11 @@ from fondid import font_face
 from sisu import E, SAMMUD, teenused, tel_link, tel_ilus, tel_lyhike, kat, sammud
 import kujundused as K
 import kujundused_auto
+import kujundused_juuks
+import kujundused_elekter
 K.KUJUNDUSED.update(kujundused_auto.K)
+K.KUJUNDUSED.update(kujundused_juuks.K)
+K.KUJUNDUSED.update(kujundused_elekter.K)
 
 BASE_CSS = """
 *{box-sizing:border-box}
@@ -72,13 +76,54 @@ p{margin:0 0 1em}
 .tekst-leht h2{font-size:26px;margin-top:32px}
 @media (max-width:900px){.kontaktid{grid-template-columns:1fr}.teenus-pikk{grid-template-columns:1fr;gap:8px}.galerii-suur{grid-template-columns:1fr 1fr}}
 @media (max-width:480px){body{font-size:16px}.wrap{padding:0 18px}.plokk{padding:72px 0}.galerii-suur{gap:10px}.kohataide span{font-size:12px}}
+.vorm-yhel{margin-top:40px;max-width:720px}
+.vorm-yhel h3{font-size:26px;font-family:var(--pea),sans-serif;font-weight:var(--pea-kaal);letter-spacing:var(--pea-ls);margin:0 0 4px}
+.sek-broneeri{background:var(--surface)}
+.broneering{display:grid;gap:28px;max-width:860px}
+.b-samm{border:0;margin:0;padding:0;min-width:0}
+.b-samm legend{font-family:var(--pea),sans-serif;font-weight:var(--pea-kaal);font-size:20px;margin-bottom:12px;padding:0}
+.kiibid{display:flex;flex-wrap:wrap;gap:10px}
+.kiip{position:relative;display:inline-flex;cursor:pointer}
+.kiip input{position:absolute;opacity:0;width:1px;height:1px}
+.kiip span{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;min-height:48px;min-width:64px;padding:6px 16px;border:1.5px solid var(--line-tugev);border-radius:min(var(--raadius),14px);background:var(--bg);color:var(--fg);font-weight:600;font-size:15.5px;line-height:1.2;text-align:center}
+.kiip span small{font-weight:400;font-size:13px;color:var(--muted)}
+.kiip input:checked+span{background:var(--accent);color:var(--accent-fg);border-color:var(--accent)}
+.kiip input:checked+span small{color:var(--accent-fg)}
+.kiip input:focus-visible+span{outline:3px solid var(--fookus);outline-offset:2px}
+.kiip input:disabled+span{opacity:.4;cursor:not-allowed}
+.kiibid.paevad{display:grid;grid-template-columns:repeat(auto-fill,minmax(68px,1fr))}
+.kiibid.paevad .kiip span{width:100%}
+.b-kuup{display:grid;gap:6px;font-weight:600}
+.b-kuup input,.b-kontakt input{font:inherit;font-size:16px;padding:12px 14px;border:1.5px solid var(--line-tugev);background:var(--bg);color:var(--fg);border-radius:min(var(--raadius),12px);width:100%}
+.b-kontakt{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.b-kontakt label{display:block;font-weight:600;font-size:15px;margin-bottom:6px}
+.broneering .markus{font-size:14px;color:var(--muted);margin:10px 0 0}
+.broneering .nupp{justify-self:start}
+@media (max-width:560px){.b-kontakt{grid-template-columns:1fr}.kiip span{min-width:56px;padding:6px 12px}}
 """
 
 SKRIPT = """document.addEventListener('submit',function(e){
   var f=e.target; if(!f.matches('[data-mailto]'))return; e.preventDefault();
   var v=function(n){var el=f.elements[n];return el?el.value:''};
+  if(f.hasAttribute('data-broneering')){
+    var p=f.elements['paev'];var paev=p&&p.length!==undefined?(f.querySelector('[name=paev]:checked')||{}).value:v('paev');
+    var t=(f.querySelector('[name=teenus]:checked')||{}).value||'';var a=(f.querySelector('[name=aeg]:checked')||{}).value||'';
+    var keha='Teenus: '+t+'\\nPäev: '+paev+'\\nKell: '+a+'\\n\\nNimi: '+v('nimi')+'\\nTelefon: '+v('telefon');
+    location.href='mailto:'+f.getAttribute('data-mailto')+'?subject='+encodeURIComponent('Broneering: '+t+', '+paev+' kell '+a)+'&body='+encodeURIComponent(keha);
+    return;
+  }
   var keha='Nimi: '+v('nimi')+'\\nKontakt: '+v('kontakt')+'\\nTöö: '+v('too')+'\\n\\n'+v('kirjeldus');
   location.href='mailto:'+f.getAttribute('data-mailto')+'?subject='+encodeURIComponent('Hinnapäring: '+v('too'))+'&body='+encodeURIComponent(keha);
+});
+document.addEventListener('DOMContentLoaded',function(){
+  var P=['P','E','T','K','N','R','L'];
+  document.querySelectorAll('[data-paevad]').forEach(function(box){
+    var h='',d=new Date(),n=0;
+    while(n<12){d.setDate(d.getDate()+1);if(d.getDay()===0)continue;
+      var s=d.getDate()+'.'+(d.getMonth()+1)+'.';
+      h+='<label class="kiip"><input type="radio" name="paev" value="'+P[d.getDay()]+' '+s+d.getFullYear()+'"'+(n?'':' required')+'><span>'+P[d.getDay()]+'<small>'+s+'</small></span></label>';n++;}
+    box.innerHTML=h;
+  });
 });
 """
 
@@ -107,7 +152,7 @@ def sek_teenused(a, d, link=None):
     return f"""<section id="teenused" class="plokk sek-teenused" aria-labelledby="teenused-pk">
   <div class="wrap">
     <h2 id="teenused-pk">{E(d.get("teenused_pk", "Teenused"))}</h2>
-    <p class="sissejuhatus">Võid tellida kogu töö või ainult ühe etapi.</p>
+    <p class="sissejuhatus">{E(kat(a).get("teenused_sissejuhatus", "Võid tellida kogu töö või ainult ühe etapi."))}</p>
     {sisu}
     {lisa}
   </div>
@@ -133,7 +178,7 @@ def sek_kaik(a, d):
     return f"""<section class="plokk sek-kaik" aria-labelledby="kaik-pk">
   <div class="wrap">
     <h2 id="kaik-pk">Kuidas töö käib</h2>
-    <p class="sissejuhatus">Enne alustamist tead, mida teeme, kui kaua see võtab ja mis see maksab.</p>
+    <p class="sissejuhatus">{E(kat(a).get("kaik_sissejuhatus", "Enne alustamist tead, mida teeme, kui kaua see võtab ja mis see maksab."))}</p>
     <ol class="k-{d['kaik']}">{sammud_html}</ol>
   </div>
 </section>"""
@@ -164,12 +209,69 @@ def kontakt_dl(a):
     </dl>"""
 
 
-def sek_kontakt(a, d, link=None):
+def vorm(a, tase=2):
+    t = teenused(a.get("teenused_voti") or a["emtak"])
+    valikud = "".join(f"<option>{E(n)}</option>" for n, _, _ in t) + "<option>Mitu tööd korraga</option>"
+    return f"""<form class="vorm" data-mailto="{E(a["email"])}" aria-labelledby="vorm-pk">
+      <h{tase} id="vorm-pk">Hinnapäring</h{tase}>
+      <div><label for="nimi">Nimi</label><input id="nimi" name="nimi" autocomplete="name" required></div>
+      <div><label for="kontakt-v">Telefon või e-post</label><input id="kontakt-v" name="kontakt" required></div>
+      <div><label for="too">Töö</label><select id="too" name="too">{valikud}</select></div>
+      <div><label for="kirjeldus">Kirjeldus</label><textarea id="kirjeldus" name="kirjeldus" placeholder="{E(kat(a)["vorm_naide"])}"></textarea></div>
+      <button class="nupp pea" type="submit">Saada hinnapäring</button>
+      <p class="markus">Päring avaneb sinu e-posti programmis valmis kirjana. Loe, kuidas andmeid kasutame: <a href="privaatsus">privaatsus</a>.</p>
+    </form>"""
+
+
+AJAD = ["10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00"]
+
+
+def sek_broneeri(a, d):
+    t = teenused(a.get("teenused_voti") or a["emtak"])
+    teen = "".join(f'<label class="kiip"><input type="radio" name="teenus" value="{E(n)}"{" required" if i == 0 else ""}><span>{E(n)}</span></label>'
+                   for i, (n, _, _) in enumerate(t))
+    ajad = "".join(f'<label class="kiip"><input type="radio" name="aeg" value="{x}"{" required" if i == 0 else ""}><span>{x}</span></label>'
+                   for i, x in enumerate(AJAD))
+    return f"""<section id="broneeri" class="plokk sek-broneeri" aria-labelledby="broneeri-pk">
+  <div class="wrap">
+    <h2 id="broneeri-pk">Broneeri aeg</h2>
+    <p class="sissejuhatus">Vali teenus, päev ja kellaaeg. Broneering jõuab {E(a["lyhinimi"])} e-postile ja kinnitame aja sulle telefoni või e-posti teel.</p>
+    <form class="broneering" data-broneering data-mailto="{E(a["email"])}">
+      <fieldset class="b-samm"><legend>1. Teenus</legend><div class="kiibid">{teen}</div></fieldset>
+      <fieldset class="b-samm"><legend>2. Päev</legend><div class="kiibid paevad" data-paevad><label class="b-kuup">Kuupäev<input type="date" name="paev" required></label></div></fieldset>
+      <fieldset class="b-samm"><legend>3. Kellaaeg</legend><div class="kiibid">{ajad}</div><p class="markus">Need on näidisajad. Päris lehele paneme ajad teie lahtiolekuaegade järgi.</p></fieldset>
+      <div class="b-kontakt"><div><label for="b-nimi">Nimi</label><input id="b-nimi" name="nimi" autocomplete="name" required></div><div><label for="b-tel">Telefon</label><input id="b-tel" name="telefon" type="tel" autocomplete="tel" required></div></div>
+      <button class="nupp pea" type="submit">Saada broneering</button>
+      <p class="markus">Broneering avaneb sinu e-posti programmis valmis kirjana. Loe, kuidas andmeid kasutame: <a href="privaatsus">privaatsus</a>.</p>
+    </form>
+  </div>
+</section>"""
+
+
+def privaatsus(a, d, lehed=None):
+    mis = "Broneerimisvorm" if kat(a).get("sammud") == "juuksur" else "Hinnapäringu vorm"
+    milleks = "Ainult sinu broneeringu kinnitamiseks." if kat(a).get("sammud") == "juuksur" else "Ainult sinu päringule vastamiseks ja hinnapakkumise tegemiseks."
+    priv = f"""<div class="lehe-pais"><div class="wrap"><h1>Privaatsus</h1></div></div>
+<div class="wrap tekst-leht plokk-alumine">
+<p>{mis} avab sinu e-posti programmi ja saadab kirja otse aadressile {E(a["email"])}. Lehel ei salvestata vormi andmeid.</p>
+<h2>Mis andmeid saame</h2><p>Nime, kontaktandmed ja muu info, mille ise kirja paned.</p>
+<h2>Milleks</h2><p>{milleks}</p>
+<h2>Kui kaua hoiame</h2><p>Kirjavahetust hoiame seni, kuni see on pakkumise või töö jaoks vajalik.</p>
+<h2>Sinu õigused</h2><p>Võid igal ajal küsida enda kohta käivaid andmeid ja paluda need kustutada. Kirjuta {E(a["email"])}.</p>
+<p>Vastutav töötleja: {E(a["nimi"])}, registrikood {E(a["registrikood"])}.</p>
+</div>"""
+    if lehed is None:
+        lehed = [("Avaleht", "./")]
+    return lehekylg(a, d, f"Privaatsus – {a['lyhinimi']}", f"{a['lyhinimi']} privaatsuspõhimõtted.",
+                    "\n".join([pais(a, d, lehed, None), "<main>", priv, "</main>", jalus(a, True)]))
+
+
+def sek_kontakt(a, d, link=None, lisa_html=""):
     t0 = a["telefonid"][0]
-    lisa = f'<p class="edasi"><a class="nupp pea" href="{link}">Saada hinnapäring</a></p>' if link else ""
+    lisa = f'<p class="edasi"><a class="nupp pea" href="{link}">Saada hinnapäring</a></p>' if link else lisa_html
     return f"""<section id="kontakt" class="plokk sek-kontakt" aria-labelledby="kontakt-pk">
   <div class="wrap">
-    <h2 id="kontakt-pk">Küsi hinnapakkumist</h2>
+    <h2 id="kontakt-pk">{E(kat(a).get("kontakt_pk", "Küsi hinnapakkumist"))}</h2>
     <p class="sissejuhatus">{E(kat(a)["kontakt"])}</p>
     <a class="suur-tel" href="tel:{tel_link(t0)}">{E(tel_ilus(t0))}</a>
     {kontakt_dl(a)}
@@ -198,13 +300,15 @@ def teip(a):
 </div>"""
 
 
-def pais(a, d, lehed=None, aktiivne=None):
-    if lehed:
+def pais(a, d, lehed=None, aktiivne=None, ankrud=None):
+    if ankrud:
+        lingid = "".join(f'<a href="#{h}">{E(n)}</a>' for n, h in ankrud)
+    elif lehed:
         lingid = "".join(
             f'<a href="{h}"{" aria-current=\"page\"" if h == aktiivne else ""}>{E(n)}</a>' for n, h in lehed)
     else:
         lingid = '<a href="#teenused">Teenused</a><a href="#tood">Tööd</a><a href="#kontakt">Kontakt</a>'
-    logo_href = "./" if lehed else "#algus"
+    logo_href = "./" if lehed and not ankrud else "#algus"
     return f"""<header class="pais pais-{d['pais']}">
   <div class="wrap">
     <a class="logo" href="{logo_href}"><span class="logo-mark" aria-hidden="true"></span>{E(a["lyhinimi"])}</a>
@@ -250,7 +354,7 @@ def ehita(a):
             pais(a, d, lehed, "./"), f'<main id="algus">', hero_html,
             sek_teenused(a, d, link="teenused"), sek_tood(a, d, n=3, link="tood"), sek_kaik(a, d),
             sek_faktid(a, d), sek_kontakt(a, d, link="kontakt"), "</main>", jalus(a, True)])
-        failid["index.html"] = lehekylg(a, d, f"{lyhi} – {t[0][0].lower()} {a['linn_kus']}", kirj, avaleht)
+        failid["index.html"] = lehekylg(a, d, f"{lyhi} – {kat(a).get('tiitel', t[0][0].lower())} {a['linn_kus']}", kirj, avaleht)
 
         pikk = "\n".join(f'<article class="teenus-pikk" id="t{i}"><h2>{E(n)}</h2><div><p>{E(p)}</p>'
                          f'<a class="nupp teine" href="kontakt">Küsi pakkumist</a></div></article>'
@@ -266,34 +370,22 @@ def ehita(a):
                           f'<div class="wrap plokk-alumine"><div class="galerii-suur">{pildid}</div></div>', '</main>', jalus(a, True)])
         failid["tood.html"] = lehekylg(a, d, f"Tehtud tööd – {lyhi}", f"{lyhi} tehtud tööd {a['piirkond_kus']}.", tood)
 
-        valikud = "".join(f"<option>{E(n)}</option>" for n, _, _ in t) + "<option>Mitu tööd korraga</option>"
-        vorm = f"""<form class="vorm" data-mailto="{E(a["email"])}" aria-labelledby="vorm-pk">
-      <h2 id="vorm-pk">Hinnapäring</h2>
-      <div><label for="nimi">Nimi</label><input id="nimi" name="nimi" autocomplete="name" required></div>
-      <div><label for="kontakt-v">Telefon või e-post</label><input id="kontakt-v" name="kontakt" required></div>
-      <div><label for="too">Töö</label><select id="too" name="too">{valikud}</select></div>
-      <div><label for="kirjeldus">Kirjeldus</label><textarea id="kirjeldus" name="kirjeldus" placeholder="{E(kat(a)["vorm_naide"])}"></textarea></div>
-      <button class="nupp pea" type="submit">Saada hinnapäring</button>
-      <p class="markus">Päring avaneb sinu e-posti programmis valmis kirjana. Loe, kuidas andmeid kasutame: <a href="privaatsus">privaatsus</a>.</p>
-    </form>"""
+        vorm_html = vorm(a)
         kont = "\n".join([pais(a, d, lehed, "kontakt"), '<main>',
                           f'<div class="lehe-pais"><div class="wrap"><h1>Kontakt</h1><p>Helista, kirjuta või saada hinnapäring. {E(kat(a)['kontakt'].split('. ',1)[1])}</p></div></div>',
-                          f'<div class="wrap kontakt-leht">{kontakt_dl(a)}<div class="vormi-ala">{vorm}</div></div>', '</main>', jalus(a, True)])
+                          f'<div class="wrap kontakt-leht">{kontakt_dl(a)}<div class="vormi-ala">{vorm_html}</div></div>', '</main>', jalus(a, True)])
         failid["kontakt.html"] = lehekylg(a, d, f"Kontakt – {lyhi}", f"{lyhi} kontaktid ja hinnapäring.", kont)
 
-        priv = f"""<div class="lehe-pais"><div class="wrap"><h1>Privaatsus</h1></div></div>
-<div class="wrap tekst-leht plokk-alumine">
-<p>Hinnapäringu vorm avab sinu e-posti programmi ja saadab kirja otse aadressile {E(a["email"])}. Lehel ei salvestata vormi andmeid.</p>
-<h2>Mis andmeid saame</h2><p>Nime, kontaktandmed ja töö kirjelduse, mille ise kirja paned.</p>
-<h2>Milleks</h2><p>Ainult sinu päringule vastamiseks ja hinnapakkumise tegemiseks.</p>
-<h2>Kui kaua hoiame</h2><p>Kirjavahetust hoiame seni, kuni see on pakkumise või töö jaoks vajalik.</p>
-<h2>Sinu õigused</h2><p>Võid igal ajal küsida enda kohta käivaid andmeid ja paluda need kustutada. Kirjuta {E(a["email"])}.</p>
-<p>Vastutav töötleja: {E(a["nimi"])}, registrikood {E(a["registrikood"])}.</p>
-</div>"""
-        failid["privaatsus.html"] = lehekylg(a, d, f"Privaatsus – {lyhi}", f"{lyhi} privaatsuspõhimõtted.",
-                                             "\n".join([pais(a, d, lehed, None), "<main>", priv, "</main>", jalus(a, True)]))
+        failid["privaatsus.html"] = privaatsus(a, d, lehed)
+    elif a["pakett"] == "400":
+        ankrud = [("Teenused", "teenused"), ("Broneeri", "broneeri"), ("Tööd", "tood"), ("Kontakt", "kontakt")]
+        keha = "\n".join([pais(a, d, ankrud=ankrud), '<main id="algus">', hero_html, sek_teenused(a, d), sek_broneeri(a, d),
+                          sek_tood(a, d), sek_kaik(a, d), sek_faktid(a, d), sek_kontakt(a, d), "</main>", jalus(a, True)])
+        failid["index.html"] = lehekylg(a, d, f"{lyhi} – {kat(a).get('tiitel', t[0][0].lower())} {a['linn_kus']}", kirj, keha)
+        failid["privaatsus.html"] = privaatsus(a, d)
     else:
         keha = "\n".join([pais(a, d), '<main id="algus">', hero_html, sek_teenused(a, d), sek_tood(a, d),
-                          sek_kaik(a, d), sek_faktid(a, d), sek_kontakt(a, d), "</main>", jalus(a)])
-        failid["index.html"] = lehekylg(a, d, f"{lyhi} – {t[0][0].lower()} {a['linn_kus']}", kirj, keha)
+                          sek_kaik(a, d), sek_faktid(a, d), sek_kontakt(a, d, lisa_html=f'<div class="vormi-ala vorm-yhel">{vorm(a, 3)}</div>'), "</main>", jalus(a, True)])
+        failid["index.html"] = lehekylg(a, d, f"{lyhi} – {kat(a).get('tiitel', t[0][0].lower())} {a['linn_kus']}", kirj, keha)
+        failid["privaatsus.html"] = privaatsus(a, d)
     return failid

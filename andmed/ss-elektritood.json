@@ -1,0 +1,23 @@
+{
+  "nimi": "SS Elektritööd OÜ",
+  "lyhinimi": "SS Elektritööd",
+  "vorm": "OÜ",
+  "registrikood": "16288530",
+  "emtak": "43211",
+  "telefonid": [
+    "+372 55630370"
+  ],
+  "email": "sselektritood@gmail.com",
+  "piirkond": "Pärnu ja Pärnumaa",
+  "piirkond_kus": "Pärnus ja Pärnumaal",
+  "linn_kus": "Pärnus",
+  "aasta": "2021",
+  "tootajaid": 1,
+  "sissejuhatus": "Teeme elektritöid Pärnus ja Pärnumaal: juhtmestik, kilbid, valgustus ja rikked. Enne tööd vaatame objekti üle ja ütleme hinna.",
+  "pakett": "250",
+  "kategooria": "elekter",
+  "teenused_voti": "",
+  "kujundus": "e-ss-elektritood",
+  "domeen": "sselektritood.ee",
+  "kaive": "51992"
+}
