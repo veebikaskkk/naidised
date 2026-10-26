@@ -20,12 +20,17 @@ LINNAD = {
     "Kohtla-Järve linn": "Kohtla-Järvel", "Haapsalu linn": "Haapsalus", "Valga linn": "Valgas",
     "Maardu linn": "Maardus", "Viljandi linn": "Viljandis", "Rakvere linn": "Rakveres",
     "Kuressaare linn": "Kuressaares", "Võru linn": "Võrus", "Keila linn": "Keilas", "Kärdla linn": "Kärdlas",
+    "Narva-Jõesuu linn": "Narva-Jõesuus", "Põlva linn": "Põlvas", "Jõgeva linn": "Jõgeval", "Saue linn": "Sauel", "Sindi linn": "Sindis",
 }
 SISSEJUHATUS = {
     "43311": "Krohvime ja pahteldame seinu ja lagesid {kus}: korterites, eramutes ja ärihoonetes. Pind jääb värvimiseks või tapeedi alla valmis.",
     "4333": "Paigaldame põrandaid ja plaaditame vannitubasid, kööke ja esikuid {kus}. Aluspind tehakse enne korda, et kate jääks sirge.",
     "4334": "Värvime siseruume ja fassaade {kus}. Enne värvi teeme pinna korda, sest just sellest sõltub, kui kaua tulemus vastu peab.",
     "433": "Teeme siseviimistlust {kus}: pahteldame, värvime, plaaditame ja paigaldame põrandaid. Võid tellida kogu remondi või ainult ühe etapi.",
+    "95311": "Hooldame ja remondime autosid {kus}. Enne tööd vaatame auto üle ja ütleme, mida on vaja teha ja mis see maksab.",
+    "95311-rehv": "Vahetame, tasakaalustame ja parandame rehve {kus}. Samal käigul vaatame üle ka pidurid ja veermiku.",
+    "95311-kere": "Parandame autokeresid ja värvime {kus}. Enne tööd vaatame kahju üle ja lepime hinna kokku.",
+    "95311-detail": "Peseme, poleerime ja puhastame autosid {kus}, nii seest kui väljast.",
 }
 
 
@@ -48,6 +53,8 @@ def asukoht(aadress):
 
 
 def sissejuhatus(emtak, kus):
+    if emtak in SISSEJUHATUS:
+        return SISSEJUHATUS[emtak].format(kus=kus)
     for n in (5, 4, 3):
         if emtak[:n] in SISSEJUHATUS:
             return SISSEJUHATUS[emtak[:n]].format(kus=kus)
@@ -69,7 +76,9 @@ def main(paev):
             "emtak": x["emtak_kood"], "telefonid": [t.strip() for t in x["telefon"].split(";") if t.strip()],
             "email": x["email"].split(";")[0].strip(), "piirkond": piirkond, "piirkond_kus": piirkond_kus,
             "linn_kus": linn_kus, "aasta": (x.get("registreeritud") or "")[-4:], "tootajaid": tootajaid or None,
-            "sissejuhatus": sissejuhatus(x["emtak_kood"], piirkond_kus), "pakett": x["pakett"],
+            "sissejuhatus": sissejuhatus(x.get("teenused_voti") or x["emtak_kood"], piirkond_kus), "pakett": x["pakett"],
+            "kategooria": "auto" if x["emtak_kood"].startswith(("9531", "452")) else "viimistlus",
+            "teenused_voti": x.get("teenused_voti", ""),
             "kujundus": x["kujundus"], "domeen": x.get("domeen", ""), "kaive": x.get("kaive", ""),
         }
         (juur / "andmed" / f"{s}.json").write_text(json.dumps(andmed, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

@@ -263,7 +263,7 @@ def hero_kalasaba(a, d):
 
 
 def hero_kontroll(a, d):
-    t = teenused(a["emtak"])
+    t = teenused(a.get("teenused_voti") or a["emtak"])
     read = "".join(f'<li><span class="h-linn" aria-hidden="true"></span>{E(n)}</li>' for n, _, _ in t)
     h = f"""<section class="h-kontroll" aria-labelledby="pk">
   <div class="wrap h-kontroll-sisu">

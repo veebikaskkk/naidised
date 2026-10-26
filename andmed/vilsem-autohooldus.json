@@ -1,0 +1,23 @@
+{
+  "nimi": "Vilsem autohooldus OÜ",
+  "lyhinimi": "Vilsem Autohooldus",
+  "vorm": "OÜ",
+  "registrikood": "17102325",
+  "emtak": "95311",
+  "telefonid": [
+    "+372 56238240"
+  ],
+  "email": "Vilsemautohooldus@gmail.com",
+  "piirkond": "Tartu ja Tartumaa",
+  "piirkond_kus": "Tartus ja Tartumaal",
+  "linn_kus": "Tartus",
+  "aasta": "2024",
+  "tootajaid": null,
+  "sissejuhatus": "Hooldame ja remondime autosid Tartus ja Tartumaal. Enne tööd vaatame auto üle ja ütleme, mida on vaja teha ja mis see maksab.",
+  "pakett": "250",
+  "kategooria": "auto",
+  "teenused_voti": "95311",
+  "kujundus": "tellimus",
+  "domeen": "vilsem.ee",
+  "kaive": "41403"
+}

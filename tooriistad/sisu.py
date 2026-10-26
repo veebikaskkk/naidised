@@ -52,6 +52,81 @@ TEENUSED = {
     ],
 }
 
+TEENUSED.update({
+    "95311": [
+        ("Hooldus", "Õli- ja filtrivahetus ning korraline hooldus.",
+         "Teeme korralise hoolduse tootja nõuete järgi: õli ja filtrid, vedelikud, pidurite ja veermiku ülevaatus. Kui märkame midagi, mis vajab tähelepanu, ütleme enne, kui midagi juurde teeme."),
+        ("Diagnostika", "Veakoodide lugemine ja rikke otsimine.",
+         "Loeme veakoodid ja otsime rikke põhjuse, enne kui midagi vahetame. Nii maksad ainult selle eest, mis päriselt katki on."),
+        ("Remont", "Mootor, veermik, pidurid ja elektrisüsteem.",
+         "Remondime mootori, veermiku, pidurite ja elektrisüsteemi rikkeid. Enne töö algust lepime kokku, mida tehakse ja mis see maksab."),
+        ("Rehvitööd", "Rehvivahetus ja tasakaalustamine.",
+         "Vahetame ja tasakaalustame rehvid ning kontrollime samal ajal pidureid ja veermikku. Hooaja vahetuse ajaks tasub aeg varakult kokku leppida."),
+    ],
+    "95311-rehv": [
+        ("Rehvivahetus", "Suve- ja talverehvide vahetus.",
+         "Vahetame rehvid ja kontrollime samal ajal rehvirõhku, mustri sügavust ja velgede seisukorda. Hooaja vahetuse ajaks tasub aeg varakult kokku leppida."),
+        ("Tasakaalustamine", "Rataste tasakaalustamine.",
+         "Tasakaalustame rattad, et auto ei vibreeriks ja rehvid kuluksid ühtlaselt."),
+        ("Rehvide parandus", "Augu parandus ja ventiilide vahetus.",
+         "Parandame torke ja vahetame ventiilid. Kui rehvi ei saa enam ohutult parandada, ütleme seda ausalt."),
+        ("Hooldus", "Väiksemad hooldus- ja remonditööd.",
+         "Samal käigul saab teha ka väiksemaid hooldustöid. Lepime enne kokku, mida tehakse."),
+    ],
+    "95311-kere": [
+        ("Kereremont", "Kereosade parandus ja vahetus.",
+         "Parandame ja vahetame kereosi pärast avariid või roostet. Enne tööd vaatame kahju üle ja lepime hinna kokku."),
+        ("Värvimine", "Detailide ja terve auto värvimine.",
+         "Värvime üksikuid detaile või terve auto. Värvitooni sobitame auto olemasoleva värviga."),
+        ("Mõlkide parandus", "Väiksemate mõlkide ja kriimude parandus.",
+         "Parandame väiksemad mõlgid ja kriimud, et auto näeks jälle korras välja."),
+        ("Kindlustusjuhtumid", "Abi kindlustusjuhtumi remondiga.",
+         "Kui kahju hüvitab kindlustus, aitame remondi kalkulatsiooniga ja lepime tööd kokku."),
+    ],
+    "95311-detail": [
+        ("Välispesu", "Põhjalik käsitsipesu.",
+         "Peseme auto käsitsi ja puhastame ka kohad, kuhu automaatpesula ei ulatu."),
+        ("Poleerimine", "Värvipinna poleerimine.",
+         "Poleerime värvipinna, et kriimud ja tuhmus kaoksid ning värv saaks tagasi oma läike."),
+        ("Salongi puhastus", "Istmete, põrandate ja paneelide puhastus.",
+         "Puhastame salongi: istmed, põrandakatted, paneelid ja aknad seestpoolt."),
+        ("Kaitsevaha", "Värvipinna kaitse.",
+         "Pärast pesu ja poleerimist kaitseb vaha värvipinda ilmastiku ja mustuse eest."),
+    ],
+})
+
+KATEGOORIAD = {
+    "viimistlus": dict(
+        tood="Siia tulevad teie enda tööde fotod. Viimistlustööd müüvad pildid paremini kui ükski tekst.",
+        kontakt="Helista või kirjuta. Kirjelda lühidalt, mis ruumiga on tegu ja kui suurt pinda töö puudutab.",
+        vorm_naide="Näiteks: kahetoaline korter, seinad umbes 120 m²",
+        teeb="teeb siseviimistlust",
+        sammud="viimistlus"),
+    "auto": dict(
+        tood="Siia tulevad teie töökoja ja tehtud tööde fotod. Puhas töökoda ja korras autod räägivad enda eest.",
+        kontakt="Helista või kirjuta. Ütle auto mark, mudel ja aasta ning kirjelda lühidalt, mis mure on.",
+        vorm_naide="Näiteks: Toyota Avensis 2012, pidurid kriuksuvad",
+        teeb="hooldab ja remondib autosid",
+        sammud="auto"),
+}
+
+SAMMUD_AUTO = [
+    ("Aeg", "Helista või kirjuta ja lepime kokku sobiva aja."),
+    ("Ülevaatus", "Vaatame auto üle ja leiame mure põhjuse."),
+    ("Kooskõlastus", "Enne remonti ütleme, mida on vaja teha ja mis see maksab."),
+    ("Töö", "Teeme kokkulepitud töö ja ei lisa midagi ilma sinu nõusolekuta."),
+    ("Üleandmine", "Anname auto üle ja räägime läbi, mida tehti."),
+]
+
+
+def kat(a):
+    return KATEGOORIAD[a.get("kategooria", "viimistlus")]
+
+
+def sammud(a):
+    return SAMMUD_AUTO if kat(a)["sammud"] == "auto" else SAMMUD
+
+
 SAMMUD = [
     ("Ülevaatus", "Tuleme kohale, vaatame pinnad üle ja mõõdame."),
     ("Pakkumine", "Saad kirjaliku pakkumise koos materjalide ja ajakavaga."),
@@ -62,6 +137,8 @@ SAMMUD = [
 
 
 def teenused(emtak):
+    if emtak in TEENUSED:
+        return TEENUSED[emtak]
     for n in (5, 4, 3):
         if emtak[:n] in TEENUSED:
             return TEENUSED[emtak[:n]]

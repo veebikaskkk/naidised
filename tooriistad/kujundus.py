@@ -8,8 +8,10 @@ privaatsus), 250 € pakett on üheleheline.
 HTML-i käsitsi ei muudeta. Muuda andmeid või seda faili ja jooksuta genereeri.py.
 """
 from fondid import font_face
-from sisu import E, SAMMUD, teenused, tel_link, tel_ilus, tel_lyhike
+from sisu import E, SAMMUD, teenused, tel_link, tel_ilus, tel_lyhike, kat, sammud
 import kujundused as K
+import kujundused_auto
+K.KUJUNDUSED.update(kujundused_auto.K)
 
 BASE_CSS = """
 *{box-sizing:border-box}
@@ -84,7 +86,7 @@ SKRIPT = """document.addEventListener('submit',function(e){
 # ---------- Sektsioonid ----------
 
 def sek_teenused(a, d, link=None):
-    t = teenused(a["emtak"])
+    t = teenused(a.get("teenused_voti") or a["emtak"])
     stiil = d["teenused"]
     if stiil == "read":
         sisu = "\n".join(f'<li><span class="t-nimi">{E(n)}</span><span class="t-kirj">{E(k)}</span></li>' for n, k, _ in t)
@@ -119,7 +121,7 @@ def sek_tood(a, d, n=6, link=None):
     return f"""<section id="tood" class="plokk sek-tood" aria-labelledby="tood-pk">
   <div class="wrap">
     <h2 id="tood-pk">Tehtud tööd</h2>
-    <p class="sissejuhatus">Siia tulevad teie enda tööde fotod. Viimistlustööd müüvad pildid paremini kui ükski tekst.</p>
+    <p class="sissejuhatus">{E(kat(a)["tood"])}</p>
     <div class="g-{d['galerii']}">{pildid}</div>
     {lisa}
   </div>
@@ -127,12 +129,12 @@ def sek_tood(a, d, n=6, link=None):
 
 
 def sek_kaik(a, d):
-    sammud = "\n".join(f'<li><span class="nr">{i}</span><h3>{E(t)}</h3><p>{E(k)}</p></li>' for i, (t, k) in enumerate(SAMMUD, 1))
+    sammud_html = "\n".join(f'<li><span class="nr">{i}</span><h3>{E(t)}</h3><p>{E(k)}</p></li>' for i, (t, k) in enumerate(sammud(a), 1))
     return f"""<section class="plokk sek-kaik" aria-labelledby="kaik-pk">
   <div class="wrap">
     <h2 id="kaik-pk">Kuidas töö käib</h2>
     <p class="sissejuhatus">Enne alustamist tead, mida teeme, kui kaua see võtab ja mis see maksab.</p>
-    <ol class="k-{d['kaik']}">{sammud}</ol>
+    <ol class="k-{d['kaik']}">{sammud_html}</ol>
   </div>
 </section>"""
 
@@ -168,7 +170,7 @@ def sek_kontakt(a, d, link=None):
     return f"""<section id="kontakt" class="plokk sek-kontakt" aria-labelledby="kontakt-pk">
   <div class="wrap">
     <h2 id="kontakt-pk">Küsi hinnapakkumist</h2>
-    <p class="sissejuhatus">Helista või kirjuta. Kirjelda lühidalt, mis ruumiga on tegu ja kui suurt pinda töö puudutab.</p>
+    <p class="sissejuhatus">{E(kat(a)["kontakt"])}</p>
     <a class="suur-tel" href="tel:{tel_link(t0)}">{E(tel_ilus(t0))}</a>
     {kontakt_dl(a)}
     {lisa}
@@ -235,7 +237,7 @@ def lehekylg(a, d, pealkiri, kirjeldus, keha):
 
 def ehita(a):
     d = K.KUJUNDUSED[a["kujundus"]]
-    t = teenused(a["emtak"])
+    t = teenused(a.get("teenused_voti") or a["emtak"])
     lyhi = a["lyhinimi"]
     kirj = f'{a["nimi"]}: {", ".join(x[0].lower() for x in t[:3])}. Tööpiirkond {a["piirkond"]}.'
     hero_html, hero_css = d["hero"](a, d)
@@ -254,7 +256,7 @@ def ehita(a):
                          f'<a class="nupp teine" href="kontakt">Küsi pakkumist</a></div></article>'
                          for i, (n, _, p) in enumerate(t, 1))
         teen = "\n".join([pais(a, d, lehed, "teenused"), '<main>',
-                          f'<div class="lehe-pais"><div class="wrap"><h1>Teenused</h1><p>{E(lyhi)} teeb siseviimistlust {E(a["piirkond_kus"])}. Võid tellida kogu töö või ainult ühe etapi.</p></div></div>',
+                          f'<div class="lehe-pais"><div class="wrap"><h1>Teenused</h1><p>{E(lyhi)} {E(kat(a)["teeb"])} {E(a["piirkond_kus"])}. Võid tellida kogu töö või ainult ühe etapi.</p></div></div>',
                           f'<div class="wrap">{pikk}</div>', sek_kaik(a, d), '</main>', jalus(a, True)])
         failid["teenused.html"] = lehekylg(a, d, f"Teenused – {lyhi}", f"{lyhi} teenused: " + ", ".join(x[0].lower() for x in t) + ".", teen)
 
@@ -270,12 +272,12 @@ def ehita(a):
       <div><label for="nimi">Nimi</label><input id="nimi" name="nimi" autocomplete="name" required></div>
       <div><label for="kontakt-v">Telefon või e-post</label><input id="kontakt-v" name="kontakt" required></div>
       <div><label for="too">Töö</label><select id="too" name="too">{valikud}</select></div>
-      <div><label for="kirjeldus">Kirjeldus</label><textarea id="kirjeldus" name="kirjeldus" placeholder="Näiteks: kahetoaline korter, seinad umbes 120 m²"></textarea></div>
+      <div><label for="kirjeldus">Kirjeldus</label><textarea id="kirjeldus" name="kirjeldus" placeholder="{E(kat(a)["vorm_naide"])}"></textarea></div>
       <button class="nupp pea" type="submit">Saada hinnapäring</button>
       <p class="markus">Päring avaneb sinu e-posti programmis valmis kirjana. Loe, kuidas andmeid kasutame: <a href="privaatsus">privaatsus</a>.</p>
     </form>"""
         kont = "\n".join([pais(a, d, lehed, "kontakt"), '<main>',
-                          f'<div class="lehe-pais"><div class="wrap"><h1>Kontakt</h1><p>Helista, kirjuta või saada hinnapäring. Kirjelda lühidalt, mis ruumiga on tegu.</p></div></div>',
+                          f'<div class="lehe-pais"><div class="wrap"><h1>Kontakt</h1><p>Helista, kirjuta või saada hinnapäring. {E(kat(a)['kontakt'].split('. ',1)[1])}</p></div></div>',
                           f'<div class="wrap kontakt-leht">{kontakt_dl(a)}<div class="vormi-ala">{vorm}</div></div>', '</main>', jalus(a, True)])
         failid["kontakt.html"] = lehekylg(a, d, f"Kontakt – {lyhi}", f"{lyhi} kontaktid ja hinnapäring.", kont)
 
