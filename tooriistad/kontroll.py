@@ -67,8 +67,8 @@ def tekst_ilma_siltideta(s):
     return re.sub(r"<[^>]+>", " ", s)
 
 
-for leht in sorted(pub.glob("*/index.html")):
-    nimi = leht.parent.name
+for leht in sorted(pub.glob("*/*.html")):
+    nimi = leht.parent.name + "/" + leht.name
     s = leht.read_text(encoding="utf-8")
     p = Parser()
     p.feed(s)
@@ -88,9 +88,15 @@ for leht in sorted(pub.glob("*/index.html")):
     if re.search(r"\[[A-ZÕÄÖÜ ]{2,}\]", s):
         v.append(f"{nimi}: kohatäide nagu [NIMI] jäi alles")
     for href in p.lingid:
+        if not re.match(r"^(#|[a-z]+:|/|https?:)", href):
+            sihtfail = leht.parent / href
+            if not (sihtfail.with_suffix(".html").exists() or (sihtfail / "index.html").exists() or sihtfail.is_file()):
+                v.append(f"{nimi}: sisemine link {href} ei vii kuhugi")
         if href.startswith("#") and href[1:] not in p.idd:
             v.append(f"{nimi}: ankur {href} ei vii kuhugi")
     for href in p.ressursid:
+        if href.startswith("data:"):
+            continue
         tee = (pub / href.lstrip("/")) if href.startswith("/") else (leht.parent / href)
         if not tee.exists():
             v.append(f"{nimi}: puudub fail {href}")
@@ -98,18 +104,20 @@ for leht in sorted(pub.glob("*/index.html")):
     for url in re.findall(r'url\("(/[^"]+)"\)', css):
         if not (pub / url.lstrip("/")).exists():
             v.append(f"{nimi}: CSS viitab puuduvale failile {url}")
-    v_ = dict(re.findall(r"--(tume|kesk|hele|toon|kiir):(#[0-9A-Fa-f]{6})", css))
-    paarid = [("#FFFFFF", v_["tume"], "valge tumedal"), ("#FFFFFF", v_["kesk"], "valge keskmisel"),
-              ("#1F2328", v_["hele"], "tekst helel"), ("#1F2328", v_["toon"], "tekst toonil"),
-              ("#4A5157", v_["toon"], "väiketekst toonil"), ("#4A5157", "#FBFBFA", "väiketekst taustal"),
-              ("#4A5157", "#FFFFFF", "väiketekst kaardil"), (v_["tume"], "#FBFBFA", "pealkiri taustal"),
-              (v_["tume"], v_["toon"], "pealkiri toonil"), ("#1F2328", v_["kiir"], "tekst kiirel"),
-              ("#363C41", "#FBFBFA", "sissejuhatus"), ("#FFFFFF", "#1F2328", "teip")]
+    v_ = dict(re.findall(r"--([a-z-]+):(#[0-9A-Fa-f]{6})", css))
+    paarid = [(v_["fg"], v_["bg"], "tekst taustal"), (v_["muted"], v_["bg"], "väiketekst taustal"),
+              (v_["muted"], v_["surface"], "väiketekst pinnal"), (v_["fg"], v_["surface"], "tekst pinnal"),
+              (v_["accent-fg"], v_["accent"], "nupp"), (v_["dark-fg"], v_["dark"], "tume plokk"),
+              (v_["dark-accent"], v_["dark"], "tumeda ploki aktsent"), ("#FFFFFF", "#15181B", "teip")]
+    for m in re.finditer(r"\{[^{}]*?(?<![-\w])color:(#[0-9A-Fa-f]{6})[^{}]*?background:(#[0-9A-Fa-f]{6})|\{[^{}]*?background:(#[0-9A-Fa-f]{6})[^{}]*?(?<![-\w])color:(#[0-9A-Fa-f]{6})", css):
+        g = m.groups()
+        fgc, bgc = (g[0], g[1]) if g[0] else (g[3], g[2])
+        paarid.append((fgc, bgc, "reegel " + fgc + "/" + bgc))
     for a, b, kus in paarid:
         k = kontrast(a, b)
         if k < 4.5:
             v.append(f"{nimi}: kontrast {kus} {k:.2f} < 4.5")
-    regkood = json.loads((juur / "andmed" / f"{nimi}.json").read_text(encoding="utf-8"))["registrikood"]
+    regkood = json.loads((juur / "andmed" / f"{leht.parent.name}.json").read_text(encoding="utf-8"))["registrikood"]
     if f"registrikood {regkood}" not in s:
         v.append(f"{nimi}: jaluses pole registrikoodi")
     vead += v
