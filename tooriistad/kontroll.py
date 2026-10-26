@@ -98,11 +98,13 @@ for leht in sorted(pub.glob("*/index.html")):
     for url in re.findall(r'url\("(/[^"]+)"\)', css):
         if not (pub / url.lstrip("/")).exists():
             v.append(f"{nimi}: CSS viitab puuduvale failile {url}")
-    aktsent = re.search(r"--aktsent:(#[0-9A-Fa-f]{6})", css).group(1)
-    paarid = [("#24282C", "#F7F8F7", "tekst taustal"), ("#4A5157", "#F7F8F7", "väiketekst taustal"),
-              ("#4A5157", "#E4E6E5", "väiketekst pinnal"), ("#FFFFFF", aktsent, "teip"),
-              ("#FFFFFF", "#24282C", "nupp"), ("#B4BCC1", "#24282C", "töökäigu tekst"),
-              ("#B9CBE6", "#24282C", "sammu number"), ("#363C41", "#F7F8F7", "sissejuhatus")]
+    v_ = dict(re.findall(r"--(tume|kesk|hele|toon|kiir):(#[0-9A-Fa-f]{6})", css))
+    paarid = [("#FFFFFF", v_["tume"], "valge tumedal"), ("#FFFFFF", v_["kesk"], "valge keskmisel"),
+              ("#1F2328", v_["hele"], "tekst helel"), ("#1F2328", v_["toon"], "tekst toonil"),
+              ("#4A5157", v_["toon"], "väiketekst toonil"), ("#4A5157", "#FBFBFA", "väiketekst taustal"),
+              ("#4A5157", "#FFFFFF", "väiketekst kaardil"), (v_["tume"], "#FBFBFA", "pealkiri taustal"),
+              (v_["tume"], v_["toon"], "pealkiri toonil"), ("#1F2328", v_["kiir"], "tekst kiirel"),
+              ("#363C41", "#FBFBFA", "sissejuhatus"), ("#FFFFFF", "#1F2328", "teip")]
     for a, b, kus in paarid:
         k = kontrast(a, b)
         if k < 4.5:
