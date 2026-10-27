@@ -8,16 +8,18 @@ privaatsus), 250 € pakett on üheleheline.
 HTML-i käsitsi ei muudeta. Muuda andmeid või seda faili ja jooksuta genereeri.py.
 """
 from fondid import font_face
-from sisu import E, SAMMUD, teenused, tel_link, tel_ilus, tel_lyhike, kat, sammud
+from sisu import E, SAMMUD, teenused, tel_link, tel_ilus, tel_lyhike, kat, sammud, teeb, vorm_naide
 import kujundused as K
 import kujundused_auto
 import kujundused_juuks
 import kujundused_elekter
 import kujundused_viim2
+import kujundused_toru
 K.KUJUNDUSED.update(kujundused_auto.K)
 K.KUJUNDUSED.update(kujundused_juuks.K)
 K.KUJUNDUSED.update(kujundused_elekter.K)
 K.KUJUNDUSED.update(kujundused_viim2.K)
+K.KUJUNDUSED.update(kujundused_toru.K)
 
 BASE_CSS = """
 *{box-sizing:border-box}
@@ -220,7 +222,7 @@ def vorm(a, tase=2):
       <div><label for="nimi">Nimi</label><input id="nimi" name="nimi" autocomplete="name" required></div>
       <div><label for="kontakt-v">Telefon või e-post</label><input id="kontakt-v" name="kontakt" required></div>
       <div><label for="too">Töö</label><select id="too" name="too">{valikud}</select></div>
-      <div><label for="kirjeldus">Kirjeldus</label><textarea id="kirjeldus" name="kirjeldus" placeholder="{E(kat(a)["vorm_naide"])}"></textarea></div>
+      <div><label for="kirjeldus">Kirjeldus</label><textarea id="kirjeldus" name="kirjeldus" placeholder="{E(vorm_naide(a))}"></textarea></div>
       <button class="nupp pea" type="submit">Saada hinnapäring</button>
       <p class="markus">Päring avaneb sinu e-posti programmis valmis kirjana. Loe, kuidas andmeid kasutame: <a href="privaatsus">privaatsus</a>.</p>
     </form>"""
@@ -363,7 +365,7 @@ def ehita(a):
                          f'<a class="nupp teine" href="kontakt">Küsi pakkumist</a></div></article>'
                          for i, (n, _, p) in enumerate(t, 1))
         teen = "\n".join([pais(a, d, lehed, "teenused"), '<main>',
-                          f'<div class="lehe-pais"><div class="wrap"><h1>Teenused</h1><p>{E(lyhi)} {E(kat(a)["teeb"])} {E(a["piirkond_kus"])}. Võid tellida kogu töö või ainult ühe etapi.</p></div></div>',
+                          f'<div class="lehe-pais"><div class="wrap"><h1>Teenused</h1><p>{E(lyhi)} {E(teeb(a))} {E(a["piirkond_kus"])}. Võid tellida kogu töö või ainult ühe etapi.</p></div></div>',
                           f'<div class="wrap">{pikk}</div>', sek_kaik(a, d), '</main>', jalus(a, True)])
         failid["teenused.html"] = lehekylg(a, d, f"Teenused – {lyhi}", f"{lyhi} teenused: " + ", ".join(x[0].lower() for x in t) + ".", teen)
 

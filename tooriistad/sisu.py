@@ -170,6 +170,103 @@ KATEGOORIAD = {
         sammud="elekter", tiitel="elektritööd"),
 }
 
+TEENUSED["43221"] = [
+    ("Küttesüsteemid", "Radiaatorid, põrandaküte, katlad ja torustik.",
+     "Paigaldame ja uuendame küttesüsteeme: radiaatorid, põrandaküte, katlad ja torustik. Enne tööd vaatame hoone üle ja lepime kokku, milline lahendus sinna sobib."),
+    ("Soojuspumbad", "Õhk-vesi, õhk-õhk ja maasoojuspumbad.",
+     "Paigaldame soojuspumpasid ja ühendame need küttesüsteemiga. Aitame valida pumba, mis sobib hoone suuruse ja olemasoleva küttega."),
+    ("Ventilatsioon", "Ventilatsiooni paigaldus ja hooldus.",
+     "Paigaldame soojustagastusega ventilatsiooni eramutesse, korteritesse ja äripindadele. Olemasoleva süsteemi puhul vahetame filtrid, puhastame ja reguleerime."),
+    ("Hooldus ja rikked", "Lekked, rikked ja korraline hooldus.",
+     "Kui küte ei soojenda või kuskilt lekib, otsime põhjuse üles ja parandame. Enne parandust ütleme, mida on vaja teha."),
+]
+TEENUSED["43221-vent"] = [
+    ("Ventilatsioon", "Ventilatsioonisüsteemide paigaldus.",
+     "Paigaldame ventilatsioonisüsteeme eramutesse, korteritesse ja äripindadele. Enne tööd vaatame hoone üle ja lepime kokku, kuhu kanalid ja seade tulevad."),
+    ("Soojustagastus", "Soojustagastusega ventilatsiooniseadmed.",
+     "Soojustagastusega seade võtab väljuvast õhust soojuse ja annab selle sissetulevale õhule. Aitame valida seadme, mis sobib hoone suurusega."),
+    ("Hooldus", "Filtrite vahetus ja süsteemi puhastus.",
+     "Vahetame filtrid, puhastame seadme ja kanalid ning kontrollime, et süsteem töötaks nii, nagu peab."),
+    ("Reguleerimine", "Õhuhulkade mõõtmine ja seadistus.",
+     "Mõõdame õhuhulgad ja reguleerime süsteemi, et igas ruumis oleks piisavalt värsket õhku ja ei tekiks tõmmet."),
+]
+TEENUSED["43221-kliima"] = [
+    ("Soojuspumbad", "Õhk-õhk, õhk-vesi ja maasoojuspumbad.",
+     "Paigaldame soojuspumpasid eramutesse ja äripindadele. Aitame valida pumba, mis sobib hoone suuruse ja küttesüsteemiga."),
+    ("Jahutus", "Konditsioneerid ja jahutusseadmed.",
+     "Paigaldame konditsioneere ja jahutusseadmeid. Seadme asukoha lepime kokku nii, et see jahutaks ruumi ühtlaselt ja ei häiriks."),
+    ("Hooldus", "Soojuspumpade ja kliimaseadmete hooldus.",
+     "Puhastame filtrid ja soojusvahetid ning kontrollime seadme töö üle. Korras seade kulutab vähem elektrit."),
+    ("Rikked", "Rikete otsimine ja parandus.",
+     "Kui seade ei kütta, ei jahuta või annab veateate, otsime põhjuse üles ja ütleme enne parandust, mida on vaja teha."),
+]
+TEENUSED["43222"] = [
+    ("Torutööd", "Vee- ja kanalisatsioonitorustik.",
+     "Paigaldame ja vahetame vee- ja kanalisatsioonitorustikku korterites, eramutes ja äripindadel. Enne tööd vaatame olemasoleva torustiku üle."),
+    ("Sanitaartehnika", "WC-potid, valamud, dušid ja segistid.",
+     "Paigaldame ja vahetame WC-potte, valamuid, dušinurki, vanne ja segisteid. Võid tellida ühe seadme vahetuse või kogu vannitoa torutööd."),
+    ("Kanalisatsioon", "Kanalisatsiooni ehitus ja ühendused.",
+     "Ehitame ja uuendame kanalisatsiooni ning teeme ühendusi. Enne tööd lepime kokku, kuhu torud tulevad ja kuidas kalded tehakse."),
+    ("Lekked ja ummistused", "Rikete otsimine ja parandus.",
+     "Kui toru lekib või vesi ei lähe ära, otsime põhjuse üles ja parandame. Ütleme enne, mida on vaja teha."),
+]
+TEENUSED["4322"] = [
+    ("Torutööd ja küte", "Vesi, kanalisatsioon ja küttesüsteemid.",
+     "Teeme vee-, kanalisatsiooni- ja küttetöid uutes ja vanades hoonetes. Enne tööd vaatame objekti üle ja lepime kokku, mida täpselt tehakse."),
+    ("Küttesüsteemid", "Radiaatorid, põrandaküte ja katlad.",
+     "Paigaldame ja uuendame radiaator- ja põrandakütet ning ühendame katlaid ja soojuspumpasid."),
+    ("Sanitaartehnika", "WC-potid, valamud, dušid ja segistid.",
+     "Paigaldame ja vahetame sanitaartehnikat: WC-potid, valamud, dušinurgad, vannid ja segistid."),
+    ("Rikked ja hooldus", "Lekked, ummistused ja hooldus.",
+     "Kui midagi lekib, ei soojenda või vesi ei lähe ära, otsime põhjuse üles ja parandame. Ütleme enne, mida on vaja teha."),
+]
+TEENUSED["43223"] = [
+    ("Ahjud", "Kütte- ja soemüüriahjude ehitus.",
+     "Ehitame kütte- ja soemüüriahjusid. Ahju suuruse ja asukoha lepime kokku ruumi ja korstna järgi."),
+    ("Pliidid", "Pliitide ehitus ja paigaldus.",
+     "Ehitame ja paigaldame pliite nii uutesse majadesse kui ka vanade asemele."),
+    ("Kaminad", "Kaminate ja kaminasüdamike paigaldus.",
+     "Paigaldame kaminaid ja kaminasüdamikke ning vooderdame need. Enne tööd vaatame üle korstna ja põranda kandevõime."),
+    ("Remont", "Vanade ahjude ja pliitide remont.",
+     "Parandame pragunenud ahjusid ja pliite ning vahetame kulunud detaile. Ütleme enne, kas remont tasub end ära."),
+]
+SAMMUD_TORU = [
+    ("Ülevaatus", "Tuleme kohale ja vaatame olemasoleva süsteemi üle."),
+    ("Pakkumine", "Saad pakkumise koos töömahu, seadmete ja ajakavaga."),
+    ("Töö", "Teeme töö kokkulepitud ajal ja koristame enda järelt."),
+    ("Kontroll", "Enne üleandmist kontrollime, et kõik töötab ja ei leki."),
+    ("Üleandmine", "Näitame süsteemi tööd ja räägime läbi hoolduse."),
+]
+# Teenuste võtme järgi: mida firma teeb (teenuste lehe lause) ja vormi näide
+TEEB = {
+    "43221": "teeb kütte- ja ventilatsioonitöid", "43221-vent": "paigaldab ja hooldab ventilatsiooni",
+    "43221-kliima": "paigaldab soojuspumpasid ja kliimaseadmeid", "43222": "teeb torutöid",
+    "4322": "teeb torutöid ja küttetöid", "43223": "ehitab ahjusid, pliite ja kaminaid",
+}
+VORM_NAIDE = {
+    "43221": "Näiteks: eramaja 150 m², vaja vahetada katel ja lisada põrandaküte",
+    "43221-vent": "Näiteks: eramaja 140 m², vaja soojustagastusega ventilatsiooni",
+    "43221-kliima": "Näiteks: eramaja 160 m², soovin õhk-vesi soojuspumpa",
+    "43222": "Näiteks: korteri vannituba, vaja vahetada torud ja WC-pott",
+    "4322": "Näiteks: eramaja, vaja uuendada veetorud ja radiaatorid",
+    "43223": "Näiteks: palkmaja, soovin soemüüriahju elutuppa",
+}
+KATEGOORIAD["toru"] = dict(
+    tood="Siia tulevad teie tehtud tööde fotod: katlaruumid, torustikud ja paigaldatud seadmed.",
+    kontakt="Helista või kirjuta. Kirjelda lühidalt, mis hoonega on tegu ja mida on vaja teha.",
+    vorm_naide=VORM_NAIDE["4322"], teeb="teeb torutöid ja küttetöid", sammud="toru")
+
+
+def teeb(a):
+    return TEEB.get(a.get("teenused_voti") or "") or TEEB.get(a.get("emtak", "")) or kat(a)["teeb"]
+
+
+def vorm_naide(a):
+    if a.get("kategooria") == "toru":
+        return VORM_NAIDE.get(a.get("teenused_voti") or "") or VORM_NAIDE.get(a.get("emtak", ""), kat(a)["vorm_naide"])
+    return kat(a)["vorm_naide"]
+
+
 SAMMUD_AUTO = [
     ("Aeg", "Helista või kirjuta ja lepime kokku sobiva aja."),
     ("Ülevaatus", "Vaatame auto üle ja leiame mure põhjuse."),
@@ -184,7 +281,7 @@ def kat(a):
 
 
 def sammud(a):
-    return {"auto": SAMMUD_AUTO, "juuksur": SAMMUD_JUUKSUR, "elekter": SAMMUD_ELEKTER}.get(kat(a)["sammud"], SAMMUD)
+    return {"auto": SAMMUD_AUTO, "juuksur": SAMMUD_JUUKSUR, "elekter": SAMMUD_ELEKTER, "toru": SAMMUD_TORU}.get(kat(a)["sammud"], SAMMUD)
 
 
 SAMMUD = [

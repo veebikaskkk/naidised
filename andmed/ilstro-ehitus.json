@@ -1,0 +1,24 @@
+{
+  "nimi": "Osaühing ILSTRO EHITUS",
+  "lyhinimi": "Ilstro Ehitus",
+  "vorm": "OÜ",
+  "registrikood": "11234474",
+  "emtak": "4322",
+  "telefonid": [
+    "+372 53543132",
+    "+372 55565345"
+  ],
+  "email": "iljasubin@mail.ru",
+  "piirkond": "Kohtla-Järve ja Ida-Virumaa",
+  "piirkond_kus": "Kohtla-Järvel ja Ida-Virumaal",
+  "linn_kus": "Kohtla-Järvel",
+  "aasta": "2006",
+  "tootajaid": 9,
+  "sissejuhatus": "Teeme torutöid ja küttetöid Kohtla-Järvel ja Ida-Virumaal: vesi, kanalisatsioon, küte ja sanitaartehnika.",
+  "pakett": "500",
+  "kategooria": "toru",
+  "teenused_voti": "",
+  "kujundus": "t-ilstro",
+  "domeen": "ilstroehitus.ee",
+  "kaive": "377819"
+}
