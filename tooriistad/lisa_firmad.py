@@ -87,7 +87,7 @@ def main(paev):
         andmed = {
             "nimi": x["nimi"], "lyhinimi": lyhi, "vorm": x.get("vorm", "OÜ"), "registrikood": x["registrikood"],
             "emtak": x["emtak_kood"], "telefonid": [t.strip() for t in x["telefon"].split(";") if t.strip()],
-            "email": x["email"].split(";")[0].strip(), "piirkond": piirkond, "piirkond_kus": piirkond_kus,
+            "email": x["email"].split(";")[0].strip().strip("<>"), "piirkond": piirkond, "piirkond_kus": piirkond_kus,
             "linn_kus": linn_kus, "aasta": (x.get("registreeritud") or "")[-4:], "tootajaid": tootajaid or None,
             "sissejuhatus": sissejuhatus(x.get("teenused_voti") or x["emtak_kood"], piirkond_kus), "pakett": x["pakett"],
             "kategooria": kategooria(x["emtak_kood"]),
