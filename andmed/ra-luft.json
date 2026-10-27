@@ -1,0 +1,23 @@
+{
+  "nimi": "Osaühing RA Luft",
+  "lyhinimi": "RA Luft",
+  "vorm": "OÜ",
+  "registrikood": "10131447",
+  "emtak": "43222",
+  "telefonid": [
+    "+372 5131526"
+  ],
+  "email": "luftcon@hot.ee",
+  "piirkond": "Pärnumaa",
+  "piirkond_kus": "Pärnumaal",
+  "linn_kus": "Pärnumaal",
+  "aasta": "1996",
+  "tootajaid": 1,
+  "sissejuhatus": "Paigaldame ja hooldame ventilatsioonisüsteeme Pärnumaal: eramutes, korterites ja äripindadel.",
+  "pakett": "500",
+  "kategooria": "toru",
+  "teenused_voti": "43221-vent",
+  "kujundus": "t2-ra-luft",
+  "domeen": "raluft.ee",
+  "kaive": "96468"
+}

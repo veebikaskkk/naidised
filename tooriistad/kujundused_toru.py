@@ -217,9 +217,64 @@ def hero_mullid(a, d):
     return h, c
 
 
+def hero_katel(a, d):
+    """Seinakatel torude ja näidikuga."""
+    P = d["p"]
+    m = mix(P['hf'], P['hb'], .35)
+    s = _svg("0 0 280 320", f"""<rect x="50" y="10" width="180" height="230" rx="22" fill="{P['hf']}"/>
+<rect x="80" y="44" width="120" height="56" rx="10" fill="{mix(P['hf'], P['hb'], .8)}"/>
+<text x="140" y="84" text-anchor="middle" font-size="30" font-weight="700" fill="{P['ha']}" font-family="Inter,sans-serif">60°</text>
+<circle cx="105" cy="150" r="16" fill="{P['ha']}"/><circle cx="175" cy="150" r="16" fill="{m}"/>
+<rect x="80" y="196" width="120" height="10" rx="5" fill="{m}"/>
+<path d="M90 240V310M140 240V310M190 240V310" stroke="{m}" stroke-width="14"/><path d="M90 240V310" stroke="{P['ha']}" stroke-width="14"/>""")
+    return _kaks("h-xkatel", a, d, s)
+
+
+def hero_dush(a, d):
+    """Dušipea ja veejoad."""
+    P = d["p"]
+    joad = "".join(f'<line x1="{150 + dx}" y1="150" x2="{150 + dx * 1.8:.0f}" y2="290" stroke="{P["ha"]}" stroke-width="6" stroke-linecap="round" stroke-dasharray="14 12"/>'
+                   for dx in (-48, -24, 0, 24, 48))
+    s = _svg("0 0 300 300", f"""<path d="M40 20H150V60" stroke="{P['hf']}" stroke-width="16" fill="none" stroke-linejoin="round"/>
+<path d="M80 130Q150 40 220 130Z" fill="{P['hf']}"/><rect x="76" y="128" width="148" height="14" rx="7" fill="{mix(P['hf'], P['hb'], .5)}"/>{joad}""")
+    return _kaks("h-xdush", a, d, s)
+
+
+def hero_termo(a, d):
+    """Termomeeter suurena paremal, skaala kriipsudega."""
+    P = d["p"]
+    kriips = "".join(f'<rect x="150" y="{40 + k * 24}" width="{34 if k % 2 == 0 else 20}" height="6" rx="3" fill="{mix(P["hf"], P["hb"], .5)}"/>' for k in range(9))
+    s = _svg("0 0 240 320", f"""<rect x="70" y="20" width="60" height="230" rx="30" fill="{mix(P['hf'], P['hb'], .15)}" stroke="{P['hf']}" stroke-width="8"/>
+<circle cx="100" cy="262" r="46" fill="{P['ha']}" stroke="{P['hf']}" stroke-width="8"/><rect x="88" y="110" width="24" height="150" rx="12" fill="{P['ha']}"/>{kriips}""")
+    return _kaks("h-xtermo", a, d, s)
+
+
+def hero_ahi(a, d):
+    """Kahhelahi koldeuksega ja leegiga."""
+    P = d["p"]
+    m = mix(P['hf'], P['hb'], .2)
+    kahhel = "".join(f'<rect x="{40 + c * 56}" y="{30 + r * 46}" width="52" height="42" rx="4" fill="{m}"/>' for r in range(5) for c in range(4))
+    s = _svg("0 0 300 300", f"""<rect x="34" y="24" width="232" height="246" rx="8" fill="{P['hf']}"/>{kahhel}
+<rect x="104" y="170" width="92" height="80" rx="6" fill="{P['hb']}"/>
+<path d="M150 180C130 205 128 225 150 244C172 225 170 205 150 180Z" fill="{P['ha']}"/>
+<rect x="20" y="268" width="260" height="16" rx="4" fill="{P['hf']}"/>""")
+    return _kaks("h-xahi", a, d, s)
+
+
+def hero_helves(a, d):
+    """Jahutus: lumehelves ja soojuslaine kõrvuti."""
+    P = d["p"]
+    haru = f'<g stroke="{P["ha"]}" stroke-width="12" stroke-linecap="round"><line x1="120" y1="150" x2="120" y2="50"/><line x1="120" y1="80" x2="98" y2="60"/><line x1="120" y1="80" x2="142" y2="60"/></g>'
+    harud = "".join(f'<g transform="rotate({k * 60} 120 150)">{haru}</g>' for k in range(6))
+    s = _svg("0 0 320 300", f"""<circle cx="120" cy="150" r="128" fill="{mix(P['hf'], P['hb'], .1)}"/>{harud}<circle cx="120" cy="150" r="14" fill="{P['hf']}"/>
+<path d="M280 280C260 240 300 200 280 160S300 80 280 40" stroke="{mix(P['hf'], P['hb'], .55)}" stroke-width="14" fill="none" stroke-linecap="round"/>""")
+    return _kaks("h-xhelves", a, d, s)
+
+
 HEROD = dict(toru=hero_toru, ventiil=hero_ventiil, mano=hero_mano, radiaator=hero_radiaator, tilk=hero_tilk, fan=hero_fan,
              lained=hero_lained, vork=hero_vork, pump=hero_pump, kraan=hero_kraan, pk=hero_pk, koll=hero_koll, ring=hero_ring,
-             kanal=hero_kanal, mullid=hero_mullid)
+             kanal=hero_kanal, mullid=hero_mullid, katel=hero_katel, dush=hero_dush, termo=hero_termo,
+             ahi=hero_ahi, helves=hero_helves)
 
 FONDID = [("Archivo", "Inter", "900", "-0.035em"), ("Space Grotesk", "Inter", "700", "-0.035em"), ("Fraunces", "Manrope", "900", "-0.02em"),
           ("Bricolage Grotesque", "Inter", "800", "-0.035em"), ("Epilogue", "Manrope", "800", "-0.03em"), ("Familjen Grotesk", "Inter", "700", "-0.03em"),

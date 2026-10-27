@@ -1,0 +1,23 @@
+{
+  "nimi": "SaneKyte OÜ",
+  "lyhinimi": "SaneKyte",
+  "vorm": "OÜ",
+  "registrikood": "16137617",
+  "emtak": "4322",
+  "telefonid": [
+    "+372 5298391"
+  ],
+  "email": "sanekyte@gmail.com",
+  "piirkond": "Tartumaa",
+  "piirkond_kus": "Tartumaal",
+  "linn_kus": "Tartumaal",
+  "aasta": "2021",
+  "tootajaid": 1,
+  "sissejuhatus": "Teeme torutöid ja küttetöid Tartumaal: vesi, kanalisatsioon, küte ja sanitaartehnika.",
+  "pakett": "500",
+  "kategooria": "toru",
+  "teenused_voti": "4322",
+  "kujundus": "t2-sanekyte",
+  "domeen": "sanekyte.ee",
+  "kaive": "195386"
+}

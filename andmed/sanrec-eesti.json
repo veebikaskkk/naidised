@@ -1,0 +1,23 @@
+{
+  "nimi": "SanRec Eesti OÜ",
+  "lyhinimi": "SanRec Eesti",
+  "vorm": "OÜ",
+  "registrikood": "16208102",
+  "emtak": "43222",
+  "telefonid": [
+    "+372 5119735"
+  ],
+  "email": "Sanreceesti@gmail.com",
+  "piirkond": "Harjumaa",
+  "piirkond_kus": "Harjumaal",
+  "linn_kus": "Harjumaal",
+  "aasta": "2021",
+  "tootajaid": 2,
+  "sissejuhatus": "Teeme torutöid Harjumaal: veetorustik, kanalisatsioon ja sanitaartehnika. Enne tööd vaatame objekti üle ja ütleme hinna.",
+  "pakett": "500",
+  "kategooria": "toru",
+  "teenused_voti": "43222",
+  "kujundus": "t2-sanrec-eesti",
+  "domeen": "sanreceesti.ee",
+  "kaive": "141903"
+}

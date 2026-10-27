@@ -15,11 +15,13 @@ import kujundused_juuks
 import kujundused_elekter
 import kujundused_viim2
 import kujundused_toru
+import kujundused_toru2
 K.KUJUNDUSED.update(kujundused_auto.K)
 K.KUJUNDUSED.update(kujundused_juuks.K)
 K.KUJUNDUSED.update(kujundused_elekter.K)
 K.KUJUNDUSED.update(kujundused_viim2.K)
 K.KUJUNDUSED.update(kujundused_toru.K)
+K.KUJUNDUSED.update(kujundused_toru2.K)
 
 BASE_CSS = """
 *{box-sizing:border-box}

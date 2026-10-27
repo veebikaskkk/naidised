@@ -1,0 +1,24 @@
+{
+  "nimi": "Mirtex Teenus OÜ",
+  "lyhinimi": "Mirtex Teenus",
+  "vorm": "OÜ",
+  "registrikood": "14494129",
+  "emtak": "4322",
+  "telefonid": [
+    "+372 56645584",
+    "+372 56779709"
+  ],
+  "email": "Mirtexou@gmail.com",
+  "piirkond": "Harjumaa",
+  "piirkond_kus": "Harjumaal",
+  "linn_kus": "Harjumaal",
+  "aasta": "2018",
+  "tootajaid": 3,
+  "sissejuhatus": "Teeme torutöid ja küttetöid Harjumaal: vesi, kanalisatsioon, küte ja sanitaartehnika.",
+  "pakett": "500",
+  "kategooria": "toru",
+  "teenused_voti": "4322",
+  "kujundus": "t2-mirtex-teenus",
+  "domeen": "mirtexteenus.ee",
+  "kaive": "113480"
+}

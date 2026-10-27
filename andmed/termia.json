@@ -1,0 +1,23 @@
+{
+  "nimi": "Osaühing Termia",
+  "lyhinimi": "Termia",
+  "vorm": "OÜ",
+  "registrikood": "10098891",
+  "emtak": "43221",
+  "telefonid": [
+    "+372 6552609"
+  ],
+  "email": "urmas.tomingas@mail.ee",
+  "piirkond": "Tallinn ja Harjumaa",
+  "piirkond_kus": "Tallinnas ja Harjumaal",
+  "linn_kus": "Tallinnas",
+  "aasta": "1996",
+  "tootajaid": 2,
+  "sissejuhatus": "Paigaldame ja hooldame kütte- ja ventilatsioonisüsteeme Tallinnas ja Harjumaal: radiaatorid, põrandaküte, soojuspumbad ja ventilatsioon.",
+  "pakett": "250",
+  "kategooria": "toru",
+  "teenused_voti": "43221",
+  "kujundus": "t2-termia",
+  "domeen": "termia.ee",
+  "kaive": "102960"
+}

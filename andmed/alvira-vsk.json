@@ -1,0 +1,23 @@
+{
+  "nimi": "Osaühing ALVIRA VSK",
+  "lyhinimi": "Alvira VSK",
+  "vorm": "OÜ",
+  "registrikood": "10692068",
+  "emtak": "43222",
+  "telefonid": [
+    "+372 5215078"
+  ],
+  "email": "alviravsk@gmail.com",
+  "piirkond": "Ida-Virumaa",
+  "piirkond_kus": "Ida-Virumaal",
+  "linn_kus": "Ida-Virumaal",
+  "aasta": "2000",
+  "tootajaid": 4,
+  "sissejuhatus": "Teeme torutöid Ida-Virumaal: veetorustik, kanalisatsioon ja sanitaartehnika. Enne tööd vaatame objekti üle ja ütleme hinna.",
+  "pakett": "250",
+  "kategooria": "toru",
+  "teenused_voti": "43222",
+  "kujundus": "t2-alvira-vsk",
+  "domeen": "alviravsk.ee",
+  "kaive": "182429"
+}
