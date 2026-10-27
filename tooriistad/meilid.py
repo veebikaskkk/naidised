@@ -8,7 +8,7 @@ from playwright.sync_api import sync_playwright
 from PIL import Image
 
 juur = pathlib.Path(__file__).resolve().parent.parent
-VEEB = "https://naidised.veebikask.workers.dev"
+VEEB = "https://naidis.veebikask.ee"
 E = html.escape
 
 

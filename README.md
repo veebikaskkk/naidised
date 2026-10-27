@@ -1,6 +1,6 @@
 # Veebikase näidised
 
-Näidislehed potentsiaalsetele klientidele. Avaldatakse Cloudflare Workerina aadressil naidised.veebikask.workers.dev.
+Näidislehed potentsiaalsetele klientidele. Avaldatakse Cloudflare Workerina aadressil naidis.veebikask.ee.
 
 - `andmed/<slug>.json`: firma andmed (avalik Äriregistri info), pakett (500 = mitmeleheline, 400 = üheleheline broneerimiskalendriga, 250 = üheleheline päringuvormiga) ja kujundus
 - `tooriistad/kujundused*.py`: kujundused valdkonniti (viimistlus, auto, juuks, elekter), igaüks oma avaploki, fontide ja värvidega
