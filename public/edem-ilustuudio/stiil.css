@@ -1,9 +1,7 @@
-@font-face{font-family:"Epilogue";src:url("/fondid/epilogue-regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:"Epilogue";src:url("/fondid/epilogue-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
-@font-face{font-family:"Epilogue";src:url("/fondid/epilogue-800.woff2") format("woff2");font-weight:800;font-style:normal;font-display:swap}
+@font-face{font-family:"Inter Display";src:url("/fondid/interdisplay-extrabold.woff") format("woff");font-weight:800;font-style:normal;font-display:swap}
 @font-face{font-family:"Inter";src:url("/fondid/inter-regular.woff") format("woff");font-weight:400;font-style:normal;font-display:swap}
 @font-face{font-family:"Inter";src:url("/fondid/inter-semibold.woff") format("woff");font-weight:600;font-style:normal;font-display:swap}
-:root{--raadius:16px;--pea-ls:-0.035em;--pea-kaal:800;--line-tugev:#909896;--pea:'Epilogue';--keha:'Inter';--bg:#FFFFFF;--fg:#22302C;--muted:#5B6663;--surface:#EEF4F3;--line:#DCDEDD;--accent:#2F7A63;--accent-fg:#FFFFFF;--dark:#22302C;--dark-fg:#FFFFFF;--dark-accent:#9EE0C8;--fookus:#2F7A63}
+:root{--raadius:2px;--pea-ls:-0.03em;--pea-kaal:800;--line-tugev:#878F8E;--pea:'Inter Display';--keha:'Inter';--bg:#FFFFFF;--fg:#0F1F1C;--muted:#4D5957;--surface:#ECF4F3;--line:#D9DBDB;--accent:#0F766E;--accent-fg:#FFFFFF;--dark:#0E1C19;--dark-fg:#FFFFFF;--dark-accent:#99F6E4;--fookus:#0F766E}
 
 *{box-sizing:border-box}
 [hidden]{display:none !important}
@@ -157,9 +155,13 @@ h1,h2,h3{overflow-wrap:break-word}
 @media (max-width:768px){.t-read li{grid-template-columns:1fr;gap:6px}.t-numbrid{grid-template-columns:1fr}.k-rida,.k-kaardid,.k-redel{grid-template-columns:1fr}.faktid,.kontakt-leht .kontaktid{grid-template-columns:1fr}.g-mosaiik{grid-template-columns:1fr 1fr;grid-auto-rows:150px}.g-mosaiik .k1{grid-column:span 2;grid-row:auto}.g-ruudustik,.g-polaroid{grid-template-columns:1fr 1fr;gap:12px}.g-polaroid .kohataide{border-width:6px}}
 @media (max-width:480px){.t-kaardid,.t-veerud,.t-plaadid{grid-template-columns:1fr}.t-plaadid .plaat{min-height:0}.vormi-ala{padding:22px}}
 
-.pais-hele .logo-mark{width:6px;height:22px;background:#2F7A63;box-shadow:10px 0 0 #2F7A63;margin-right:10px}
-.h-terr{padding:96px 0;background:radial-gradient(circle at 12% 20%,#E3A587 0 18px,transparent 19px),radial-gradient(circle at 80% 14%,#22302C 0 10px,transparent 11px),radial-gradient(ellipse at 88% 70%,#E3A587 0 30px,transparent 31px),radial-gradient(circle at 30% 86%,#E0C8B6 0 22px,transparent 23px),radial-gradient(circle at 60% 40%,#E0C8B6 0 8px,transparent 9px),radial-gradient(circle at 6% 64%,#22302C 0 12px,transparent 13px),#DCEBE4}
-.h-terr-kaart{background:#FFFFFF;color:#22302C;padding:clamp(28px,5vw,64px);border-radius:min(var(--raadius),24px);max-width:820px;box-shadow:0 20px 60px rgba(0,0,0,.12)}
-.h-terr h1{font-size:clamp(34px,5.6vw,80px);line-height:1;font-weight:var(--pea-kaal);letter-spacing:var(--pea-ls);margin:0 0 24px}
-.h-terr .lead{color:var(--muted)}
-.h-terr .nupp.teine{color:var(--fg)}
+.pais-tume{background:#0E1C19;color:#FFFFFF}.pais-tume .logo-mark{width:20px;height:20px;border-radius:50% 50% 50% 0;background:#99F6E4}
+.h-fkaart{background:#0F1F1C;color:#FFFFFF;padding:0 0 72px;position:relative;overflow:hidden}
+.h-fkaart h1{font-size:clamp(32px,4.4vw,64px);line-height:1.0;font-weight:var(--pea-kaal);letter-spacing:var(--pea-ls);margin:0 0 24px;}
+.h-fkaart .lead{color:#DDE0DF}
+.h-fkaart .nupp.pea{background:#99F6E4;color:#141414}
+.h-fkaart .nupp.teine{color:#FFFFFF}
+.h-fkaart{background:#FFFFFF}
+.h-fkaart-foto{position:relative;height:clamp(300px,52vw,560px)}.h-fkaart-foto img{width:100%;height:100%;object-fit:cover;display:block}
+.h-fkaart-wrap{position:relative;margin-top:-180px}.h-fkaart-kaart{background:#0F1F1C;color:#FFFFFF;padding:48px 52px;max-width:680px;border-radius:var(--raadius);box-shadow:0 24px 60px rgba(0,0,0,.18)}
+@media (max-width:760px){.h-fkaart-wrap{margin-top:-48px}.h-fkaart-kaart{padding:32px 24px}}.h-fkaart-silt{position:absolute;right:16px;top:16px;z-index:2;font-size:12px;font-weight:600;letter-spacing:.04em;padding:4px 8px;border-radius:4px;color:#FFFFFF;background:#1A1A1A}

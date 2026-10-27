@@ -15,6 +15,13 @@ FOTOD = {
     "kaeve": ["kaeve-kraav", "kaeve-kopp", "kaeve-kopp2", "kaeve-udu"],
     "haljastus": ["haljastus-muru", "haljastus-aed", "haljastus-hoov", "haljastus-rohi"],
     "koristus": ["koristus-pudel", "koristus-tolm", "koristus-aken", "koristus-pesu"],
+    "juuksur": ["juuksur-foon", "juuksur-salong", "juuksur-pesu", "juuksur-toolid", "juuksur-lokid"],
+    "juuksur-m": ["juuksur-habe2", "juuksur-habe", "juuksur-salong", "juuksur-toolid"],
+    "elekter": ["elekter-kilp", "elekter-moot", "elekter-pirnid", "elekter-liin", "elekter-kilp2"],
+    "toru": ["toru-valamu", "toru-katlaruum", "toru-vannituba", "toru-kraan", "toru-valamu2", "toru-soojuspump"],
+    "toru-kliima": ["toru-soojuspump", "toru-katlaruum", "toru-valamu"],
+    "toru-ahi": ["ahi-kamin", "ahi-tuli"],
+    "viimistlus": ["viim-rull", "viim-varv", "ehitus-pahtel", "ehitus-remont"],
 }
 
 
@@ -29,7 +36,7 @@ def _img(nimi, cls="", lazy=False):
 
 
 def _silt(cls):
-    return f'<span class="{cls}-silt">Näidisfoto</span>'
+    return ""
 
 
 def _silt_css(cls, P, kus="right:16px;bottom:16px"):
@@ -49,7 +56,7 @@ def hero_taust(a, d):
     css = baas(c, P, "120px 0 128px", "clamp(36px,5.6vw,84px)") + f""".{c}-img{{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}}
 .{c}-kiht{{position:absolute;inset:0;background:linear-gradient(90deg,{P['hb']} 0%,{P['hb']}F2 38%,{P['hb']}99 62%,{P['hb']}26 100%)}}
 .{c}-sisu{{position:relative;z-index:1}}.{c}-sisu>*{{max-width:min(620px,60%)}}.{c} .aasta-rida{{color:{P['hl']};font-size:14px;margin:28px 0 0}}
-@media (max-width:760px){{.{c}{{padding:96px 0 104px}}.{c}-kiht{{background:{P['hb']}E6}}.{c}-sisu>*{{max-width:none}}}}{_silt_css(c, P)}"""
+@media (max-width:760px){{.{c}{{padding:0 0 72px}}.{c}-img{{position:relative;display:block;height:240px}}.{c}-kiht{{display:none}}.{c}-sisu{{padding-top:40px}}.{c}-sisu>*{{max-width:none}}}}{_silt_css(c, P)}"""
     return h, css
 
 
@@ -135,7 +142,7 @@ def hero_duo(a, d):
     css = baas(c, P, "136px 0 144px", "clamp(38px,6vw,92px)") + f""".{c}-img{{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.1)}}
 .{c}-kiht{{position:absolute;inset:0;background:{P['hb']};opacity:{'.86' if P['hf'] == '#FFFFFF' else '.8'}}}.{c}-sisu{{position:relative;z-index:1;text-align:center}}
 .{c} h1{{max-width:13em;margin-left:auto;margin-right:auto}}.{c} .lead{{margin-left:auto;margin-right:auto}}.{c} .nupud{{justify-content:center}}
-@media (max-width:760px){{.{c}{{padding:96px 0 104px}}}}{_silt_css(c, P)}"""
+@media (max-width:760px){{.{c}{{padding:0 0 72px}}.{c}-img{{position:relative;display:block;height:240px;filter:none}}.{c}-kiht{{display:none}}.{c}-sisu{{padding-top:40px}}}}{_silt_css(c, P)}"""
     return h, css
 
 
@@ -179,7 +186,7 @@ def hero_diag(a, d):
     css = baas(c, P, "112px 0 120px", "clamp(34px,5vw,76px)") + f""".{c}-img{{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}}
 .{c}-paneel{{position:absolute;inset:0;background:{P['hb']};clip-path:polygon(0 0,62% 0,48% 100%,0 100%)}}
 .{c}-sisu{{position:relative;z-index:1}}.{c}-sisu>*{{max-width:min(560px,46%)}}.{c} .aasta-rida{{color:{P['hl']};font-size:14px;margin:28px 0 0}}
-@media (max-width:820px){{.{c}-paneel{{clip-path:none;opacity:.92}}.{c}-sisu>*{{max-width:none}}}}{_silt_css(c, P)}"""
+@media (max-width:820px){{.{c}{{padding:0 0 72px}}.{c}-img{{position:relative;display:block;height:240px}}.{c}-paneel{{display:none}}.{c}-sisu{{padding-top:40px}}.{c}-sisu>*{{max-width:none}}}}{_silt_css(c, P)}"""
     return h, css
 
 
@@ -230,13 +237,17 @@ VARVID = {
                ("#B91C1C", "#FCA5A5", "#1B1B1F"), ("#4338CA", "#FCD34D", "#111827"), ("#A16207", "#FDE68A", "#1A1A1A"), ("#15803D", "#FACC15", "#14201A")],
     "kaeve": [("#B45309", "#FACC15", "#1A1712"), ("#A16207", "#FDE047", "#18181B"), ("#C2410C", "#FDBA74", "#1C1917"), ("#854D0E", "#FCD34D", "#1F1A14")],
     "haljastus": [("#15803D", "#BEF264", "#14201A"), ("#166534", "#FDE68A", "#13241B"), ("#4D7C0F", "#D9F99D", "#1A2312"), ("#0F766E", "#A7F3D0", "#0F1F1C")],
+    "juuksur": [("#9D174D", "#F9A8D4", "#1F1420"), ("#7C3AED", "#C4B5FD", "#1E1B2E"), ("#B45309", "#FCD34D", "#1C1917"), ("#0F766E", "#99F6E4", "#0F1F1C")],
+    "elekter": [("#1D4ED8", "#FACC15", "#0F172A"), ("#B45309", "#FDE047", "#1C1917"), ("#0F766E", "#FDE047", "#0F1F1C"), ("#4338CA", "#FCD34D", "#111827")],
+    "toru": [("#0369A1", "#7DD3FC", "#0C1A2B"), ("#B91C1C", "#FCA5A5", "#1B1B1F"), ("#0E7490", "#A5F3FC", "#0B1F2A"), ("#C2410C", "#FDBA74", "#1C1917")],
+    "viimistlus": [("#1D4ED8", "#FDE047", "#14213D"), ("#B4531F", "#FDBA74", "#2A1B12"), ("#0F766E", "#5EEAD4", "#0F1F1C"), ("#86198F", "#F0ABFC", "#2A1E2E")],
     "koristus": [("#0369A1", "#7DD3FC", "#0C1A2B"), ("#0E7490", "#A5F3FC", "#0B1F2A"), ("#7C3AED", "#C4B5FD", "#1E1B2E"), ("#BE185D", "#F9A8D4", "#1F1420")],
 }
 
 
 def lisa(nimi, kat, hero, h1, i):
     """Loob kujunduse: värvid, font ja fotod tulevad järjekorranumbrist, nii et naabrid ei sarnane."""
-    akt, ha, tume = VARVID[kat][(i * 3) % len(VARVID[kat])]
+    akt, ha, tume = VARVID[kat.split("-")[0]][(i * 3) % len(VARVID[kat.split("-")[0]])]
     tyyp = ["tume", "hele", "varv", "tume", "hele"][i % 5]
     if tyyp == "hele":
         hb, hf, haa = mix(akt, "#FFFFFF", .08), tume, akt
@@ -2213,4 +2224,1258 @@ FOTOLEHED = [
 ]
 
 for _r in FOTOLEHED:
+    lisa(*_r)
+
+
+# Varasemad lehed (saadetakse alates 29.10), nüüd fotoga avaplokiga. Pealkiri jäi sama.
+UMBER = [
+[
+"p-a-soleil",
+"juuksur",
+"riba",
+"Päike ka pilvisel päeval.",
+300
+],
+[
+"p-aminates",
+"juuksur",
+"print",
+"Vaata peeglisse ja naerata.",
+301
+],
+[
+"p-auu-disain",
+"juuksur",
+"kaar",
+"Disain sinu juustele.",
+302
+],
+[
+"p-bellamark",
+"juuksur",
+"taust",
+"Bellamark.",
+303
+],
+[
+"p-bp-ilusalong",
+"juuksur",
+"kolm",
+"Ilu ja juuksed ühest kohast.",
+304
+],
+[
+"p-edem-ilustuudio",
+"juuksur",
+"kaart",
+"Edem Ilustuudio.",
+305
+],
+[
+"p-ellu",
+"juuksur",
+"diag",
+"Ellu juuksur.",
+306
+],
+[
+"p-glamrim",
+"juuksur",
+"raam",
+"Viimsi juuksur.",
+307
+],
+[
+"p-ilumaja",
+"juuksur",
+"ring",
+"Pärnu Ilumaja.",
+308
+],
+[
+"p-ilusalong-lelii",
+"juuksur",
+"duo",
+"Saaremaa ilusalong.",
+309
+],
+[
+"p-ilusalong-nr-1",
+"juuksur",
+"pool",
+"Ilusalong Nr 1.",
+310
+],
+[
+"p-jbspot",
+"juuksur",
+"aasta",
+"Lõikus ilma ootamata.",
+311
+],
+[
+"p-juukstop",
+"juuksur",
+"riba",
+"Juukstop. Lõikus ja värv.",
+312
+],
+[
+"p-kaar-salongid",
+"juuksur",
+"print",
+"Käärid, kamm ja hea jutt.",
+313
+],
+[
+"p-kiitna-tk",
+"juuksur",
+"kaar",
+"Juuksur kesklinnas.",
+314
+],
+[
+"p-kristanoli",
+"juuksur",
+"taust",
+"Juuksur Elva kandis.",
+315
+],
+[
+"p-kuldne-panter",
+"juuksur",
+"kolm",
+"Kuldne Panter.",
+316
+],
+[
+"p-lavendel",
+"juuksur-m",
+"kaart",
+"Meeste juuksur Kaupmehe tänaval.",
+317
+],
+[
+"p-lofty",
+"juuksur",
+"diag",
+"Hea juuksepäev algab siit.",
+318
+],
+[
+"p-mari-liisi-ilutuba",
+"juuksur",
+"raam",
+"Ilutuba Kiilis.",
+319
+],
+[
+"p-nona",
+"juuksur",
+"ring",
+"Juuksed, mis jäävad meelde.",
+320
+],
+[
+"p-noorannika",
+"juuksur",
+"duo",
+"Värske soeng Laagris.",
+321
+],
+[
+"p-parnu-salong",
+"juuksur",
+"pool",
+"Pärnu juuksur, aeg ühe klikiga.",
+322
+],
+[
+"p-patsike",
+"juuksur",
+"aasta",
+"Patsid, lõikus ja värv.",
+323
+],
+[
+"p-poisipea",
+"juuksur",
+"riba",
+"Poisipea või pikad lokid.",
+324
+],
+[
+"p-rilja",
+"juuksur",
+"print",
+"Juuksur Pärnumaa lõunas.",
+325
+],
+[
+"p-salong-rosita",
+"juuksur",
+"kaar",
+"Salong Rosita.",
+326
+],
+[
+"p-salonjoi",
+"juuksur",
+"taust",
+"Salong Haljalas.",
+327
+],
+[
+"p-theodor",
+"juuksur-m",
+"kolm",
+"Meeste juuksur Raekoja platsil.",
+328
+],
+[
+"p-uncle-ve",
+"juuksur",
+"kaart",
+"Uncle Ve. Lõikus ja habe.",
+329
+],
+[
+"p-4a-lux",
+"elekter",
+"diag",
+"Valgus Tori vallas.",
+330
+],
+[
+"p-aavo-elekter",
+"elekter",
+"raam",
+"Tartu elektrik.",
+331
+],
+[
+"p-albol-primer",
+"elekter",
+"ring",
+"Elektritööd Otepää kandis.",
+332
+],
+[
+"p-calmar-electer",
+"elekter",
+"duo",
+"Viljandi elektritööd.",
+333
+],
+[
+"p-el-teh-grupp",
+"elekter",
+"pool",
+"Juhtmest kilbini.",
+334
+],
+[
+"p-electra-grupp",
+"elekter",
+"aasta",
+"Tallinna elektritööd.",
+335
+],
+[
+"p-elektriparadiis",
+"elekter",
+"riba",
+"Elektriparadiis Maardus.",
+336
+],
+[
+"p-elfi-elekter",
+"elekter",
+"print",
+"Elektritööd Raplamaal.",
+337
+],
+[
+"p-eligero",
+"elekter",
+"kaar",
+"Elektrik Ida-Virumaal.",
+338
+],
+[
+"p-elmiku",
+"elekter",
+"taust",
+"Saaremaa elektritööd.",
+339
+],
+[
+"p-elortex",
+"elekter",
+"kolm",
+"Pärnu elektrik.",
+340
+],
+[
+"p-elredi",
+"elekter",
+"kaart",
+"Elektrik Tallinnas.",
+341
+],
+[
+"p-elren-elekter",
+"elekter",
+"diag",
+"Saare elektrik.",
+342
+],
+[
+"p-estomeister",
+"elekter",
+"raam",
+"Keila elektritööd.",
+343
+],
+[
+"p-ete-worx",
+"elekter",
+"ring",
+"Elektritööd Jõhvi kandis.",
+344
+],
+[
+"p-eurest-group",
+"elekter",
+"duo",
+"Elektritööd Keilas.",
+345
+],
+[
+"p-gentroon",
+"elekter",
+"pool",
+"Elektritööd Pärnus ja Pärnumaal.",
+346
+],
+[
+"p-hooneabi",
+"elekter",
+"aasta",
+"Elekter, mis lihtsalt töötab.",
+347
+],
+[
+"p-jannes",
+"elekter",
+"riba",
+"Mulgimaa elektrik.",
+348
+],
+[
+"p-kaabeldusabi",
+"elekter",
+"print",
+"Kaabeldus ja elekter Jõgevamaal.",
+349
+],
+[
+"p-kangro-nagla",
+"elekter",
+"kaar",
+"Elektritööd Elva kandis.",
+350
+],
+[
+"p-khs",
+"elekter",
+"taust",
+"Elektrik Jõgevamaal.",
+351
+],
+[
+"p-l-viru-elekter",
+"elekter",
+"kolm",
+"Elektritööd Ida-Virumaal.",
+352
+],
+[
+"p-maasvool",
+"elekter",
+"kaart",
+"Maasvool. Elekter Pärnus.",
+353
+],
+[
+"p-martipet",
+"elekter",
+"diag",
+"Elektrik pealinnas.",
+354
+],
+[
+"p-msl-elektritood",
+"elekter",
+"raam",
+"Võrumaa elektritööd.",
+355
+],
+[
+"p-otto-elekter",
+"elekter",
+"ring",
+"Elektrik Jõgeva kandis.",
+356
+],
+[
+"p-peetri",
+"elekter",
+"duo",
+"Elektrik Saaremaal.",
+357
+],
+[
+"p-pistrel",
+"elekter",
+"pool",
+"Pistik, lüliti ja kilp.",
+358
+],
+[
+"p-reljans",
+"elekter",
+"aasta",
+"Narva elektritööd.",
+359
+],
+[
+"p-sikuway",
+"elekter",
+"riba",
+"Türi elektrik.",
+360
+],
+[
+"p-ss-elektritood",
+"elekter",
+"print",
+"Elektritööd Pärnus ja ümbruses.",
+361
+],
+[
+"p-stablenord",
+"elekter",
+"kaar",
+"Vool sees, mure läinud.",
+362
+],
+[
+"p-sven-elekter",
+"elekter",
+"taust",
+"Elva kandi elektrik.",
+363
+],
+[
+"p-tagener",
+"elekter",
+"kolm",
+"Elektritööd Tartus.",
+364
+],
+[
+"p-tavako-elekter",
+"elekter",
+"kaart",
+"Pärnu elektritööd algusest lõpuni.",
+365
+],
+[
+"p-toostuselekter",
+"elekter",
+"diag",
+"Elektritööd Viljandis.",
+366
+],
+[
+"p-valgis",
+"elekter",
+"raam",
+"Valgus ja vool Narvas.",
+367
+],
+[
+"p-vitali-elekter",
+"elekter",
+"ring",
+"Elekter korda Maardus.",
+368
+],
+[
+"p-winels",
+"elekter",
+"duo",
+"Winels. Elektritööd Tallinnas.",
+369
+],
+[
+"p-allik-trans",
+"toru",
+"pool",
+"Küte ja ventilatsioon Pärnus.",
+370
+],
+[
+"p-abc-kute",
+"toru",
+"aasta",
+"Küte, jahutus ja ventilatsioon Tartus.",
+371
+],
+[
+"p-abix-teenindus",
+"toru",
+"riba",
+"Keila kütte- ja ventilatsioonitööd.",
+372
+],
+[
+"p-fop-rem-grupp",
+"toru",
+"print",
+"Küttetööd Ida-Virumaal.",
+373
+],
+[
+"p-berku-eritood",
+"toru",
+"kaar",
+"Torutööd ja küte Hiiumaal.",
+374
+],
+[
+"p-lviworks",
+"toru",
+"taust",
+"Vesi, küte ja ventilatsioon Tallinnas.",
+375
+],
+[
+"p-art-building",
+"toru",
+"kolm",
+"Torutööd Tartus.",
+376
+],
+[
+"p-maxwelding-service",
+"toru",
+"kaart",
+"Narva küttetööd.",
+377
+],
+[
+"p-sergo-torutood",
+"toru",
+"diag",
+"Torutööd Pärnus.",
+378
+],
+[
+"p-kp-invest",
+"toru",
+"raam",
+"Küttesüsteemid Tallinnas.",
+379
+],
+[
+"p-kp-kliima",
+"toru-kliima",
+"ring",
+"Soojuspumbad Tartumaal.",
+380
+],
+[
+"p-entivent",
+"toru",
+"duo",
+"Ventilatsioon Harjumaal.",
+381
+],
+[
+"p-veritang",
+"toru",
+"pool",
+"Soe kodu Tallinnas.",
+382
+],
+[
+"p-teemantpoiss",
+"toru",
+"aasta",
+"Teemantpoiss. Küte ja ventilatsioon.",
+383
+],
+[
+"p-estoman",
+"toru",
+"riba",
+"Vesi ja kanalisatsioon Tallinnas.",
+384
+],
+[
+"p-aas-sanitaartehnika",
+"toru",
+"print",
+"Sanitaartehnika Pärnus.",
+385
+],
+[
+"p-vexon-arendus",
+"toru",
+"kaar",
+"Torutööd ja küte Tallinnas.",
+386
+],
+[
+"p-weldcom",
+"toru",
+"taust",
+"Küttetorustikud Tallinnas.",
+387
+],
+[
+"p-deandra",
+"toru",
+"kolm",
+"Torutööd pealinnas.",
+388
+],
+[
+"p-girlande",
+"toru",
+"kaart",
+"Küte Harjumaal.",
+389
+],
+[
+"p-viktorija-maailm",
+"toru",
+"diag",
+"Vesi ja kanalisatsioon Tartus.",
+390
+],
+[
+"p-jurgus-torutood",
+"toru",
+"raam",
+"Jurgus. Torutööd Tartus.",
+391
+],
+[
+"p-ilstro-ehitus",
+"toru",
+"ring",
+"Torutööd ja küte Kohtla-Järvel.",
+392
+],
+[
+"p-avass-grupp",
+"toru",
+"duo",
+"Küttetööd Jõhvi kandis.",
+393
+],
+[
+"p-maritek",
+"toru",
+"pool",
+"Torud ja küte Tartus.",
+394
+],
+[
+"p-kvv-torugrupp",
+"toru",
+"aasta",
+"Vesi, kanalisatsioon ja küte.",
+395
+],
+[
+"p-vvs-paigaldus",
+"toru",
+"riba",
+"Ventilatsioon Tallinnas.",
+396
+],
+[
+"p-kaltel",
+"toru",
+"print",
+"Jõgeva torutööd ja küte.",
+397
+],
+[
+"p-acai-estonia",
+"toru-ahi",
+"kaar",
+"Ahjud ja kaminad Viljandis.",
+398
+],
+[
+"p-torukunn",
+"toru",
+"taust",
+"ToruKunn. Torutööd Tallinnas.",
+399
+],
+[
+"p-milann-santeh-grupp",
+"toru",
+"kolm",
+"Santehnika Narvas.",
+400
+],
+[
+"p-kuul-ehitus",
+"toru",
+"kaart",
+"Korras torud Tallinnas.",
+401
+],
+[
+"p-parnu-torutood",
+"toru",
+"diag",
+"Torud ja küte Pärnumaal.",
+402
+],
+[
+"p-elrem",
+"toru",
+"raam",
+"Torutööd Lääne-Virumaal.",
+403
+],
+[
+"p-inverter-heat",
+"toru-kliima",
+"ring",
+"Soojuspumbad Järvamaal.",
+404
+],
+[
+"p-raksek",
+"toru",
+"duo",
+"Küte ja ventilatsioon Saaremaal.",
+405
+],
+[
+"p-maida-sale",
+"toru",
+"pool",
+"Torutööd ja küte Harjumaal.",
+406
+],
+[
+"p-cera-ehitus",
+"toru",
+"aasta",
+"Torutööd Valgas.",
+407
+],
+[
+"p-seven-tehnika",
+"toru",
+"riba",
+"Küte ja ventilatsioon Tallinnas.",
+408
+],
+[
+"p-kulmameister",
+"toru-kliima",
+"print",
+"Soojuspumbad ja jahutus Narvas.",
+409
+],
+[
+"p-maximus-ehitus",
+"toru",
+"kaar",
+"Vesi ja kanalisatsioon Tallinnas.",
+410
+],
+[
+"p-arek-grupp",
+"toru",
+"taust",
+"Küttetööd Sauel.",
+411
+],
+[
+"p-kummionu",
+"toru",
+"kolm",
+"Soe maja Võrus.",
+412
+],
+[
+"p-janest-grupp",
+"toru",
+"kaart",
+"Küttesüsteemid Tartus.",
+413
+],
+[
+"p-sanekyte",
+"toru",
+"diag",
+"Vesi ja küte Tartumaal.",
+414
+],
+[
+"p-valiskeere",
+"toru",
+"raam",
+"Väliskeere. Küte Saaremaal.",
+415
+],
+[
+"p-baltkomfort",
+"toru",
+"ring",
+"Santehnika Tallinnas.",
+416
+],
+[
+"p-riho-kinnisvarahooldus",
+"toru",
+"duo",
+"Korras torud Viljandis.",
+417
+],
+[
+"p-e-r-kliima",
+"toru-kliima",
+"pool",
+"Kliima ja küte Järvamaal.",
+418
+],
+[
+"p-kulmamasin",
+"toru-kliima",
+"aasta",
+"Soojuspumbad ja jahutus Tartumaal.",
+419
+],
+[
+"p-sanjaan",
+"toru",
+"riba",
+"Torud ja küte Jõgeval.",
+420
+],
+[
+"p-alvira-vsk",
+"toru",
+"print",
+"Alvira VSK. Torutööd Ida-Virumaal.",
+421
+],
+[
+"p-hannobalt",
+"toru",
+"kaar",
+"Torutööd Harjumaal.",
+422
+],
+[
+"p-valexehitus",
+"toru",
+"taust",
+"Küte ja ventilatsioon Harjumaal.",
+423
+],
+[
+"p-ehitus-ja-soojus",
+"toru",
+"kolm",
+"Küttetööd Pärnus.",
+424
+],
+[
+"p-k-kolded",
+"toru-ahi",
+"kaart",
+"Ahjud ja kaminad Tartumaal.",
+425
+],
+[
+"p-vesi-ja-soojus",
+"toru",
+"diag",
+"Soe maja Harjumaal.",
+426
+],
+[
+"p-napri-vent",
+"toru",
+"raam",
+"Ventilatsioon Viljandimaal.",
+427
+],
+[
+"p-trubagood",
+"toru",
+"ring",
+"Küttesüsteemid Tallinnas.",
+428
+],
+[
+"p-haldi-infra",
+"toru",
+"duo",
+"Haldi Infra. Küte Lääne-Virumaal.",
+429
+],
+[
+"p-kagunurk",
+"toru-ahi",
+"pool",
+"Ahjud ja pliidid Põlvas.",
+430
+],
+[
+"p-toruvennad",
+"toru",
+"aasta",
+"Santehnika Pärnus.",
+431
+],
+[
+"p-goodreason",
+"toru",
+"riba",
+"Küte ja ventilatsioon Tallinnas.",
+432
+],
+[
+"p-plumbweld",
+"toru",
+"print",
+"Korras torud Tallinnas.",
+433
+],
+[
+"p-arvikom",
+"toru",
+"kaar",
+"Arvikom. Torutööd Tallinnas.",
+434
+],
+[
+"p-rakimel",
+"toru",
+"taust",
+"Küttetööd Tartus.",
+435
+],
+[
+"p-drandool",
+"toru",
+"kolm",
+"Soe maja Pärnus.",
+436
+],
+[
+"p-shumas-ehitus",
+"toru",
+"kaart",
+"Küttesüsteemid Narvas.",
+437
+],
+[
+"p-al-bi-sant",
+"toru",
+"diag",
+"Torutööd Tartus.",
+438
+],
+[
+"p-ohu-ehitus",
+"toru",
+"raam",
+"Värske õhk Tallinnas.",
+439
+],
+[
+"p-i-s-p-s",
+"toru",
+"ring",
+"Vesi ja kanalisatsioon Tartus.",
+440
+],
+[
+"p-sanrec-eesti",
+"toru",
+"duo",
+"Santehnika Harjumaal.",
+441
+],
+[
+"p-torupark",
+"toru",
+"pool",
+"Korras torud Harjumaal.",
+442
+],
+[
+"p-spe-grupp",
+"toru",
+"aasta",
+"Spe Grupp. Torud ja küte.",
+443
+],
+[
+"p-volffix",
+"toru",
+"riba",
+"Volffix. Torutööd Tartus.",
+444
+],
+[
+"p-linmar-torutood",
+"toru",
+"print",
+"Torutööd Harjumaal.",
+445
+],
+[
+"p-matex-service",
+"toru",
+"kaar",
+"Vesi ja kanalisatsioon Põlvas.",
+446
+],
+[
+"p-raidora-grupp",
+"toru",
+"taust",
+"Torutööd ja küte Tallinnas.",
+447
+],
+[
+"p-eestimeister",
+"toru",
+"kolm",
+"Santehnika Tallinnas.",
+448
+],
+[
+"p-alfakliima",
+"toru-kliima",
+"kaart",
+"Kliima ja küte Viljandis.",
+449
+],
+[
+"p-freeform",
+"toru",
+"diag",
+"FreeForm. Küte Tallinnas.",
+450
+],
+[
+"p-ideaalkaminad",
+"toru-ahi",
+"raam",
+"Ahjud ja kaminad Viljandis.",
+451
+],
+[
+"p-rjv-ehitus",
+"toru",
+"ring",
+"Küte ja ventilatsioon Maardus.",
+452
+],
+[
+"p-j-t-terasmaa",
+"toru",
+"duo",
+"Vesi ja küte Keilas.",
+453
+],
+[
+"p-lulekar-solutions",
+"toru",
+"pool",
+"Korras torud Tartumaal.",
+454
+],
+[
+"p-mirtex-teenus",
+"toru",
+"aasta",
+"Torud ja küte Harjumaal.",
+455
+],
+[
+"p-tornimees",
+"toru",
+"riba",
+"Küttetööd Tallinnas.",
+456
+],
+[
+"p-elvetor",
+"toru",
+"print",
+"Elvetor. Torutööd Viljandis.",
+457
+],
+[
+"p-dimlex-toru",
+"toru",
+"kaar",
+"DimLex Toru. Torud ja küte.",
+458
+],
+[
+"p-tanpeeg",
+"toru",
+"taust",
+"Soe maja Harjumaal.",
+459
+],
+[
+"p-arles",
+"toru",
+"kolm",
+"Küttesüsteemid Tartus.",
+460
+],
+[
+"p-hansagas",
+"toru",
+"kaart",
+"Hansagas. Küte Tallinnas.",
+461
+],
+[
+"p-termia",
+"toru",
+"diag",
+"Küte ja ventilatsioon Tallinnas.",
+462
+],
+[
+"p-kaas-grupp",
+"toru-ahi",
+"raam",
+"Ahjud ja pliidid Pärnumaal.",
+463
+],
+[
+"p-esajas-invest",
+"toru",
+"ring",
+"Küttetööd Põlvamaal.",
+464
+],
+[
+"p-sanka",
+"toru",
+"duo",
+"Torutööd Jõgevamaal.",
+465
+],
+[
+"p-fluk-tehnik",
+"toru",
+"pool",
+"Vesi ja kanalisatsioon Kohtla-Järvel.",
+466
+],
+[
+"p-ra-luft",
+"toru",
+"aasta",
+"Ventilatsioon Pärnumaal.",
+467
+],
+[
+"p-santeh-invest",
+"toru",
+"riba",
+"Torutööd ja küte Tallinnas.",
+468
+],
+[
+"p-san-v",
+"toru",
+"print",
+"Santehnika Pärnus.",
+469
+],
+[
+"p-sepa-ehitus",
+"viimistlus",
+"kaar",
+"Sepa Ehitus Saku vallas.",
+470
+],
+[
+"p-privamal",
+"viimistlus",
+"taust",
+"Plaatimine Kambja kandis.",
+471
+],
+[
+"p-porandast-laeni",
+"viimistlus",
+"kolm",
+"Põrandast laeni, Pärnus.",
+472
+],
+[
+"p-joksi-mek",
+"viimistlus",
+"kaart",
+"Remont Põlvamaal.",
+473
+],
+[
+"p-ksa-paigaldusgrupp",
+"viimistlus",
+"diag",
+"Värvimine Tartu vallas.",
+474
+],
+[
+"p-sideline",
+"viimistlus",
+"raam",
+"Viimistlus Võrumaal.",
+475
+],
+[
+"p-puidusober",
+"viimistlus",
+"ring",
+"Põrandad ja viimistlus Kuusalus.",
+476
+],
+[
+"p-ille-siseviimistlus",
+"viimistlus",
+"duo",
+"Ille Siseviimistlus.",
+477
+]
+]
+
+for _r in UMBER:
     lisa(*_r)

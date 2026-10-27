@@ -22,3 +22,25 @@ koristus-pesu.jpg  https://images.unsplash.com/photo-1740657254989-42fe9c3b8cce
 koristus-aken.jpg  https://images.unsplash.com/photo-1581578731548-c64695cc6952
 koristus-tolm.jpg  https://images.unsplash.com/photo-1758273705627-937374bfa978
 koristus-pudel.jpg  https://images.unsplash.com/photo-1563453392212-326f5e854473
+juuksur-pesu.jpg  https://images.unsplash.com/photo-1634449571010-02389ed0f9b0
+juuksur-foon.jpg  https://images.unsplash.com/photo-1580618672591-eb180b1a973f
+juuksur-salong.jpg  https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6
+juuksur-habe.jpg  https://images.unsplash.com/photo-1503951914875-452162b0f3f1
+juuksur-habe2.jpg  https://images.unsplash.com/photo-1599011176306-4a96f1516d4d
+juuksur-toolid.jpg  https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f
+juuksur-lokid.jpg  https://images.unsplash.com/photo-1560869713-7d0a29430803
+elekter-kilp.jpg  https://images.unsplash.com/photo-1621905251189-08b45d6a269e
+elekter-moot.jpg  https://images.unsplash.com/photo-1758101755915-462eddc23f57
+elekter-pirnid.jpg  https://images.unsplash.com/photo-1507494924047-60b8ee826ca9
+elekter-kilp2.jpg  https://images.unsplash.com/photo-1621905251918-48416bd8575a
+elekter-liin.jpg  https://images.unsplash.com/photo-1555963966-b7ae5404b6ed
+toru-valamu.jpg  https://images.unsplash.com/photo-1676210134188-4c05dd172f89
+toru-vannituba.jpg  https://images.unsplash.com/photo-1749532125405-70950966b0e5
+toru-valamu2.jpg  https://images.unsplash.com/photo-1676210134190-3f2c0d5cf58d
+toru-katlaruum.jpg  https://images.unsplash.com/photo-1650551182991-b07558247564
+toru-kraan.jpg  https://images.unsplash.com/photo-1521207418485-99c705420785
+viim-rull.jpg  https://images.unsplash.com/photo-1562259949-e8e7689d7828
+viim-varv.jpg  https://images.unsplash.com/photo-1688372199140-cade7ae820fe
+ahi-kamin.jpg  https://images.unsplash.com/photo-1678274909137-ae0677d24a9b
+ahi-tuli.jpg  https://images.unsplash.com/photo-1648332202349-a1ca4f99ee0c
+toru-soojuspump.jpg  https://images.unsplash.com/photo-1700124113583-81aa99ea2aa2 (tootja logo kaetud)

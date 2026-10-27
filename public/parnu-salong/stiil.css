@@ -1,9 +1,8 @@
-@font-face{font-family:"Space Grotesk";src:url("/fondid/space-grotesk-regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:"Space Grotesk";src:url("/fondid/space-grotesk-500.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
-@font-face{font-family:"Space Grotesk";src:url("/fondid/space-grotesk-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Instrument Serif";src:url("/fondid/instrument-serif-regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Instrument Serif";src:url("/fondid/instrument-serif-italic.woff2") format("woff2");font-weight:400;font-style:italic;font-display:swap}
 @font-face{font-family:"Inter";src:url("/fondid/inter-regular.woff") format("woff");font-weight:400;font-style:normal;font-display:swap}
 @font-face{font-family:"Inter";src:url("/fondid/inter-semibold.woff") format("woff");font-weight:600;font-style:normal;font-display:swap}
-:root{--raadius:8px;--pea-ls:-0.035em;--pea-kaal:700;--line-tugev:#88929C;--pea:'Space Grotesk';--keha:'Inter';--bg:#FFFFFF;--fg:#10243A;--muted:#4E5D6D;--surface:#ECF2F6;--line:#D9DCDF;--accent:#0E5A8A;--accent-fg:#FFFFFF;--dark:#10243A;--dark-fg:#FFFFFF;--dark-accent:#8CCBF2;--fookus:#0E5A8A}
+:root{--raadius:12px;--pea-ls:-0.01em;--pea-kaal:400;--line-tugev:#8E8C8B;--pea:'Instrument Serif';--keha:'Inter';--bg:#FFFFFF;--fg:#1C1917;--muted:#575553;--surface:#F9F1EB;--line:#DBDADA;--accent:#B45309;--accent-fg:#FFFFFF;--dark:#191615;--dark-fg:#FFFFFF;--dark-accent:#FCD34D;--fookus:#B45309}
 
 *{box-sizing:border-box}
 [hidden]{display:none !important}
@@ -157,11 +156,14 @@ h1,h2,h3{overflow-wrap:break-word}
 @media (max-width:768px){.t-read li{grid-template-columns:1fr;gap:6px}.t-numbrid{grid-template-columns:1fr}.k-rida,.k-kaardid,.k-redel{grid-template-columns:1fr}.faktid,.kontakt-leht .kontaktid{grid-template-columns:1fr}.g-mosaiik{grid-template-columns:1fr 1fr;grid-auto-rows:150px}.g-mosaiik .k1{grid-column:span 2;grid-row:auto}.g-ruudustik,.g-polaroid{grid-template-columns:1fr 1fr;gap:12px}.g-polaroid .kohataide{border-width:6px}}
 @media (max-width:480px){.t-kaardid,.t-veerud,.t-plaadid{grid-template-columns:1fr}.t-plaadid .plaat{min-height:0}.vormi-ala{padding:22px}}
 
-.pais-varv{background:#10243A;color:#FFFFFF}.pais-varv .logo-mark{width:22px;height:20px;background:#F2C14E;clip-path:polygon(50% 0,100% 100%,0 100%)}
-.h-kamm{background:#10243A;color:#FFFFFF;padding:96px 0 180px;position:relative;overflow:hidden}
-.h-kamm h1{font-size:clamp(36px,6.2vw,90px);line-height:1.0;font-weight:var(--pea-kaal);letter-spacing:var(--pea-ls);margin:0 0 24px;}
-.h-kamm .lead{color:#DEE0E3}
-.h-kamm .nupp.pea{background:#F2C14E;color:#141414}
-.h-kamm .nupp.teine{color:#FFFFFF}
-.h-kamm-sisu{position:relative;z-index:1}.h-kamm h1{max-width:11em}
-.h-kamm-svg{position:absolute;right:-40px;bottom:-24px;width:min(560px,70vw);transform:rotate(-8deg);opacity:.9}
+.pais-varv{background:#632E05;color:#FFFFFF}.pais-varv .logo-mark{width:22px;height:11px;border-radius:22px 22px 0 0;background:#FCD34D}
+.h-fpool{background:#632E05;color:#FFFFFF;padding:0;position:relative;overflow:hidden}
+.h-fpool h1{font-size:clamp(34px,4.6vw,72px);line-height:1.0;font-weight:var(--pea-kaal);letter-spacing:var(--pea-ls);margin:0 0 24px;}
+.h-fpool .lead{color:#E9E2DC}
+.h-fpool .nupp.pea{background:#FCD34D;color:#141414}
+.h-fpool .nupp.teine{color:#FFFFFF}
+.h-fpool{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);min-height:560px}
+.h-fpool-tekst{display:flex;align-items:center;padding:88px max(24px,calc((100vw - 1180px)/2 + 24px)) 96px}.h-fpool-tekst .h-fpool-sisu{padding-right:40px}
+.h-fpool-foto{position:relative;min-height:320px}.h-fpool-foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.h-fpool .aasta-rida{color:#E9E2DC;font-size:14px;margin:28px 0 0}
+@media (max-width:860px){.h-fpool{grid-template-columns:minmax(0,1fr)}.h-fpool-foto{order:-1;min-height:0;aspect-ratio:16/10}.h-fpool-tekst{padding:48px 20px 64px}.h-fpool-tekst .h-fpool-sisu{padding-right:0}}.h-fpool-silt{position:absolute;right:16px;bottom:16px;z-index:2;font-size:12px;font-weight:600;letter-spacing:.04em;padding:4px 8px;border-radius:4px;color:#FFFFFF;background:#1A1A1A}

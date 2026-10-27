@@ -1,10 +1,10 @@
-@font-face{font-family:"Familjen Grotesk";src:url("/fondid/familjen-grotesk-regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:"Familjen Grotesk";src:url("/fondid/familjen-grotesk-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
-@font-face{font-family:"Familjen Grotesk";src:url("/fondid/familjen-grotesk-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
-@font-face{font-family:"Manrope";src:url("/fondid/manrope-regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:"Manrope";src:url("/fondid/manrope-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
-@font-face{font-family:"Manrope";src:url("/fondid/manrope-800.woff2") format("woff2");font-weight:800;font-style:normal;font-display:swap}
-:root{--raadius:28px;--pea-ls:-0.03em;--pea-kaal:700;--line-tugev:#8C9299;--pea:'Familjen Grotesk';--keha:'Manrope';--bg:#F9FAFB;--fg:#1F2A37;--muted:#58606A;--surface:#EBEFF2;--line:#D6D9DC;--accent:#4F6D8A;--accent-fg:#FFFFFF;--dark:#1F2A37;--dark-fg:#FFFFFF;--dark-accent:#B7D0E8;--fookus:#4F6D8A}
+@font-face{font-family:"Archivo";src:url("/fondid/archivo-regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Archivo";src:url("/fondid/archivo-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Archivo";src:url("/fondid/archivo-800.woff2") format("woff2");font-weight:800;font-style:normal;font-display:swap}
+@font-face{font-family:"Archivo";src:url("/fondid/archivo-900.woff2") format("woff2");font-weight:900;font-style:normal;font-display:swap}
+@font-face{font-family:"Inter";src:url("/fondid/inter-regular.woff") format("woff");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Inter";src:url("/fondid/inter-semibold.woff") format("woff");font-weight:600;font-style:normal;font-display:swap}
+:root{--raadius:6px;--pea-ls:-0.035em;--pea-kaal:900;--line-tugev:#8E8C8B;--pea:'Archivo';--keha:'Inter';--bg:#FFFFFF;--fg:#1C1917;--muted:#575553;--surface:#F9F1EB;--line:#DBDADA;--accent:#B45309;--accent-fg:#FFFFFF;--dark:#191615;--dark-fg:#FFFFFF;--dark-accent:#FCD34D;--fookus:#B45309}
 
 *{box-sizing:border-box}
 [hidden]{display:none !important}
@@ -158,15 +158,13 @@ h1,h2,h3{overflow-wrap:break-word}
 @media (max-width:768px){.t-read li{grid-template-columns:1fr;gap:6px}.t-numbrid{grid-template-columns:1fr}.k-rida,.k-kaardid,.k-redel{grid-template-columns:1fr}.faktid,.kontakt-leht .kontaktid{grid-template-columns:1fr}.g-mosaiik{grid-template-columns:1fr 1fr;grid-auto-rows:150px}.g-mosaiik .k1{grid-column:span 2;grid-row:auto}.g-ruudustik,.g-polaroid{grid-template-columns:1fr 1fr;gap:12px}.g-polaroid .kohataide{border-width:6px}}
 @media (max-width:480px){.t-kaardid,.t-veerud,.t-plaadid{grid-template-columns:1fr}.t-plaadid .plaat{min-height:0}.vormi-ala{padding:22px}}
 
-.pais-hele .logo-mark{width:22px;height:20px;background:#4F6D8A;clip-path:polygon(50% 0,100% 100%,0 100%)}
-.h-kaarus{background:#E4EBF2;color:#1F2A37;padding:72px 0 0;position:relative;overflow:hidden}
-.h-kaarus h1{font-size:clamp(36px,6.2vw,90px);line-height:1.0;font-weight:var(--pea-kaal);letter-spacing:var(--pea-ls);margin:0 0 24px;}
-.h-kaarus .lead{color:#3B4551}
-.h-kaarus .nupp.pea{background:#4F6D8A;color:#FFFFFF}
-.h-kaarus .nupp.teine{color:#1F2A37}
-.h-kaarus-sisu{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:48px;align-items:end}
-.h-kaarus-sisu>div:first-child{padding-bottom:88px}
-.h-kaared{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:end}
-.h-kaared .kohataide{border-radius:999px 999px 0 0;min-height:0;aspect-ratio:1/1.8;border:6px solid #4F6D8A;border-bottom:0}
-.h-kaared .h-k2{aspect-ratio:1/1.35}
-@media (max-width:820px){.h-kaarus-sisu{grid-template-columns:minmax(0,1fr)}.h-kaarus-sisu>div:first-child{padding-bottom:0}.h-kaared{max-width:320px}}
+.pais-hele .logo-mark{width:8px;height:8px;border-radius:50%;background:#B45309;box-shadow:12px 0 0 #B45309,24px 0 0 #B45309;margin-right:24px}
+.h-fdiag{background:#F9F1EB;color:#1C1917;padding:112px 0 120px;position:relative;overflow:hidden}
+.h-fdiag h1{font-size:clamp(34px,5vw,76px);line-height:1.0;font-weight:var(--pea-kaal);letter-spacing:var(--pea-ls);margin:0 0 24px;}
+.h-fdiag .lead{color:#3B3735}
+.h-fdiag .nupp.pea{background:#B45309;color:#FFFFFF}
+.h-fdiag .nupp.teine{color:#1C1917}
+.h-fdiag-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.h-fdiag-paneel{position:absolute;inset:0;background:#F9F1EB;clip-path:polygon(0 0,62% 0,48% 100%,0 100%)}
+.h-fdiag-sisu{position:relative;z-index:1}.h-fdiag-sisu>*{max-width:min(560px,46%)}.h-fdiag .aasta-rida{color:#3B3735;font-size:14px;margin:28px 0 0}
+@media (max-width:820px){.h-fdiag{padding:0 0 72px}.h-fdiag-img{position:relative;display:block;height:240px}.h-fdiag-paneel{display:none}.h-fdiag-sisu{padding-top:40px}.h-fdiag-sisu>*{max-width:none}}.h-fdiag-silt{position:absolute;right:16px;bottom:16px;z-index:2;font-size:12px;font-weight:600;letter-spacing:.04em;padding:4px 8px;border-radius:4px;color:#FFFFFF;background:#1A1A1A}

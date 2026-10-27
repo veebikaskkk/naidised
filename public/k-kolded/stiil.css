@@ -1,9 +1,7 @@
-@font-face{font-family:"Bricolage Grotesque";src:url("/fondid/bricolage-grotesque-regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:"Bricolage Grotesque";src:url("/fondid/bricolage-grotesque-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
-@font-face{font-family:"Bricolage Grotesque";src:url("/fondid/bricolage-grotesque-800.woff2") format("woff2");font-weight:800;font-style:normal;font-display:swap}
+@font-face{font-family:"Inter Display";src:url("/fondid/interdisplay-extrabold.woff") format("woff");font-weight:800;font-style:normal;font-display:swap}
 @font-face{font-family:"Inter";src:url("/fondid/inter-regular.woff") format("woff");font-weight:400;font-style:normal;font-display:swap}
 @font-face{font-family:"Inter";src:url("/fondid/inter-semibold.woff") format("woff");font-weight:600;font-style:normal;font-display:swap}
-:root{--raadius:4px;--pea-ls:-0.035em;--pea-kaal:800;--line-tugev:#8A8C90;--pea:'Bricolage Grotesque';--keha:'Inter';--bg:#FFFFFF;--fg:#151A22;--muted:#52565B;--surface:#EDF0F9;--line:#DADADC;--accent:#1E40AF;--accent-fg:#FFFFFF;--dark:#13171F;--dark-fg:#FFFFFF;--dark-accent:#6EE7B7;--fookus:#1E40AF}
+:root{--raadius:2px;--pea-ls:-0.03em;--pea-kaal:800;--line-tugev:#8E8C8B;--pea:'Inter Display';--keha:'Inter';--bg:#FFFFFF;--fg:#1C1917;--muted:#575553;--surface:#FAF0EC;--line:#DBDADA;--accent:#C2410C;--accent-fg:#FFFFFF;--dark:#191615;--dark-fg:#FFFFFF;--dark-accent:#FDBA74;--fookus:#C2410C}
 
 *{box-sizing:border-box}
 [hidden]{display:none !important}
@@ -157,12 +155,13 @@ h1,h2,h3{overflow-wrap:break-word}
 @media (max-width:768px){.t-read li{grid-template-columns:1fr;gap:6px}.t-numbrid{grid-template-columns:1fr}.k-rida,.k-kaardid,.k-redel{grid-template-columns:1fr}.faktid,.kontakt-leht .kontaktid{grid-template-columns:1fr}.g-mosaiik{grid-template-columns:1fr 1fr;grid-auto-rows:150px}.g-mosaiik .k1{grid-column:span 2;grid-row:auto}.g-ruudustik,.g-polaroid{grid-template-columns:1fr 1fr;gap:12px}.g-polaroid .kohataide{border-width:6px}}
 @media (max-width:480px){.t-kaardid,.t-veerud,.t-plaadid{grid-template-columns:1fr}.t-plaadid .plaat{min-height:0}.vormi-ala{padding:22px}}
 
-.pais-tume{background:#13171F;color:#FFFFFF}.pais-tume .logo-mark{width:16px;height:16px;background:#6EE7B7;transform:rotate(45deg)}
-.h-xahi{background:#151A22;color:#FFFFFF;padding:80px 0 88px;position:relative;overflow:hidden}
-.h-xahi h1{font-size:clamp(34px,5.4vw,78px);line-height:1.0;font-weight:var(--pea-kaal);letter-spacing:var(--pea-ls);margin:0 0 24px;}
-.h-xahi .lead{color:#DEDFE0}
-.h-xahi .nupp.pea{background:#6EE7B7;color:#141414}
-.h-xahi .nupp.teine{color:#FFFFFF}
-.h-xahi-sisu{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:48px;align-items:center}
-.h-xahi-sisu>svg,.h-xahi-sisu>.joonis{width:100%;max-width:380px;justify-self:end}
-@media (max-width:820px){.h-xahi-sisu{grid-template-columns:minmax(0,1fr)}.h-xahi-sisu>svg,.h-xahi-sisu>.joonis{max-width:190px;justify-self:start;order:-1}}
+.pais-tume{background:#191615;color:#FFFFFF}.pais-tume .logo-mark{width:20px;height:20px;border-radius:50% 50% 50% 0;background:#FDBA74}
+.h-fkaart{background:#1C1917;color:#FFFFFF;padding:0 0 72px;position:relative;overflow:hidden}
+.h-fkaart h1{font-size:clamp(32px,4.4vw,64px);line-height:1.0;font-weight:var(--pea-kaal);letter-spacing:var(--pea-ls);margin:0 0 24px;}
+.h-fkaart .lead{color:#DFDFDF}
+.h-fkaart .nupp.pea{background:#FDBA74;color:#141414}
+.h-fkaart .nupp.teine{color:#FFFFFF}
+.h-fkaart{background:#FFFFFF}
+.h-fkaart-foto{position:relative;height:clamp(300px,52vw,560px)}.h-fkaart-foto img{width:100%;height:100%;object-fit:cover;display:block}
+.h-fkaart-wrap{position:relative;margin-top:-180px}.h-fkaart-kaart{background:#1C1917;color:#FFFFFF;padding:48px 52px;max-width:680px;border-radius:var(--raadius);box-shadow:0 24px 60px rgba(0,0,0,.18)}
+@media (max-width:760px){.h-fkaart-wrap{margin-top:-48px}.h-fkaart-kaart{padding:32px 24px}}.h-fkaart-silt{position:absolute;right:16px;top:16px;z-index:2;font-size:12px;font-weight:600;letter-spacing:.04em;padding:4px 8px;border-radius:4px;color:#FFFFFF;background:#1A1A1A}

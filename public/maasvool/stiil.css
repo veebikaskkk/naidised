@@ -1,9 +1,11 @@
-@font-face{font-family:"Familjen Grotesk";src:url("/fondid/familjen-grotesk-regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:"Familjen Grotesk";src:url("/fondid/familjen-grotesk-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
-@font-face{font-family:"Familjen Grotesk";src:url("/fondid/familjen-grotesk-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
-@font-face{font-family:"Inter";src:url("/fondid/inter-regular.woff") format("woff");font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:"Inter";src:url("/fondid/inter-semibold.woff") format("woff");font-weight:600;font-style:normal;font-display:swap}
-:root{--raadius:6px;--pea-ls:-0.03em;--pea-kaal:700;--line-tugev:#8B8A88;--pea:'Familjen Grotesk';--keha:'Inter';--bg:#FAFAF9;--fg:#1C1917;--muted:#565452;--surface:#E8F0EA;--line:#D6D6D5;--accent:#15803D;--accent-fg:#FFFFFF;--dark:#191615;--dark-fg:#FFFFFF;--dark-accent:#55A272;--fookus:#15803D}
+@font-face{font-family:"Fraunces";src:url("/fondid/fraunces-regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Fraunces";src:url("/fondid/fraunces-italic.woff2") format("woff2");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Fraunces";src:url("/fondid/fraunces-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Fraunces";src:url("/fondid/fraunces-900.woff2") format("woff2");font-weight:900;font-style:normal;font-display:swap}
+@font-face{font-family:"Manrope";src:url("/fondid/manrope-regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Manrope";src:url("/fondid/manrope-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Manrope";src:url("/fondid/manrope-800.woff2") format("woff2");font-weight:800;font-style:normal;font-display:swap}
+:root{--raadius:2px;--pea-ls:-0.02em;--pea-kaal:900;--line-tugev:#888C93;--pea:'Fraunces';--keha:'Manrope';--bg:#FFFFFF;--fg:#111827;--muted:#4F545F;--surface:#F0EFFB;--line:#D9DADC;--accent:#4338CA;--accent-fg:#FFFFFF;--dark:#0F1623;--dark-fg:#FFFFFF;--dark-accent:#FCD34D;--fookus:#4338CA}
 
 *{box-sizing:border-box}
 [hidden]{display:none !important}
@@ -157,10 +159,13 @@ h1,h2,h3{overflow-wrap:break-word}
 @media (max-width:768px){.t-read li{grid-template-columns:1fr;gap:6px}.t-numbrid{grid-template-columns:1fr}.k-rida,.k-kaardid,.k-redel{grid-template-columns:1fr}.faktid,.kontakt-leht .kontaktid{grid-template-columns:1fr}.g-mosaiik{grid-template-columns:1fr 1fr;grid-auto-rows:150px}.g-mosaiik .k1{grid-column:span 2;grid-row:auto}.g-ruudustik,.g-polaroid{grid-template-columns:1fr 1fr;gap:12px}.g-polaroid .kohataide{border-width:6px}}
 @media (max-width:480px){.t-kaardid,.t-veerud,.t-plaadid{grid-template-columns:1fr}.t-plaadid .plaat{min-height:0}.vormi-ala{padding:22px}}
 
-.pais-hele .logo-mark{width:18px;height:18px;border-radius:50%;background:#15803D}
-.h-siin{background:#ECFDF3;color:#1C1917;padding:96px 0 0;position:relative;overflow:hidden}
-.h-siin h1{font-size:clamp(36px,6.2vw,90px);line-height:1.0;font-weight:var(--pea-kaal);letter-spacing:var(--pea-ls);margin:0 0 24px;}
-.h-siin .lead{color:#393936}
-.h-siin .nupp.pea{background:#15803D;color:#FFFFFF}
-.h-siin .nupp.teine{color:#1C1917}
-.h-siin h1{max-width:12em}.h-siin-svg{display:block;width:100%;height:120px;margin-top:64px}
+.pais-tume{background:#0F1623;color:#FFFFFF}.pais-tume .logo-mark{width:6px;height:22px;background:#FCD34D;box-shadow:10px 0 0 #FCD34D;margin-right:10px}
+.h-fkaart{background:#111827;color:#FFFFFF;padding:0 0 72px;position:relative;overflow:hidden}
+.h-fkaart h1{font-size:clamp(32px,4.4vw,64px);line-height:1.0;font-weight:var(--pea-kaal);letter-spacing:var(--pea-ls);margin:0 0 24px;}
+.h-fkaart .lead{color:#DEDFE1}
+.h-fkaart .nupp.pea{background:#FCD34D;color:#141414}
+.h-fkaart .nupp.teine{color:#FFFFFF}
+.h-fkaart{background:#FFFFFF}
+.h-fkaart-foto{position:relative;height:clamp(300px,52vw,560px)}.h-fkaart-foto img{width:100%;height:100%;object-fit:cover;display:block}
+.h-fkaart-wrap{position:relative;margin-top:-180px}.h-fkaart-kaart{background:#111827;color:#FFFFFF;padding:48px 52px;max-width:680px;border-radius:var(--raadius);box-shadow:0 24px 60px rgba(0,0,0,.18)}
+@media (max-width:760px){.h-fkaart-wrap{margin-top:-48px}.h-fkaart-kaart{padding:32px 24px}}.h-fkaart-silt{position:absolute;right:16px;top:16px;z-index:2;font-size:12px;font-weight:600;letter-spacing:.04em;padding:4px 8px;border-radius:4px;color:#FFFFFF;background:#1A1A1A}

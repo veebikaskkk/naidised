@@ -1,10 +1,10 @@
-@font-face{font-family:"Bricolage Grotesque";src:url("/fondid/bricolage-grotesque-regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:"Bricolage Grotesque";src:url("/fondid/bricolage-grotesque-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
-@font-face{font-family:"Bricolage Grotesque";src:url("/fondid/bricolage-grotesque-800.woff2") format("woff2");font-weight:800;font-style:normal;font-display:swap}
+@font-face{font-family:"Epilogue";src:url("/fondid/epilogue-regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Epilogue";src:url("/fondid/epilogue-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Epilogue";src:url("/fondid/epilogue-800.woff2") format("woff2");font-weight:800;font-style:normal;font-display:swap}
 @font-face{font-family:"Manrope";src:url("/fondid/manrope-regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
 @font-face{font-family:"Manrope";src:url("/fondid/manrope-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
 @font-face{font-family:"Manrope";src:url("/fondid/manrope-800.woff2") format("woff2");font-weight:800;font-style:normal;font-display:swap}
-:root{--raadius:24px;--pea-ls:-0.04em;--pea-kaal:800;--line-tugev:#948B98;--pea:'Bricolage Grotesque';--keha:'Manrope';--bg:#FFFFFF;--fg:#2A1730;--muted:#615366;--surface:#F7EEF6;--line:#DDDADE;--accent:#9D2C8F;--accent-fg:#FFFFFF;--dark:#2A1730;--dark-fg:#FFFFFF;--dark-accent:#F3A6E8;--fookus:#9D2C8F}
+:root{--raadius:16px;--pea-ls:-0.03em;--pea-kaal:800;--line-tugev:#8E8D96;--pea:'Epilogue';--keha:'Manrope';--bg:#FFFFFF;--fg:#1E1B2E;--muted:#585664;--surface:#F5EFFE;--line:#DBDBDE;--accent:#7C3AED;--accent-fg:#FFFFFF;--dark:#1B1829;--dark-fg:#FFFFFF;--dark-accent:#C4B5FD;--fookus:#7C3AED}
 
 *{box-sizing:border-box}
 [hidden]{display:none !important}
@@ -158,12 +158,13 @@ h1,h2,h3{overflow-wrap:break-word}
 @media (max-width:768px){.t-read li{grid-template-columns:1fr;gap:6px}.t-numbrid{grid-template-columns:1fr}.k-rida,.k-kaardid,.k-redel{grid-template-columns:1fr}.faktid,.kontakt-leht .kontaktid{grid-template-columns:1fr}.g-mosaiik{grid-template-columns:1fr 1fr;grid-auto-rows:150px}.g-mosaiik .k1{grid-column:span 2;grid-row:auto}.g-ruudustik,.g-polaroid{grid-template-columns:1fr 1fr;gap:12px}.g-polaroid .kohataide{border-width:6px}}
 @media (max-width:480px){.t-kaardid,.t-veerud,.t-plaadid{grid-template-columns:1fr}.t-plaadid .plaat{min-height:0}.vormi-ala{padding:22px}}
 
-.pais-hele .logo-mark{width:22px;height:11px;border-radius:22px 22px 0 0;background:#9D2C8F}
-.h-foon{background:#FBEAF7;color:#2A1730;padding:88px 0 96px;position:relative;overflow:hidden}
-.h-foon h1{font-size:clamp(36px,6.2vw,90px);line-height:1.0;font-weight:var(--pea-kaal);letter-spacing:var(--pea-ls);margin:0 0 24px;}
-.h-foon .lead{color:#47354C}
-.h-foon .nupp.pea{background:#9D2C8F;color:#FFFFFF}
-.h-foon .nupp.teine{color:#2A1730}
-.h-foon-sisu{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:40px;align-items:center}
-.h-foon-svg{width:100%;max-width:360px;justify-self:end}
-@media (max-width:820px){.h-foon-sisu{grid-template-columns:minmax(0,1fr)}.h-foon-svg{max-width:200px;justify-self:start;order:-1}}
+.pais-varv{background:#442082;color:#FFFFFF}.pais-varv .logo-mark{width:20px;height:20px;border-radius:4px;border:3px solid #C4B5FD;border-right-color:transparent}
+.h-fraam{background:#442082;color:#FFFFFF;padding:96px 0 104px;position:relative;overflow:hidden}
+.h-fraam h1{font-size:clamp(34px,5vw,76px);line-height:1.0;font-weight:var(--pea-kaal);letter-spacing:var(--pea-ls);margin:0 0 24px;}
+.h-fraam .lead{color:#E5E0EE}
+.h-fraam .nupp.pea{background:#C4B5FD;color:#141414}
+.h-fraam .nupp.teine{color:#FFFFFF}
+.h-fraam-sisu{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:64px;align-items:center}
+.h-fraam-foto{position:relative;transform:rotate(-2deg)}.h-fraam-foto img{position:relative;display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border:10px solid #FFFFFF}
+.h-fraam-plokk{position:absolute;inset:24px -24px -24px 24px;background:#C4B5FD}.h-fraam .aasta-rida{color:#E5E0EE;font-size:14px;margin:28px 0 0}
+@media (max-width:820px){.h-fraam-sisu{grid-template-columns:minmax(0,1fr);gap:48px}.h-fraam-foto{order:-1;margin-right:24px}}.h-fraam-silt{position:absolute;right:22px;bottom:22px;z-index:2;font-size:12px;font-weight:600;letter-spacing:.04em;padding:4px 8px;border-radius:4px;color:#FFFFFF;background:#1A1A1A}

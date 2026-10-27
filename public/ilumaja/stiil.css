@@ -1,10 +1,10 @@
-@font-face{font-family:"Fraunces";src:url("/fondid/fraunces-regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:"Fraunces";src:url("/fondid/fraunces-italic.woff2") format("woff2");font-weight:400;font-style:italic;font-display:swap}
-@font-face{font-family:"Fraunces";src:url("/fondid/fraunces-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
-@font-face{font-family:"Fraunces";src:url("/fondid/fraunces-900.woff2") format("woff2");font-weight:900;font-style:normal;font-display:swap}
-@font-face{font-family:"Inter";src:url("/fondid/inter-regular.woff") format("woff");font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:"Inter";src:url("/fondid/inter-semibold.woff") format("woff");font-weight:600;font-style:normal;font-display:swap}
-:root{--raadius:14px;--pea-ls:-0.02em;--pea-kaal:900;--line-tugev:#968F92;--pea:'Fraunces';--keha:'Inter';--bg:#FFFFFF;--fg:#2D1F26;--muted:#64595E;--surface:#F6EFF2;--line:#DDDBDC;--accent:#8C3A5E;--accent-fg:#FFFFFF;--dark:#2D1F26;--dark-fg:#FFFFFF;--dark-accent:#F0A7C6;--fookus:#8C3A5E}
+@font-face{font-family:"Space Grotesk";src:url("/fondid/space-grotesk-regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Space Grotesk";src:url("/fondid/space-grotesk-500.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"Space Grotesk";src:url("/fondid/space-grotesk-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Manrope";src:url("/fondid/manrope-regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Manrope";src:url("/fondid/manrope-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Manrope";src:url("/fondid/manrope-800.woff2") format("woff2");font-weight:800;font-style:normal;font-display:swap}
+:root{--raadius:0px;--pea-ls:-0.035em;--pea-kaal:700;--line-tugev:#8F8A90;--pea:'Space Grotesk';--keha:'Manrope';--bg:#FFFFFF;--fg:#1F1420;--muted:#59515A;--surface:#F7ECF1;--line:#DBD9DB;--accent:#9D174D;--accent-fg:#FFFFFF;--dark:#1C121D;--dark-fg:#FFFFFF;--dark-accent:#F9A8D4;--fookus:#9D174D}
 
 *{box-sizing:border-box}
 [hidden]{display:none !important}
@@ -158,9 +158,14 @@ h1,h2,h3{overflow-wrap:break-word}
 @media (max-width:768px){.t-read li{grid-template-columns:1fr;gap:6px}.t-numbrid{grid-template-columns:1fr}.k-rida,.k-kaardid,.k-redel{grid-template-columns:1fr}.faktid,.kontakt-leht .kontaktid{grid-template-columns:1fr}.g-mosaiik{grid-template-columns:1fr 1fr;grid-auto-rows:150px}.g-mosaiik .k1{grid-column:span 2;grid-row:auto}.g-ruudustik,.g-polaroid{grid-template-columns:1fr 1fr;gap:12px}.g-polaroid .kohataide{border-width:6px}}
 @media (max-width:480px){.t-kaardid,.t-veerud,.t-plaadid{grid-template-columns:1fr}.t-plaadid .plaat{min-height:0}.vormi-ala{padding:22px}}
 
-.pais-hele .logo-mark{width:20px;height:20px;border-radius:4px;border:3px solid #8C3A5E;border-right-color:transparent}
-.h-terr{padding:96px 0;background:radial-gradient(circle at 12% 20%,#3F8C7A 0 18px,transparent 19px),radial-gradient(circle at 80% 14%,#2D1F26 0 10px,transparent 11px),radial-gradient(ellipse at 88% 70%,#3F8C7A 0 30px,transparent 31px),radial-gradient(circle at 30% 86%,#9AB4B0 0 22px,transparent 23px),radial-gradient(circle at 60% 40%,#9AB4B0 0 8px,transparent 9px),radial-gradient(circle at 6% 64%,#2D1F26 0 12px,transparent 13px),#F4DCE5}
-.h-terr-kaart{background:#FFFFFF;color:#2D1F26;padding:clamp(28px,5vw,64px);border-radius:min(var(--raadius),24px);max-width:820px;box-shadow:0 20px 60px rgba(0,0,0,.12)}
-.h-terr h1{font-size:clamp(34px,5.6vw,80px);line-height:1;font-weight:var(--pea-kaal);letter-spacing:var(--pea-ls);margin:0 0 24px}
-.h-terr .lead{color:var(--muted)}
-.h-terr .nupp.teine{color:var(--fg)}
+.pais-tume{background:#1C121D;color:#FFFFFF}.pais-tume .logo-mark{width:22px;height:22px;background:conic-gradient(#F9A8D4 0 25%,transparent 0 50%,#F9A8D4 0 75%,transparent 0)}
+.h-fring{background:#1F1420;color:#FFFFFF;padding:88px 0 96px;position:relative;overflow:hidden}
+.h-fring h1{font-size:clamp(34px,5vw,76px);line-height:1.0;font-weight:var(--pea-kaal);letter-spacing:var(--pea-ls);margin:0 0 24px;}
+.h-fring .lead{color:#E0DEE0}
+.h-fring .nupp.pea{background:#F9A8D4;color:#141414}
+.h-fring .nupp.teine{color:#FFFFFF}
+.h-fring-sisu{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:56px;align-items:center}
+.h-fring-foto{position:relative;aspect-ratio:1;max-width:440px;justify-self:end;width:100%}
+.h-fring-foto img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block;box-shadow:0 0 0 12px #1F1420,0 0 0 20px #F9A8D4}
+.h-fring .aasta-rida{color:#E0DEE0;font-size:14px;margin:28px 0 0}
+@media (max-width:820px){.h-fring-sisu{grid-template-columns:minmax(0,1fr);gap:40px}.h-fring-foto{order:-1;max-width:240px;justify-self:start;margin-left:20px}}.h-fring-silt{position:absolute;right:0;bottom:8%;z-index:2;font-size:12px;font-weight:600;letter-spacing:.04em;padding:4px 8px;border-radius:4px;color:#FFFFFF;background:#1A1A1A}

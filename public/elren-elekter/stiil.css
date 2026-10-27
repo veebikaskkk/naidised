@@ -1,10 +1,8 @@
-@font-face{font-family:"Archivo";src:url("/fondid/archivo-regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:"Archivo";src:url("/fondid/archivo-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
-@font-face{font-family:"Archivo";src:url("/fondid/archivo-800.woff2") format("woff2");font-weight:800;font-style:normal;font-display:swap}
-@font-face{font-family:"Archivo";src:url("/fondid/archivo-900.woff2") format("woff2");font-weight:900;font-style:normal;font-display:swap}
+@font-face{font-family:"Instrument Serif";src:url("/fondid/instrument-serif-regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Instrument Serif";src:url("/fondid/instrument-serif-italic.woff2") format("woff2");font-weight:400;font-style:italic;font-display:swap}
 @font-face{font-family:"Inter";src:url("/fondid/inter-regular.woff") format("woff");font-weight:400;font-style:normal;font-display:swap}
 @font-face{font-family:"Inter";src:url("/fondid/inter-semibold.woff") format("woff");font-weight:600;font-style:normal;font-display:swap}
-:root{--raadius:4px;--pea-ls:-0.035em;--pea-kaal:900;--line-tugev:#829098;--pea:'Archivo';--keha:'Inter';--bg:#F8FAFC;--fg:#0B2533;--muted:#495C67;--surface:#E5EFF3;--line:#D2D8DC;--accent:#0E7490;--accent-fg:#FFFFFF;--dark:#0A212E;--dark-fg:#FFFFFF;--dark-accent:#67E8F9;--fookus:#0E7490}
+:root{--raadius:6px;--pea-ls:-0.01em;--pea-kaal:400;--line-tugev:#878F8E;--pea:'Instrument Serif';--keha:'Inter';--bg:#FFFFFF;--fg:#0F1F1C;--muted:#4D5957;--surface:#ECF4F3;--line:#D9DBDB;--accent:#0F766E;--accent-fg:#FFFFFF;--dark:#0E1C19;--dark-fg:#FFFFFF;--dark-accent:#FDE047;--fookus:#0F766E}
 
 *{box-sizing:border-box}
 [hidden]{display:none !important}
@@ -158,12 +156,13 @@ h1,h2,h3{overflow-wrap:break-word}
 @media (max-width:768px){.t-read li{grid-template-columns:1fr;gap:6px}.t-numbrid{grid-template-columns:1fr}.k-rida,.k-kaardid,.k-redel{grid-template-columns:1fr}.faktid,.kontakt-leht .kontaktid{grid-template-columns:1fr}.g-mosaiik{grid-template-columns:1fr 1fr;grid-auto-rows:150px}.g-mosaiik .k1{grid-column:span 2;grid-row:auto}.g-ruudustik,.g-polaroid{grid-template-columns:1fr 1fr;gap:12px}.g-polaroid .kohataide{border-width:6px}}
 @media (max-width:480px){.t-kaardid,.t-veerud,.t-plaadid{grid-template-columns:1fr}.t-plaadid .plaat{min-height:0}.vormi-ala{padding:22px}}
 
-.pais-varv{background:#0B2533;color:#FFFFFF}.pais-varv .logo-mark{width:6px;height:22px;background:#67E8F9;box-shadow:10px 0 0 #67E8F9;margin-right:10px}
-.h-mast{background:#0B2533;color:#FFFFFF;padding:64px 0 72px;position:relative;overflow:hidden}
-.h-mast h1{font-size:clamp(36px,6.2vw,90px);line-height:1.0;font-weight:var(--pea-kaal);letter-spacing:var(--pea-ls);margin:0 0 24px;}
-.h-mast .lead{color:#DDE0E2}
-.h-mast .nupp.pea{background:#67E8F9;color:#141414}
-.h-mast .nupp.teine{color:#FFFFFF}
-.h-mast-sisu{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:48px;align-items:center}
-.h-mast-sisu>svg,.h-mast-sisu>.joonis{width:100%;max-width:400px;justify-self:end}
-@media (max-width:820px){.h-mast-sisu{grid-template-columns:minmax(0,1fr)}.h-mast-sisu>svg,.h-mast-sisu>.joonis{max-width:200px;justify-self:start;order:-1}}
+.pais-hele .logo-mark{width:22px;height:11px;border-radius:22px 22px 0 0;background:#0F766E}
+.h-fdiag{background:#08413D;color:#FFFFFF;padding:112px 0 120px;position:relative;overflow:hidden}
+.h-fdiag h1{font-size:clamp(34px,5vw,76px);line-height:1.0;font-weight:var(--pea-kaal);letter-spacing:var(--pea-ls);margin:0 0 24px;}
+.h-fdiag .lead{color:#DCE4E4}
+.h-fdiag .nupp.pea{background:#FDE047;color:#141414}
+.h-fdiag .nupp.teine{color:#FFFFFF}
+.h-fdiag-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.h-fdiag-paneel{position:absolute;inset:0;background:#08413D;clip-path:polygon(0 0,62% 0,48% 100%,0 100%)}
+.h-fdiag-sisu{position:relative;z-index:1}.h-fdiag-sisu>*{max-width:min(560px,46%)}.h-fdiag .aasta-rida{color:#DCE4E4;font-size:14px;margin:28px 0 0}
+@media (max-width:820px){.h-fdiag{padding:0 0 72px}.h-fdiag-img{position:relative;display:block;height:240px}.h-fdiag-paneel{display:none}.h-fdiag-sisu{padding-top:40px}.h-fdiag-sisu>*{max-width:none}}.h-fdiag-silt{position:absolute;right:16px;bottom:16px;z-index:2;font-size:12px;font-weight:600;letter-spacing:.04em;padding:4px 8px;border-radius:4px;color:#FFFFFF;background:#1A1A1A}
