@@ -1,0 +1,23 @@
+{
+  "nimi": "MPa Ehitus OÜ",
+  "lyhinimi": "MPa Ehitus",
+  "vorm": "OÜ",
+  "registrikood": "14003120",
+  "emtak": "41001",
+  "telefonid": [
+    "+372 5231922"
+  ],
+  "email": "savinski.romeo@gmail.com",
+  "piirkond": "Lääne-Virumaa",
+  "piirkond_kus": "Lääne-Virumaal",
+  "linn_kus": "Lääne-Virumaal",
+  "aasta": "2016",
+  "tootajaid": 14,
+  "sissejuhatus": "Ehitame ja renoveerime maju Lääne-Virumaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "500",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-mpa-ehitus",
+  "domeen": "mpaehitus.ee",
+  "kaive": "1550859"
+}

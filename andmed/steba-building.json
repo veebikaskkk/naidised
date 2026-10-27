@@ -1,0 +1,24 @@
+{
+  "nimi": "Osaühing STEBA Building",
+  "lyhinimi": "STEBA Building",
+  "vorm": "OÜ",
+  "registrikood": "11234362",
+  "emtak": "41001",
+  "telefonid": [
+    "+372 5272518",
+    "+372 55641867"
+  ],
+  "email": "Steba.building@mail.ee",
+  "piirkond": "Rakvere ja Lääne-Virumaa",
+  "piirkond_kus": "Rakveres ja Lääne-Virumaal",
+  "linn_kus": "Rakveres",
+  "aasta": "2006",
+  "tootajaid": 23,
+  "sissejuhatus": "Ehitame ja renoveerime maju Rakveres ja Lääne-Virumaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "250",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-steba-building",
+  "domeen": "stebabuilding.ee",
+  "kaive": "2221923"
+}

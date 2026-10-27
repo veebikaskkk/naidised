@@ -1,0 +1,23 @@
+{
+  "nimi": "ANLE Ehitus OÜ",
+  "lyhinimi": "ANLE Ehitus",
+  "vorm": "OÜ",
+  "registrikood": "10709923",
+  "emtak": "41001",
+  "telefonid": [
+    "+372 56630699"
+  ],
+  "email": "anle.ehitus@gmail.com",
+  "piirkond": "Tallinn ja Harjumaa",
+  "piirkond_kus": "Tallinnas ja Harjumaal",
+  "linn_kus": "Tallinnas",
+  "aasta": "2000",
+  "tootajaid": 17,
+  "sissejuhatus": "Ehitame ja renoveerime maju Tallinnas ja Harjumaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "250",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-anle-ehitus",
+  "domeen": "anleehitus.ee",
+  "kaive": "2907298"
+}

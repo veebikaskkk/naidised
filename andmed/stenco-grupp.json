@@ -1,0 +1,23 @@
+{
+  "nimi": "OÜ Stenco Grupp",
+  "lyhinimi": "Stenco Grupp",
+  "vorm": "OÜ",
+  "registrikood": "12179027",
+  "emtak": "41001",
+  "telefonid": [
+    "+372 58362744"
+  ],
+  "email": "stencco@gmail.com",
+  "piirkond": "Harjumaa",
+  "piirkond_kus": "Harjumaal",
+  "linn_kus": "Harjumaal",
+  "aasta": "2011",
+  "tootajaid": 10,
+  "sissejuhatus": "Ehitame ja renoveerime maju Harjumaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "500",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-stenco-grupp",
+  "domeen": "stencogrupp.ee",
+  "kaive": "625319"
+}

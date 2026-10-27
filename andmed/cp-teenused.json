@@ -1,0 +1,23 @@
+{
+  "nimi": "CP Teenused OÜ",
+  "lyhinimi": "CP Teenused",
+  "vorm": "OÜ",
+  "registrikood": "14279495",
+  "emtak": "43129",
+  "telefonid": [
+    "+372 56315792"
+  ],
+  "email": "cpteenused@gmail.com",
+  "piirkond": "Valgamaa",
+  "piirkond_kus": "Valgamaal",
+  "linn_kus": "Valgamaal",
+  "aasta": "2017",
+  "tootajaid": 3,
+  "sissejuhatus": "Teeme kaeve- ja pinnasetöid Valgamaal: vundamendi süvendid, trassid, kraavid ja krundi planeerimine.",
+  "pakett": "500",
+  "kategooria": "kaeve",
+  "teenused_voti": "43129",
+  "kujundus": "f-cp-teenused",
+  "domeen": "cpteenused.ee",
+  "kaive": "176754"
+}

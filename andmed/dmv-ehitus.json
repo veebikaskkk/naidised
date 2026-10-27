@@ -1,0 +1,23 @@
+{
+  "nimi": "DMV Ehitus OÜ",
+  "lyhinimi": "DMV Ehitus",
+  "vorm": "OÜ",
+  "registrikood": "14033954",
+  "emtak": "41001",
+  "telefonid": [
+    "+372 55538938"
+  ],
+  "email": "e-dmv@outlook.com",
+  "piirkond": "Tallinn ja Harjumaa",
+  "piirkond_kus": "Tallinnas ja Harjumaal",
+  "linn_kus": "Tallinnas",
+  "aasta": "2016",
+  "tootajaid": 3,
+  "sissejuhatus": "Ehitame ja renoveerime maju Tallinnas ja Harjumaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "500",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-dmv-ehitus",
+  "domeen": "dmvehitus.ee",
+  "kaive": "413960"
+}

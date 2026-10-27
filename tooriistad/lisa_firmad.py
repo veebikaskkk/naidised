@@ -39,6 +39,10 @@ SISSEJUHATUS = {
     "43222": "Teeme torutöid {kus}: veetorustik, kanalisatsioon ja sanitaartehnika. Enne tööd vaatame objekti üle ja ütleme hinna.",
     "4322": "Teeme torutöid ja küttetöid {kus}: vesi, kanalisatsioon, küte ja sanitaartehnika.",
     "43223": "Ehitame ja paigaldame ahjusid, pliite ja kaminaid {kus}. Enne tööd vaatame üle ruumi ja korstna.",
+    "41001": "Ehitame ja renoveerime maju {kus}: uued hooned, katused, fassaadid ja siseviimistlus.",
+    "43129": "Teeme kaeve- ja pinnasetöid {kus}: vundamendi süvendid, trassid, kraavid ja krundi planeerimine.",
+    "81301": "Teeme haljastus- ja aiatöid {kus}: muru, hekid, puude hooldus ja hooajaline korrastus.",
+    "81211": "Koristame kodusid, kontoreid ja äripindu {kus}. Ühekordselt või regulaarselt, nagu teile sobib.",
     "95311-detail": "Peseme, poleerime ja puhastame autosid {kus}, nii seest kui väljast.",
 }
 
@@ -79,6 +83,14 @@ def kategooria(emtak):
         return "elekter"
     if emtak.startswith("4322"):
         return "toru"
+    if emtak.startswith(("41001", "41201")):
+        return "ehitus"
+    if emtak.startswith(("4312",)):
+        return "kaeve"
+    if emtak.startswith("8130"):
+        return "haljastus"
+    if emtak.startswith(("8121", "8122")):
+        return "koristus"
     return "viimistlus"
 
 

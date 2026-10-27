@@ -1,0 +1,23 @@
+{
+  "nimi": "Osaühing Karell Ehitus",
+  "lyhinimi": "Karell Ehitus",
+  "vorm": "OÜ",
+  "registrikood": "10622435",
+  "emtak": "41001",
+  "telefonid": [
+    "+372 5020937"
+  ],
+  "email": "karell.ehitus@mail.ee",
+  "piirkond": "Tallinn ja Harjumaa",
+  "piirkond_kus": "Tallinnas ja Harjumaal",
+  "linn_kus": "Tallinnas",
+  "aasta": "2000",
+  "tootajaid": 6,
+  "sissejuhatus": "Ehitame ja renoveerime maju Tallinnas ja Harjumaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "500",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-karell-ehitus",
+  "domeen": "karellehitus.ee",
+  "kaive": "727053"
+}

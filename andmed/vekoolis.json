@@ -1,0 +1,24 @@
+{
+  "nimi": "Osaühing VEKOOLIS",
+  "lyhinimi": "Vekoolis",
+  "vorm": "OÜ",
+  "registrikood": "10133245",
+  "emtak": "41001",
+  "telefonid": [
+    "+372 3325695",
+    "+372 5023748"
+  ],
+  "email": "vekoolis@hot.ee",
+  "piirkond": "Kohtla-Järve ja Ida-Virumaa",
+  "piirkond_kus": "Kohtla-Järvel ja Ida-Virumaal",
+  "linn_kus": "Kohtla-Järvel",
+  "aasta": "1996",
+  "tootajaid": 10,
+  "sissejuhatus": "Ehitame ja renoveerime maju Kohtla-Järvel ja Ida-Virumaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "250",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-vekoolis",
+  "domeen": "vekoolis.ee",
+  "kaive": "615008"
+}

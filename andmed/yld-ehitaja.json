@@ -1,0 +1,23 @@
+{
+  "nimi": "Osaühing YLD Ehitaja",
+  "lyhinimi": "YLD Ehitaja",
+  "vorm": "OÜ",
+  "registrikood": "14416572",
+  "emtak": "41001",
+  "telefonid": [
+    "+372 55644249"
+  ],
+  "email": "ylolutter@gmail.com",
+  "piirkond": "Harjumaa",
+  "piirkond_kus": "Harjumaal",
+  "linn_kus": "Harjumaal",
+  "aasta": "2018",
+  "tootajaid": 5,
+  "sissejuhatus": "Ehitame ja renoveerime maju Harjumaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "500",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-yld-ehitaja",
+  "domeen": "yldehitaja.ee",
+  "kaive": "400869"
+}

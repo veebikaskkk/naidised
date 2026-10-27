@@ -256,6 +256,97 @@ KATEGOORIAD["toru"] = dict(
     kontakt="Helista või kirjuta. Kirjelda lühidalt, mis hoonega on tegu ja mida on vaja teha.",
     vorm_naide=VORM_NAIDE["4322"], teeb="teeb torutöid ja küttetöid", sammud="toru")
 
+TEENUSED["41001"] = [
+    ("Ehitustööd", "Elamute ja väiksemate hoonete ehitus.",
+     "Ehitame eramaju, abihooneid ja väiksemaid ärihooneid vundamendist katuseni. Enne tööd vaatame üle projekti ja lepime kokku, mis etapid teeme meie."),
+    ("Renoveerimine", "Vanade majade ja korterite uuendamine.",
+     "Uuendame vanu maju ja kortereid: vaheseinad, põrandad, laed ja viimistlus. Enne lammutamist vaatame üle, mida saab alles jätta."),
+    ("Katus ja fassaad", "Katuse vahetus, soojustus ja fassaaditööd.",
+     "Vahetame katuseid, soojustame ja teeme fassaaditöid. Töö käigus kontrollime, et konstruktsioon all oleks korras."),
+    ("Siseviimistlus", "Pahteldus, värvimine ja põrandad.",
+     "Teeme ka viimistlustööd: pahteldus, värvimine, põrandad ja liistud. Nii saad maja või ruumi valmis ühest kohast."),
+]
+TEENUSED["43129"] = [
+    ("Kaevetööd", "Kaevetööd ekskavaatoriga.",
+     "Kaevame vundamendialuseid, kraave ja süvendeid. Enne tööd vaatame objekti üle ja lepime kokku, kuhu pinnas läheb."),
+    ("Vundamendi alus", "Pinnase ettevalmistus ja tihendamine.",
+     "Valmistame ette maja või abihoone aluse: koorime pinnase, toome täitematerjali ja tihendame. Hea alus hoiab hoone sirge."),
+    ("Trassid ja kraavid", "Vee-, kanalisatsiooni- ja kaablitrassid.",
+     "Kaevame trasse vee, kanalisatsiooni ja kaablite jaoks ning täidame need pärast paigaldust. Kraavid puhastame ja süvendame."),
+    ("Planeerimine", "Krundi tasandamine ja haljastuse eeltööd.",
+     "Tasandame krundi, veame mulda ja valmistame ette muru või platsi aluse. Võid tellida ka ainult ühe etapi."),
+]
+TEENUSED["81301"] = [
+    ("Muru", "Muru rajamine ja niitmine.",
+     "Rajame uue muru ja hooldame olemasolevat: niitmine, kaared ja väetamine. Enne rajamist vaatame üle pinnase."),
+    ("Hekid ja põõsad", "Pügamine ja istutamine.",
+     "Pügame hekke ja põõsaid ning istutame uusi. Taimed valime koos tellijaga koha ja valguse järgi."),
+    ("Puude hooldus", "Hoolduslõikus ja võsa eemaldamine.",
+     "Teeme puudele hoolduslõikust ja eemaldame võsa. Suuremate tööde puhul vaatame enne koha peal üle, mida on vaja teha."),
+    ("Hooajatööd", "Kevadine ja sügisene korrastus.",
+     "Korrastame aia kevadel ja sügisel: lehed, oksad, peenrad ja hoovialad. Võid tellida ühekordse töö või regulaarse hoolduse."),
+]
+TEENUSED["81211"] = [
+    ("Kodukoristus", "Korterite ja majade koristus.",
+     "Koristame kodusid nii ühekordselt kui ka regulaarselt. Enne esimest korda lepime kokku, mis ruumid ja mis tööd on olulised."),
+    ("Kontorite koristus", "Büroode ja äripindade koristus.",
+     "Koristame kontoreid ja äripindu sobival ajal, ka õhtuti. Koristusgraafiku paneme kokku teie tööaja järgi."),
+    ("Suurpuhastus", "Põhjalik puhastus ja koristus pärast remonti.",
+     "Teeme suurpuhastust ja koristame pärast remonti: tolm, värviplekid ja ehitusprügi. Pärast seda on ruum kohe kasutatav."),
+    ("Akende pesu", "Akende ja klaaspindade pesu.",
+     "Peseme aknaid ja klaaspindu seest ja väljast. Kõrgemate akende puhul räägime enne läbi, kuidas neile ligi pääseb."),
+]
+SAMMUD_EHITUS = [
+    ("Ülevaatus", "Tuleme kohale, vaatame objekti ja projekti üle."),
+    ("Pakkumine", "Saad pakkumise koos tööde, materjalide ja ajakavaga."),
+    ("Ettevalmistus", "Lepime kokku algusaja ja valmistame objekti ette."),
+    ("Töö", "Ehitame kokkulepitud järjekorras ja anname vahepeal teada, kus ollakse."),
+    ("Üleandmine", "Vaatame tulemuse koos üle ja koristame enda järelt."),
+]
+SAMMUD_KAEVE = [
+    ("Ülevaatus", "Vaatame krundi üle ja kuulame, mida on vaja teha."),
+    ("Pakkumine", "Saad pakkumise koos töömahu ja ajakavaga."),
+    ("Ettevalmistus", "Selgitame välja trasside asukohad ja juurdepääsu."),
+    ("Töö", "Teeme kaeve- ja pinnasetööd kokkulepitud ajal."),
+    ("Üleandmine", "Korrastame ala ja vaatame tulemuse koos üle."),
+]
+SAMMUD_HALJASTUS = [
+    ("Ülevaatus", "Vaatame aia üle ja kuulame, mida soovid."),
+    ("Plaan", "Lepime kokku tööd, taimed ja ajakava."),
+    ("Töö", "Teeme aiatööd kokkulepitud ajal."),
+    ("Koristus", "Viime oksad ja jäätmed ära."),
+    ("Hooldus", "Soovi korral tuleme hooajal uuesti."),
+]
+SAMMUD_KORISTUS = [
+    ("Kokkulepe", "Räägime läbi ruumid, tööd ja sobiva aja."),
+    ("Pakkumine", "Saad hinna kas korra või kuu kaupa."),
+    ("Koristus", "Koristame kokkulepitud ajal oma vahenditega."),
+    ("Kontroll", "Vaatame enne lahkumist üle, et kõik on tehtud."),
+    ("Tagasiside", "Kui midagi jäi puudu, tuleme ja teeme korda."),
+]
+TEEB.update({"41001": "ehitab ja renoveerib", "43129": "teeb kaeve- ja pinnasetöid", "81301": "teeb haljastus- ja aiatöid",
+             "81211": "koristab kodusid ja kontoreid"})
+VORM_NAIDE.update({"41001": "Näiteks: vana eramaja, vaja vahetada katus ja uuendada fassaad",
+                   "43129": "Näiteks: vundamendi süvend 10 × 12 m ja kanalisatsioonitrass",
+                   "81301": "Näiteks: eramaja aed, vaja pügada hekk ja rajada muru",
+                   "81211": "Näiteks: kontor 120 m², koristus kaks korda nädalas"})
+KATEGOORIAD["ehitus"] = dict(
+    tood="Siia tulevad teie ehitatud ja renoveeritud objektide fotod. Ehitusfirma juurde tullakse tehtud tööde järgi.",
+    kontakt="Helista või kirjuta. Kirjelda lühidalt, mis hoonega on tegu ja mida on vaja teha.",
+    vorm_naide=VORM_NAIDE["41001"], teeb=TEEB["41001"], sammud="ehitus", tiitel="ehitus")
+KATEGOORIAD["kaeve"] = dict(
+    tood="Siia tulevad teie objektide fotod: süvendid, trassid ja korras krundid.",
+    kontakt="Helista või kirjuta. Kirjelda lühidalt, mis krundiga on tegu ja mida on vaja kaevata.",
+    vorm_naide=VORM_NAIDE["43129"], teeb=TEEB["43129"], sammud="kaeve", tiitel="kaevetööd")
+KATEGOORIAD["haljastus"] = dict(
+    tood="Siia tulevad teie hooldatud aedade ja rajatud muru fotod.",
+    kontakt="Helista või kirjuta. Kirjelda lühidalt, mis aiaga on tegu ja mida on vaja teha.",
+    vorm_naide=VORM_NAIDE["81301"], teeb=TEEB["81301"], sammud="haljastus", tiitel="haljastus")
+KATEGOORIAD["koristus"] = dict(
+    tood="Siia tulevad fotod teie koristatud ruumidest ja tagasiside klientidelt.",
+    kontakt="Helista või kirjuta. Kirjelda lühidalt, mis ruumid ja kui tihti on vaja koristada.",
+    vorm_naide=VORM_NAIDE["81211"], teeb=TEEB["81211"], sammud="koristus", tiitel="koristus")
+
 
 def teeb(a):
     return TEEB.get(a.get("teenused_voti") or "") or TEEB.get(a.get("emtak", "")) or kat(a)["teeb"]
@@ -281,7 +372,7 @@ def kat(a):
 
 
 def sammud(a):
-    return {"auto": SAMMUD_AUTO, "juuksur": SAMMUD_JUUKSUR, "elekter": SAMMUD_ELEKTER, "toru": SAMMUD_TORU}.get(kat(a)["sammud"], SAMMUD)
+    return {"auto": SAMMUD_AUTO, "juuksur": SAMMUD_JUUKSUR, "elekter": SAMMUD_ELEKTER, "toru": SAMMUD_TORU, "ehitus": SAMMUD_EHITUS, "kaeve": SAMMUD_KAEVE, "haljastus": SAMMUD_HALJASTUS, "koristus": SAMMUD_KORISTUS}.get(kat(a)["sammud"], SAMMUD)
 
 
 SAMMUD = [

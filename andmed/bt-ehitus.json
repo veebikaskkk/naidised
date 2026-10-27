@@ -1,0 +1,23 @@
+{
+  "nimi": "BT Ehitus OÜ",
+  "lyhinimi": "BT Ehitus",
+  "vorm": "OÜ",
+  "registrikood": "12927601",
+  "emtak": "41001",
+  "telefonid": [
+    "+372 55613236"
+  ],
+  "email": "btehitus@gmail.com",
+  "piirkond": "Tartumaa",
+  "piirkond_kus": "Tartumaal",
+  "linn_kus": "Tartumaal",
+  "aasta": "2015",
+  "tootajaid": 3,
+  "sissejuhatus": "Ehitame ja renoveerime maju Tartumaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "500",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-bt-ehitus",
+  "domeen": "btehitus.ee",
+  "kaive": "383764"
+}

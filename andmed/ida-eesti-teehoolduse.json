@@ -1,0 +1,23 @@
+{
+  "nimi": "Ida-Eesti Teehoolduse OÜ",
+  "lyhinimi": "Ida-Eesti Teehoolduse",
+  "vorm": "OÜ",
+  "registrikood": "16427019",
+  "emtak": "81301",
+  "telefonid": [
+    "+372 56474388"
+  ],
+  "email": "jyri.idaeesti@gmail.com",
+  "piirkond": "Ida-Virumaa",
+  "piirkond_kus": "Ida-Virumaal",
+  "linn_kus": "Ida-Virumaal",
+  "aasta": "2022",
+  "tootajaid": 2,
+  "sissejuhatus": "Teeme haljastus- ja aiatöid Ida-Virumaal: muru, hekid, puude hooldus ja hooajaline korrastus.",
+  "pakett": "500",
+  "kategooria": "haljastus",
+  "teenused_voti": "81301",
+  "kujundus": "f-ida-eesti-teehoolduse",
+  "domeen": "idaeestiteehoolduse.ee",
+  "kaive": "246967"
+}

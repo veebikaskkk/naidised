@@ -1,0 +1,23 @@
+{
+  "nimi": "Prisv Ehitus OÜ",
+  "lyhinimi": "Prisv Ehitus",
+  "vorm": "OÜ",
+  "registrikood": "14705997",
+  "emtak": "41001",
+  "telefonid": [
+    "+372 53422585"
+  ],
+  "email": "prisv.ehitus@gmail.com",
+  "piirkond": "Pärnu ja Pärnumaa",
+  "piirkond_kus": "Pärnus ja Pärnumaal",
+  "linn_kus": "Pärnus",
+  "aasta": "2019",
+  "tootajaid": 31,
+  "sissejuhatus": "Ehitame ja renoveerime maju Pärnus ja Pärnumaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "500",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-prisv-ehitus",
+  "domeen": "prisvehitus.ee",
+  "kaive": "3359824"
+}

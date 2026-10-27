@@ -1,0 +1,24 @@
+{
+  "nimi": "MIHEST OÜ",
+  "lyhinimi": "Mihest",
+  "vorm": "OÜ",
+  "registrikood": "12671024",
+  "emtak": "41001",
+  "telefonid": [
+    "+372 53510253",
+    "+372 53510265"
+  ],
+  "email": "mihest.kompanii@gmail.com",
+  "piirkond": "Tartu ja Tartumaa",
+  "piirkond_kus": "Tartus ja Tartumaal",
+  "linn_kus": "Tartus",
+  "aasta": "2014",
+  "tootajaid": 27,
+  "sissejuhatus": "Ehitame ja renoveerime maju Tartus ja Tartumaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "500",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-mihest",
+  "domeen": "mihest.ee",
+  "kaive": "1103500"
+}

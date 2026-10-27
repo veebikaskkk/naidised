@@ -1,0 +1,24 @@
+Näidislehtede fotod: Unsplash (https://unsplash.com/license), tasuta kasutamiseks ka äriliselt.
+
+ehitus-karkass.jpg  https://images.unsplash.com/photo-1587582423116-ec07293f0395
+ehitus-betoon.jpg  https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea
+ehitus-tellingud.jpg  https://images.unsplash.com/photo-1639953803381-e9c3f3a38253
+ehitus-seinad.jpg  https://images.unsplash.com/photo-1704742950992-9815a104820c
+ehitus-fassaad.jpg  https://images.unsplash.com/photo-1612935089040-89195ef54677
+ehitus-remont.jpg  https://images.unsplash.com/photo-1517581177682-a085bb7ffb15
+ehitus-pahtel.jpg  https://images.unsplash.com/photo-1768839725085-829e6ac7ac26
+ehitus-katus.jpg  https://images.unsplash.com/photo-1635424824849-1b09bdcc55b1
+ehitus-katus2.jpg  https://images.unsplash.com/photo-1635424709961-f3a150459ad4
+ehitus-tuba.jpg  https://images.unsplash.com/photo-1634586648651-f1fb9ec10d90
+kaeve-kopp.jpg  https://images.unsplash.com/photo-1583024011792-b165975b52f5
+kaeve-kraav.jpg  https://images.unsplash.com/photo-1652303713917-2666b8bee507
+kaeve-kopp2.jpg  https://images.unsplash.com/photo-1622082679766-c5912d9416eb
+kaeve-udu.jpg  https://images.unsplash.com/photo-1637669886956-bf0e1cc4f0d3
+haljastus-muru.jpg  https://images.unsplash.com/photo-1668120089662-42642838cfef
+haljastus-aed.jpg  https://images.unsplash.com/photo-1700689807667-82630348b301
+haljastus-rohi.jpg  https://images.unsplash.com/photo-1724556295135-ff92b9aa0a55
+haljastus-hoov.jpg  https://images.unsplash.com/photo-1621272156568-7306716648df
+koristus-pesu.jpg  https://images.unsplash.com/photo-1740657254989-42fe9c3b8cce
+koristus-aken.jpg  https://images.unsplash.com/photo-1581578731548-c64695cc6952
+koristus-tolm.jpg  https://images.unsplash.com/photo-1758273705627-937374bfa978
+koristus-pudel.jpg  https://images.unsplash.com/photo-1563453392212-326f5e854473

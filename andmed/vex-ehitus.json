@@ -1,0 +1,23 @@
+{
+  "nimi": "OÜ Vex Ehitus",
+  "lyhinimi": "Vex Ehitus",
+  "vorm": "OÜ",
+  "registrikood": "12575131",
+  "emtak": "41001",
+  "telefonid": [
+    "+372 56856588"
+  ],
+  "email": "vex.00@mail.ru",
+  "piirkond": "Narva ja Ida-Virumaa",
+  "piirkond_kus": "Narvas ja Ida-Virumaal",
+  "linn_kus": "Narvas",
+  "aasta": "2013",
+  "tootajaid": 6,
+  "sissejuhatus": "Ehitame ja renoveerime maju Narvas ja Ida-Virumaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "250",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-vex-ehitus",
+  "domeen": "vexehitus.ee",
+  "kaive": "561850"
+}

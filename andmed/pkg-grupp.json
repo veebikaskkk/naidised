@@ -1,0 +1,23 @@
+{
+  "nimi": "PKG Grupp OÜ",
+  "lyhinimi": "PKG Grupp",
+  "vorm": "OÜ",
+  "registrikood": "14155095",
+  "emtak": "43129",
+  "telefonid": [
+    "+372 56211776"
+  ],
+  "email": "pkg.grupp@gmail.com",
+  "piirkond": "Järvamaa",
+  "piirkond_kus": "Järvamaal",
+  "linn_kus": "Järvamaal",
+  "aasta": "2016",
+  "tootajaid": 7,
+  "sissejuhatus": "Teeme kaeve- ja pinnasetöid Järvamaal: vundamendi süvendid, trassid, kraavid ja krundi planeerimine.",
+  "pakett": "250",
+  "kategooria": "kaeve",
+  "teenused_voti": "43129",
+  "kujundus": "f-pkg-grupp",
+  "domeen": "pkggrupp.ee",
+  "kaive": "582619"
+}
