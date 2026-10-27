@@ -14,7 +14,7 @@ TEENUSED = {
         ("Krohvimine", "Seinte ja lagede tasandamine lubi-, tsement- ja kipskrohviga.",
          "Krohvime seinu ja lagesid nii uusehitistes kui ka vanades majades. Krohvi tüüp valitakse aluspinna ja ruumi järgi: kuiva ruumi jaoks üks, niiske ja vana müüri jaoks teine. Enne tööd vaatame aluspinna üle ja lepime kokku, milline peab tulemus olema."),
         ("Pahteldus", "Sile pind värvimiseks või tapeedi alla.",
-         "Pahteldame ja lihvime pinnad kokkulepitud siledusastmeni. Mida rohkem valgust seinale langeb, seda siledam peab pind olema, ja see lepitakse kokku enne tööde algust. Pind jääb valmis värviks või tapeediks."),
+         "Pahteldame ja lihvime pinnad kokkulepitud siledusastmeni. Mida rohkem valgust seinale langeb, seda siledam peab pind olema. Siledusaste lepitakse kokku enne tööde algust. Pind jääb valmis värviks või tapeediks."),
         ("Värvimine", "Seinte ja lagede kruntimine ja värvimine.",
          "Krundime ja värvime seinad ja laed, sealhulgas niisked ruumid. Värvi ja läike valime koos tellijaga ruumi kasutuse järgi. Enne värvimist katame põrandad ja mööbli."),
         ("Dekoratiivkrohv", "Struktuur- ja dekoratiivkrohvid.",

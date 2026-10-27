@@ -13,9 +13,11 @@ import kujundused as K
 import kujundused_auto
 import kujundused_juuks
 import kujundused_elekter
+import kujundused_viim2
 K.KUJUNDUSED.update(kujundused_auto.K)
 K.KUJUNDUSED.update(kujundused_juuks.K)
 K.KUJUNDUSED.update(kujundused_elekter.K)
+K.KUJUNDUSED.update(kujundused_viim2.K)
 
 BASE_CSS = """
 *{box-sizing:border-box}
