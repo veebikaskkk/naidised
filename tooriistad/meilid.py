@@ -51,7 +51,6 @@ def meil(a, s):
     keskel = ("Seal on teie teenused, broneerimiskalender ja kontaktid ning see töötab ka telefonis." if a["pakett"] == "400" else
               "Seal on teie teenused ja kontaktid ning see töötab ka telefonis.")
     keskel += " Kui see meeldib, paneme selle teie oma aadressile üles ja lisame pildid teie päris töödest."
-    lopp = "Kui see teid ei huvita, vastake lihtsalt ei ja ma rohkem ei kirjuta."
     domeen = a.get("domeen") or ""
     aadress = f" Valmis lehel on teie oma aadress, näiteks {domeen}." if domeen else ""
     keha_html = (
@@ -59,8 +58,8 @@ def meil(a, s):
         f'<p><a href="{link}"><img src="{pilt}" width="560" height="350" alt="{E(lyhi)} näidiskoduleht" '
         f'style="display:block;width:100%;max-width:560px;height:auto;border:1px solid #dddddd;border-radius:6px"></a></p>'
         f'<p style="font-size:13px;color:#555555;margin-top:-6px">Vaata lehte: <a href="{link}">{E(lyhi)} näidiskoduleht</a>.{E(aadress)}</p>'
-        f'<p>{E(keskel)}</p><p>{E(hind)}</p><p>{E(lopp)}</p>')
-    keha_tekst = f"Tere!\n\n{sissejuhatus}\n{link}\n{aadress.strip()}\n\n{keskel}\n\n{hind}\n\n{lopp}"
+        f'<p>{E(keskel)}</p><p>{E(hind)}</p>')
+    keha_tekst = f"Tere!\n\n{sissejuhatus}\n{link}\n{aadress.strip()}\n\n{keskel}\n\n{hind}"
     return pealkiri, keha_html, keha_tekst, link, pilt
 
 
