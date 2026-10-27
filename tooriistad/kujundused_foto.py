@@ -1514,7 +1514,7 @@ FOTOLEHED = [
 "f-d-r-byggmestari",
 "ehitus",
 "kaar",
-"D.r.byggmestari. Ehitus Pärnus.",
+"D.R. Byggmestari. Ehitus Pärnus.",
 179
 ],
 [
