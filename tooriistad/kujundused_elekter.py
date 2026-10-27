@@ -197,7 +197,7 @@ def hero_triibud(a, d):
 .h-trii-ribad span{flex:1}.h-trii-ribad span:nth-child(1){background:#7A4A26}.h-trii-ribad span:nth-child(2){background:#1A1A1A}
 .h-trii-ribad span:nth-child(3){background:#8C8C8C}.h-trii-ribad span:nth-child(4){background:#2F6FD6}
 .h-trii-ribad span:nth-child(5){background:repeating-linear-gradient(0deg,#3D9A3D 0 28px,#F2D21B 28px 56px)}
-.h-trii-sisu{position:relative}.h-trii-sisu>*{max-width:min(640px,62%)}
+.h-trii-sisu{position:relative}.h-trii-sisu>*{max-width:min(640px,62%)}.h-trii h1{font-size:clamp(32px,5vw,72px)}
 @media (max-width:760px){.h-trii-ribad{width:100%;height:14px;top:auto}.h-trii-sisu>*{max-width:none}}"""
     return h, c
 

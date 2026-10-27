@@ -237,7 +237,7 @@ def hero_olitilk(a, d):
     c = """.h-oli{background:#17130E;color:#fff;padding:72px 0 96px}
 .h-oli-sisu{display:grid;grid-template-columns:clamp(140px,20vw,240px) minmax(0,1fr);gap:64px;align-items:center}
 .h-tilk{width:100%;height:auto}
-.h-oli h1{font-size:clamp(30px,6.6vw,96px);line-height:.95;font-weight:800;letter-spacing:-.035em;margin:0 0 24px}
+.h-oli h1{font-size:clamp(28px,5.8vw,84px);line-height:.95;font-weight:800;letter-spacing:-.035em;margin:0 0 24px}
 .h-oli .lead{color:#EADFCB}
 .h-oli .nupp.pea{background:#E8A93A;color:#17130E}
 .h-oli .nupp.teine{color:#fff}
@@ -275,7 +275,7 @@ def hero_noolemark(a, d):
     c = """.h-nool{background:#B4141B;color:#fff;padding-bottom:88px}
 .h-noolerida{height:70px;background:linear-gradient(135deg,transparent 0 50%,#fff 50% 65%,transparent 65%) 0 0/70px 70px,linear-gradient(45deg,transparent 0 35%,#fff 35% 50%,transparent 50%) 0 0/70px 70px,#B4141B}
 .h-nool-sisu{padding-top:64px}
-.h-nool h1{font-size:clamp(30px,7.4vw,108px);line-height:1;font-weight:900;letter-spacing:-.03em;margin:0 0 24px;text-transform:uppercase;max-width:10em}
+.h-nool h1{font-size:clamp(28px,6.4vw,92px);line-height:1;font-weight:900;letter-spacing:-.03em;margin:0 0 24px;text-transform:uppercase;max-width:none}
 .h-nool .lead{color:#FBE3E4}
 .h-nool .nupp.pea{background:#fff;color:#8E0F15}
 .h-nool .nupp.teine{color:#fff}"""

@@ -460,7 +460,8 @@ def hero_rullitriibud(a, d):
 .h-rull-sisu{position:relative}
 .h-rull h1{font-size:clamp(44px,6.2vw,86px);line-height:.95;font-weight:800;letter-spacing:-.03em;margin:0 0 24px;max-width:8.5em}
 .h-rull .lead{max-width:24em;background:rgba(244,247,242,.92);padding:4px 0}
-@media (max-width:760px){.h-triip{width:80px;opacity:.35}}"""
+.h-rull .wrap{position:relative;z-index:1}
+@media (max-width:760px){.h-triip{width:80px;opacity:.3}.h-rull h1{font-size:clamp(32px,9vw,44px)}}"""
     return h, c
 
 

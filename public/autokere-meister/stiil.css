@@ -63,7 +63,8 @@ p{margin:0 0 1em}
 .tekst-leht{max-width:44em}
 .tekst-leht h2{font-size:26px;margin-top:32px}
 @media (max-width:900px){.kontaktid{grid-template-columns:1fr}.teenus-pikk{grid-template-columns:1fr;gap:8px}.galerii-suur{grid-template-columns:1fr 1fr}}
-@media (max-width:480px){body{font-size:16px}.wrap{padding:0 18px}.plokk{padding:72px 0}.galerii-suur{gap:10px}.kohataide span{font-size:12px}}
+@media (max-width:480px){body{font-size:16px}.wrap{padding:0 18px}.plokk{padding:72px 0}.galerii-suur{gap:10px}.kohataide span{font-size:12px}h2{font-size:clamp(22px,6.6vw,34px)}.suur-tel{font-size:clamp(20px,5.4vw,36px)}.lehe-pais h1{font-size:clamp(32px,9vw,44px)}}
+h1,h2,h3{overflow-wrap:break-word}
 .vorm-yhel{margin-top:40px;max-width:720px}
 .vorm-yhel h3{font-size:26px;font-family:var(--pea),sans-serif;font-weight:var(--pea-kaal);letter-spacing:var(--pea-ls);margin:0 0 4px}
 .sek-broneeri{background:var(--surface)}
