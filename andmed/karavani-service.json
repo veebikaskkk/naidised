@@ -1,0 +1,24 @@
+{
+  "nimi": "Osaühing Karavani Service",
+  "lyhinimi": "Karavani Service",
+  "vorm": "OÜ",
+  "registrikood": "11360718",
+  "emtak": "95311",
+  "telefonid": [
+    "+372 5291878"
+  ],
+  "email": "karavanipesulad@gmail.com",
+  "piirkond": "Tallinn ja Harjumaa",
+  "piirkond_kus": "Tallinnas ja Harjumaal",
+  "linn_kus": "Tallinnas",
+  "aasta": "2007",
+  "tootajaid": 1,
+  "sissejuhatus": "Peseme, poleerime ja puhastame autosid Tallinnas ja Harjumaal, nii seest kui väljast.",
+  "pakett": "500",
+  "kategooria": "auto",
+  "teenused_voti": "95311-detail",
+  "kujundus": "f-karavani-service",
+  "domeen": "karavaniservice.ee",
+  "kaive": "62557",
+  "h1": "Auto puhastus seest ja väljast."
+}

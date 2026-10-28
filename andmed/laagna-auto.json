@@ -1,0 +1,25 @@
+{
+  "nimi": "Osaühing Laagna-Auto",
+  "lyhinimi": "Laagna-Auto",
+  "vorm": "OÜ",
+  "registrikood": "10142630",
+  "emtak": "95311",
+  "telefonid": [
+    "+372 5010191",
+    "+372 6343645"
+  ],
+  "email": "laagnaou@gmail.com",
+  "piirkond": "Tallinn ja Harjumaa",
+  "piirkond_kus": "Tallinnas ja Harjumaal",
+  "linn_kus": "Tallinnas",
+  "aasta": "1997",
+  "tootajaid": 4,
+  "sissejuhatus": "Hooldame ja remondime autosid Tallinnas ja Harjumaal. Enne tööd vaatame auto üle ja ütleme, mida on vaja teha ja mis see maksab.",
+  "pakett": "250",
+  "kategooria": "auto",
+  "teenused_voti": "95311",
+  "kujundus": "f-laagna-auto",
+  "domeen": "laagnaauto.ee",
+  "kaive": "50591",
+  "h1": "Auto hooldus ja remont Tallinnas."
+}

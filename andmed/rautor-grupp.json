@@ -1,0 +1,24 @@
+{
+  "nimi": "Osaühing RAUTOR GRUPP",
+  "lyhinimi": "Rautor Grupp",
+  "vorm": "OÜ",
+  "registrikood": "10933075",
+  "emtak": "95311",
+  "telefonid": [
+    "+372 5185467"
+  ],
+  "email": "rautorgrupp@gmail.com",
+  "piirkond": "Tallinn ja Harjumaa",
+  "piirkond_kus": "Tallinnas ja Harjumaal",
+  "linn_kus": "Tallinnas",
+  "aasta": "2003",
+  "tootajaid": 1,
+  "sissejuhatus": "Hooldame ja remondime autosid Tallinnas ja Harjumaal. Enne tööd vaatame auto üle ja ütleme, mida on vaja teha ja mis see maksab.",
+  "pakett": "250",
+  "kategooria": "auto",
+  "teenused_voti": "95311",
+  "kujundus": "f-rautor-grupp",
+  "domeen": "rautorgrupp.ee",
+  "kaive": "46024",
+  "h1": "Autoteenindus Tallinnas."
+}

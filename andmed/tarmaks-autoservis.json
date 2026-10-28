@@ -1,0 +1,25 @@
+{
+  "nimi": "Tarmaks Autoservis OÜ",
+  "lyhinimi": "Tarmaks Autoservis",
+  "vorm": "OÜ",
+  "registrikood": "14576301",
+  "emtak": "95311",
+  "telefonid": [
+    "+372 5093196",
+    "+372 5063096"
+  ],
+  "email": "tarmaksautoservis@gmail.com",
+  "piirkond": "Kohtla-Järve ja Ida-Virumaa",
+  "piirkond_kus": "Kohtla-Järvel ja Ida-Virumaal",
+  "linn_kus": "Kohtla-Järvel",
+  "aasta": "2018",
+  "tootajaid": 2,
+  "sissejuhatus": "Hooldame ja remondime autosid Kohtla-Järvel ja Ida-Virumaal. Enne tööd vaatame auto üle ja ütleme, mida on vaja teha ja mis see maksab.",
+  "pakett": "500",
+  "kategooria": "auto",
+  "teenused_voti": "95311",
+  "kujundus": "f-tarmaks-autoservis",
+  "domeen": "tarmaksautoservis.ee",
+  "kaive": "57216",
+  "h1": "Autoremont Kohtla-Järvel."
+}

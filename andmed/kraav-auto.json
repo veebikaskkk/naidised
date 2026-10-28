@@ -1,0 +1,24 @@
+{
+  "nimi": "Kraav Auto OÜ",
+  "lyhinimi": "Kraav Auto",
+  "vorm": "OÜ",
+  "registrikood": "14678622",
+  "emtak": "95311",
+  "telefonid": [
+    "+372 58581105"
+  ],
+  "email": "kraavauto@gmail.com",
+  "piirkond": "Hiiumaa",
+  "piirkond_kus": "Hiiumaal",
+  "linn_kus": "Hiiumaal",
+  "aasta": "2019",
+  "tootajaid": 2,
+  "sissejuhatus": "Hooldame ja remondime autosid Hiiumaal. Enne tööd vaatame auto üle ja ütleme, mida on vaja teha ja mis see maksab.",
+  "pakett": "500",
+  "kategooria": "auto",
+  "teenused_voti": "95311",
+  "kujundus": "f-kraav-auto",
+  "domeen": "kraavauto.ee",
+  "kaive": "71116",
+  "h1": "Auto hooldus ja remont Hiiumaal."
+}

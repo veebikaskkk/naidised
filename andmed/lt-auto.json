@@ -1,0 +1,24 @@
+{
+  "nimi": "LT Auto OÜ",
+  "lyhinimi": "LT Auto",
+  "vorm": "OÜ",
+  "registrikood": "12784343",
+  "emtak": "95311",
+  "telefonid": [
+    "+372 53909188"
+  ],
+  "email": "lennart.ltauto@gmail.com",
+  "piirkond": "Pärnu ja Pärnumaa",
+  "piirkond_kus": "Pärnus ja Pärnumaal",
+  "linn_kus": "Pärnus",
+  "aasta": "2015",
+  "tootajaid": 1,
+  "sissejuhatus": "Hooldame ja remondime autosid Pärnus ja Pärnumaal. Enne tööd vaatame auto üle ja ütleme, mida on vaja teha ja mis see maksab.",
+  "pakett": "500",
+  "kategooria": "auto",
+  "teenused_voti": "95311",
+  "kujundus": "f-lt-auto",
+  "domeen": "ltauto.ee",
+  "kaive": "72719",
+  "h1": "Hooldus ja diagnostika Pärnus."
+}

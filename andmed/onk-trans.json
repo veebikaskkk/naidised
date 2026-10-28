@@ -1,0 +1,24 @@
+{
+  "nimi": "Osaühing ONK-TRANS",
+  "lyhinimi": "ONK-Trans",
+  "vorm": "OÜ",
+  "registrikood": "10706497",
+  "emtak": "95311",
+  "telefonid": [
+    "+372 6212577"
+  ],
+  "email": "onk-trans@mail.ru",
+  "piirkond": "Tallinn ja Harjumaa",
+  "piirkond_kus": "Tallinnas ja Harjumaal",
+  "linn_kus": "Tallinnas",
+  "aasta": "2000",
+  "tootajaid": 2,
+  "sissejuhatus": "Hooldame ja remondime autosid Tallinnas ja Harjumaal. Enne tööd vaatame auto üle ja ütleme, mida on vaja teha ja mis see maksab.",
+  "pakett": "500",
+  "kategooria": "auto",
+  "teenused_voti": "95311",
+  "kujundus": "f-onk-trans",
+  "domeen": "onktrans.ee",
+  "kaive": "67985",
+  "h1": "Auto hooldus ja remont Tallinnas."
+}

@@ -22,6 +22,9 @@ FOTOD = {
     "toru-kliima": ["toru-soojuspump", "toru-katlaruum", "toru-valamu"],
     "toru-ahi": ["ahi-kamin", "ahi-tuli"],
     "viimistlus": ["viim-rull", "viim-varv", "ehitus-pahtel", "ehitus-remont"],
+    "auto": ["auto-padrun", "auto-alt", "auto-mutrivoti", "auto-pidur"],
+    "auto-rehv": ["auto-rehvid", "auto-pidur", "auto-padrun"],
+    "auto-detail": ["auto-pesu", "auto-armatuur", "auto-padrun"],
 }
 
 
@@ -241,6 +244,8 @@ VARVID = {
     "elekter": [("#1D4ED8", "#FACC15", "#0F172A"), ("#B45309", "#FDE047", "#1C1917"), ("#0F766E", "#FDE047", "#0F1F1C"), ("#4338CA", "#FCD34D", "#111827")],
     "toru": [("#0369A1", "#7DD3FC", "#0C1A2B"), ("#B91C1C", "#FCA5A5", "#1B1B1F"), ("#0E7490", "#A5F3FC", "#0B1F2A"), ("#C2410C", "#FDBA74", "#1C1917")],
     "viimistlus": [("#1D4ED8", "#FDE047", "#14213D"), ("#B4531F", "#FDBA74", "#2A1B12"), ("#0F766E", "#5EEAD4", "#0F1F1C"), ("#86198F", "#F0ABFC", "#2A1E2E")],
+    "auto": [("#B91C1C", "#FCA5A5", "#18181B"), ("#1D4ED8", "#FACC15", "#0F172A"), ("#C2410C", "#FDBA74", "#1C1917"), ("#0F766E", "#5EEAD4", "#0F1F1C"),
+             ("#4338CA", "#FCD34D", "#111827"), ("#A16207", "#FDE68A", "#1A1A1A")],
     "koristus": [("#0369A1", "#7DD3FC", "#0C1A2B"), ("#0E7490", "#A5F3FC", "#0B1F2A"), ("#7C3AED", "#C4B5FD", "#1E1B2E"), ("#BE185D", "#F9A8D4", "#1F1420")],
 }
 
@@ -3478,4 +3483,411 @@ UMBER = [
 ]
 
 for _r in UMBER:
+    lisa(*_r)
+
+
+# Autoteenindused kolmandalt kontolt (alates 29.10).
+AUTOLEHED = [
+[
+"f-autorem-dk",
+"auto",
+"taust",
+"Autoremont Rakveres.",
+600
+],
+[
+"f-aldova",
+"auto",
+"kaar",
+"Auto hooldus ja remont Võrumaal.",
+601
+],
+[
+"f-kttt",
+"auto",
+"print",
+"Hooldus ja diagnostika Valgas.",
+602
+],
+[
+"f-remotors",
+"auto",
+"riba",
+"Teie auto remont Raplamaal.",
+603
+],
+[
+"f-mertaks",
+"auto",
+"aasta",
+"Autoteenindus Tallinnas.",
+604
+],
+[
+"f-tarmaks-autoservis",
+"auto",
+"pool",
+"Autoremont Kohtla-Järvel.",
+605
+],
+[
+"f-alicron-grupp",
+"auto",
+"duo",
+"Auto hooldus ja remont Kohtla-Järvel.",
+606
+],
+[
+"f-chippro",
+"auto",
+"ring",
+"Hooldus ja diagnostika Viljandimaal.",
+607
+],
+[
+"f-raudvelg",
+"auto-rehv",
+"raam",
+"Rehvivahetus Viljandimaal.",
+609
+],
+[
+"f-olympic-car-fest",
+"auto",
+"diag",
+"Autoteenindus Harjumaal.",
+609
+],
+[
+"f-mt-autospa",
+"auto-detail",
+"kaart",
+"Puhas auto Tartumaal.",
+610
+],
+[
+"f-karavani-service",
+"auto-detail",
+"kolm",
+"Auto puhastus seest ja väljast.",
+612
+],
+[
+"f-kulasepp",
+"auto",
+"taust",
+"Hooldus ja diagnostika Tartumaal.",
+612
+],
+[
+"f-repairit",
+"auto",
+"kaar",
+"Teie auto remont Tallinnas.",
+613
+],
+[
+"f-anpo-teenused",
+"auto",
+"print",
+"Autoteenindus Harjumaal.",
+614
+],
+[
+"f-serdna-servis",
+"auto",
+"riba",
+"Autoremont Tartus.",
+615
+],
+[
+"f-onk-trans",
+"auto",
+"aasta",
+"Auto hooldus ja remont Tallinnas.",
+616
+],
+[
+"f-tehrem",
+"auto",
+"pool",
+"Hooldus ja diagnostika Saaremaal.",
+617
+],
+[
+"f-scalor",
+"auto",
+"duo",
+"Teie auto remont Harjumaal.",
+618
+],
+[
+"f-vaivara-transservis",
+"auto",
+"ring",
+"Autoteenindus Narva-Jõesuus.",
+619
+],
+[
+"f-sepresto",
+"auto",
+"raam",
+"Autoremont Lääne-Virumaal.",
+620
+],
+[
+"f-laagna-auto",
+"auto",
+"diag",
+"Auto hooldus ja remont Tallinnas.",
+621
+],
+[
+"f-sanderauto",
+"auto",
+"kaart",
+"Hooldus ja diagnostika Jõgevamaal.",
+622
+],
+[
+"f-altek-pro",
+"auto",
+"kolm",
+"Teie auto remont Ida-Virumaal.",
+623
+],
+[
+"f-viraks",
+"auto",
+"taust",
+"Autoteenindus Tallinnas.",
+624
+],
+[
+"f-oktrans",
+"auto",
+"kaar",
+"Autoremont Maardus.",
+625
+],
+[
+"f-amstell",
+"auto",
+"print",
+"Auto hooldus ja remont Tallinnas.",
+626
+],
+[
+"f-kohalik-autohoole",
+"auto",
+"riba",
+"Hooldus ja diagnostika Pärnumaal.",
+627
+],
+[
+"f-dafu-trans",
+"auto",
+"aasta",
+"Teie auto remont Tallinnas.",
+628
+],
+[
+"f-rautor-grupp",
+"auto",
+"pool",
+"Autoteenindus Tallinnas.",
+629
+],
+[
+"f-sandla-motoservice",
+"auto",
+"duo",
+"Autoremont Saaremaal.",
+630
+],
+[
+"f-auto-korrashoid",
+"auto",
+"ring",
+"Auto hooldus ja remont Viljandis.",
+631
+],
+[
+"f-garageplus",
+"auto",
+"raam",
+"Hooldus ja diagnostika Harjumaal.",
+632
+],
+[
+"f-48cars",
+"auto",
+"diag",
+"Teie auto remont Harjumaal.",
+633
+],
+[
+"f-krei-auto",
+"auto",
+"kaart",
+"Autoteenindus Harjumaal.",
+634
+],
+[
+"f-viimserv",
+"auto",
+"kolm",
+"Autoremont Tallinnas.",
+635
+],
+[
+"f-yescar",
+"auto",
+"taust",
+"Auto hooldus ja remont Põlvamaal.",
+636
+],
+[
+"f-tku-teenused",
+"auto",
+"kaar",
+"Hooldus ja diagnostika Saaremaal.",
+637
+],
+[
+"f-elten-motors",
+"auto",
+"print",
+"Teie auto remont Tallinnas.",
+638
+],
+[
+"f-helcarteam",
+"auto",
+"riba",
+"Autoteenindus Saaremaal.",
+639
+],
+[
+"f-tauriko",
+"auto",
+"aasta",
+"Autoremont Raplamaal.",
+640
+],
+[
+"f-kraav-auto",
+"auto",
+"pool",
+"Auto hooldus ja remont Hiiumaal.",
+641
+],
+[
+"f-lt-auto",
+"auto",
+"duo",
+"Hooldus ja diagnostika Pärnus.",
+642
+],
+[
+"f-mechanic-car-service",
+"auto",
+"ring",
+"Teie auto remont Tallinnas.",
+643
+],
+[
+"f-saare-diisel",
+"auto",
+"raam",
+"Autoteenindus Saaremaal.",
+644
+],
+[
+"f-teorein",
+"auto",
+"diag",
+"Autoremont Valgamaal.",
+645
+],
+[
+"f-vo-way",
+"auto",
+"kaart",
+"Auto hooldus ja remont Ida-Virumaal.",
+646
+],
+[
+"f-klereke",
+"auto",
+"kolm",
+"Hooldus ja diagnostika Tallinnas.",
+647
+],
+[
+"f-merksani",
+"auto",
+"taust",
+"Teie auto remont Põlvas.",
+648
+],
+[
+"f-vahurel",
+"auto",
+"kaar",
+"Autoteenindus Lääne-Virumaal.",
+649
+],
+[
+"f-dkmotors",
+"auto",
+"print",
+"Autoremont Pärnumaal.",
+650
+],
+[
+"f-rehvi-maantee",
+"auto-rehv",
+"riba",
+"Rehvid ja veljed Tallinnas.",
+651
+],
+[
+"f-revada-remont",
+"auto",
+"aasta",
+"Hooldus ja diagnostika Tallinnas.",
+652
+],
+[
+"f-ra-detailing",
+"auto-detail",
+"pool",
+"Auto detailing Raplas.",
+654
+],
+[
+"f-jp-garage",
+"auto",
+"duo",
+"Autoteenindus Harjumaal.",
+654
+],
+[
+"f-lavenko",
+"auto",
+"ring",
+"Autoremont Jõgevamaal.",
+655
+],
+[
+"f-tfs-ceramic",
+"auto-detail",
+"raam",
+"Poleerimine ja keraamiline kaitse.",
+657
+]
+]
+
+for _r in AUTOLEHED:
     lisa(*_r)

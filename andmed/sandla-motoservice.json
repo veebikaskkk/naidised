@@ -1,0 +1,25 @@
+{
+  "nimi": "Sandla motoservice OÜ",
+  "lyhinimi": "Sandla Motoservice",
+  "vorm": "OÜ",
+  "registrikood": "16396388",
+  "emtak": "95311",
+  "telefonid": [
+    "+372 56965027",
+    "+372 5149047"
+  ],
+  "email": "sandlamotoservice@gmail.com",
+  "piirkond": "Saaremaa",
+  "piirkond_kus": "Saaremaal",
+  "linn_kus": "Saaremaal",
+  "aasta": "2021",
+  "tootajaid": 1,
+  "sissejuhatus": "Hooldame ja remondime autosid Saaremaal. Enne tööd vaatame auto üle ja ütleme, mida on vaja teha ja mis see maksab.",
+  "pakett": "250",
+  "kategooria": "auto",
+  "teenused_voti": "95311",
+  "kujundus": "f-sandla-motoservice",
+  "domeen": "sandlamotoservice.ee",
+  "kaive": "45964",
+  "h1": "Autoremont Saaremaal."
+}

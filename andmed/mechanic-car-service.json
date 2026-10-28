@@ -1,0 +1,24 @@
+{
+  "nimi": "MECHANIC CAR SERVICE OÜ",
+  "lyhinimi": "Mechanic Car Service",
+  "vorm": "OÜ",
+  "registrikood": "12178105",
+  "emtak": "95311",
+  "telefonid": [
+    "+372 56616116"
+  ],
+  "email": "mechaniccs@hotmail.com",
+  "piirkond": "Tallinn ja Harjumaa",
+  "piirkond_kus": "Tallinnas ja Harjumaal",
+  "linn_kus": "Tallinnas",
+  "aasta": "2011",
+  "tootajaid": 2,
+  "sissejuhatus": "Hooldame ja remondime autosid Tallinnas ja Harjumaal. Enne tööd vaatame auto üle ja ütleme, mida on vaja teha ja mis see maksab.",
+  "pakett": "500",
+  "kategooria": "auto",
+  "teenused_voti": "95311",
+  "kujundus": "f-mechanic-car-service",
+  "domeen": "mechaniccarservice.ee",
+  "kaive": "72831",
+  "h1": "Teie auto remont Tallinnas."
+}

@@ -1,0 +1,24 @@
+{
+  "nimi": "KÜLASEPP OÜ",
+  "lyhinimi": "Külasepp",
+  "vorm": "OÜ",
+  "registrikood": "14100126",
+  "emtak": "95311",
+  "telefonid": [
+    "+372 5028352"
+  ],
+  "email": "kulasepp@gmail.com",
+  "piirkond": "Tartumaa",
+  "piirkond_kus": "Tartumaal",
+  "linn_kus": "Tartumaal",
+  "aasta": "2016",
+  "tootajaid": 2,
+  "sissejuhatus": "Hooldame ja remondime autosid Tartumaal. Enne tööd vaatame auto üle ja ütleme, mida on vaja teha ja mis see maksab.",
+  "pakett": "500",
+  "kategooria": "auto",
+  "teenused_voti": "95311",
+  "kujundus": "f-kulasepp",
+  "domeen": "kulasepp.ee",
+  "kaive": "63230",
+  "h1": "Hooldus ja diagnostika Tartumaal."
+}

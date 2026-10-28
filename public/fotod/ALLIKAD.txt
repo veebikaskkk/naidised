@@ -44,3 +44,10 @@ viim-varv.jpg  https://images.unsplash.com/photo-1688372199140-cade7ae820fe
 ahi-kamin.jpg  https://images.unsplash.com/photo-1678274909137-ae0677d24a9b
 ahi-tuli.jpg  https://images.unsplash.com/photo-1648332202349-a1ca4f99ee0c
 toru-soojuspump.jpg  https://images.unsplash.com/photo-1700124113583-81aa99ea2aa2 (tootja logo kaetud)
+auto-mutrivoti.jpg  https://images.unsplash.com/photo-1619642751034-765dfdf7c58e
+auto-alt.jpg  https://images.unsplash.com/photo-1643700973089-baa86a1ab9ee
+auto-padrun.jpg  https://images.unsplash.com/photo-1775590766345-c117265f0c1b
+auto-rehvid.jpg  https://images.unsplash.com/photo-1764699186616-8f707281e4f3
+auto-pidur.jpg  https://images.unsplash.com/photo-1760317890314-e964ffd7e6a6
+auto-pesu.jpg  https://images.unsplash.com/photo-1694678505383-676d78ea3b96
+auto-armatuur.jpg  https://images.unsplash.com/photo-1771491237218-cbd4a707497e
