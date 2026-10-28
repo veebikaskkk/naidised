@@ -1,0 +1,24 @@
+{
+  "nimi": "Osaühing Elekto HPN",
+  "lyhinimi": "Elekto HPN",
+  "vorm": "OÜ",
+  "registrikood": "10867757",
+  "emtak": "43211",
+  "telefonid": [
+    "+372 56973346"
+  ],
+  "email": "elekto.joonas@gmail.com",
+  "piirkond": "Tartumaa",
+  "piirkond_kus": "Tartumaal",
+  "linn_kus": "Tartumaal",
+  "aasta": "2002",
+  "tootajaid": 2,
+  "sissejuhatus": "Teeme elektritöid Tartumaal: juhtmestik, kilbid, valgustus ja rikked. Enne tööd vaatame objekti üle ja ütleme hinna.",
+  "pakett": "500",
+  "kategooria": "elekter",
+  "teenused_voti": "43211",
+  "kujundus": "f-elekto-hpn",
+  "domeen": "elektohpn.ee",
+  "kaive": "110151",
+  "h1": "Elektritööd kodus ja ettevõttes."
+}

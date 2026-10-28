@@ -3891,3 +3891,431 @@ AUTOLEHED = [
 
 for _r in AUTOLEHED:
     lisa(*_r)
+
+
+# Elektrikud kolmandalt kontolt (4.–6.11).
+ELEKTERLEHED = [
+[
+"f-ikiti-grupp",
+"elekter",
+"riba",
+"Elektritööd Võrumaal.",
+700
+],
+[
+"f-utpro",
+"elekter",
+"print",
+"Elektrik Tallinnas.",
+701
+],
+[
+"f-installor",
+"elekter",
+"kaar",
+"Elektripaigaldus ja remont Keilas.",
+702
+],
+[
+"f-vigral",
+"elekter",
+"taust",
+"Elektritööd kodus ja ettevõttes.",
+703
+],
+[
+"f-baltic-anur",
+"elekter",
+"kolm",
+"Juhtmestik, kilbid ja valgustus Tallinnas.",
+704
+],
+[
+"f-sahkomees",
+"elekter",
+"kaart",
+"Elektritööd Tartumaal.",
+705
+],
+[
+"f-nzelekter",
+"elekter",
+"diag",
+"Elektrik Tallinnas.",
+706
+],
+[
+"f-dielekter",
+"elekter",
+"raam",
+"Elektripaigaldus ja remont Tallinnas.",
+707
+],
+[
+"f-jarvelo",
+"elekter",
+"ring",
+"Elektritööd kodus ja ettevõttes.",
+708
+],
+[
+"f-skat-elekter",
+"elekter",
+"duo",
+"Juhtmestik, kilbid ja valgustus Tallinnas.",
+709
+],
+[
+"f-elwepro",
+"elekter",
+"pool",
+"Elektritööd Pärnus.",
+710
+],
+[
+"f-voltexpert",
+"elekter",
+"aasta",
+"Elektrik Tallinnas.",
+711
+],
+[
+"f-electrical-team",
+"elekter",
+"riba",
+"Elektripaigaldus ja remont Kohtla-Järvel.",
+712
+],
+[
+"f-regina-elekter",
+"elekter",
+"print",
+"Elektritööd kodus ja ettevõttes.",
+713
+],
+[
+"f-tarmik",
+"elekter",
+"kaar",
+"Juhtmestik, kilbid ja valgustus Harjumaal.",
+714
+],
+[
+"f-electrico-solution",
+"elekter",
+"taust",
+"Elektritööd Kohtla-Järvel.",
+715
+],
+[
+"f-brentel",
+"elekter",
+"kolm",
+"Elektrik Pärnus.",
+716
+],
+[
+"f-aapol",
+"elekter",
+"kaart",
+"Elektripaigaldus ja remont Pärnus.",
+717
+],
+[
+"f-arturi-elekter",
+"elekter",
+"diag",
+"Elektritööd kodus ja ettevõttes.",
+718
+],
+[
+"f-elasi-elekter",
+"elekter",
+"raam",
+"Juhtmestik, kilbid ja valgustus Tartumaal.",
+719
+],
+[
+"f-smartinstallation",
+"elekter",
+"ring",
+"Elektritööd Tallinnas.",
+720
+],
+[
+"f-elekter4you",
+"elekter",
+"duo",
+"Elektrik Tallinnas.",
+721
+],
+[
+"f-varistor",
+"elekter",
+"pool",
+"Elektripaigaldus ja remont Pärnus.",
+722
+],
+[
+"f-asew",
+"elekter",
+"aasta",
+"Elektritööd kodus ja ettevõttes.",
+723
+],
+[
+"f-rauteco",
+"elekter",
+"riba",
+"Juhtmestik, kilbid ja valgustus Harjumaal.",
+724
+],
+[
+"f-kadrina-elektrik",
+"elekter",
+"print",
+"Elektritööd Lääne-Virumaal.",
+725
+],
+[
+"f-elektritark",
+"elekter",
+"kaar",
+"Elektrik Harjumaal.",
+726
+],
+[
+"f-stargo",
+"elekter",
+"taust",
+"Elektripaigaldus ja remont Jõgeval.",
+727
+],
+[
+"f-elekto-hpn",
+"elekter",
+"kolm",
+"Elektritööd kodus ja ettevõttes.",
+728
+],
+[
+"f-velsi-service",
+"elekter",
+"kaart",
+"Juhtmestik, kilbid ja valgustus Ida-Virumaal.",
+729
+],
+[
+"f-vipersem",
+"elekter",
+"diag",
+"Elektritööd Narvas.",
+730
+],
+[
+"f-v-j-elektritood",
+"elekter",
+"raam",
+"Elektrik Pärnumaal.",
+731
+],
+[
+"f-tafles",
+"elekter",
+"ring",
+"Elektripaigaldus ja remont Tallinnas.",
+732
+],
+[
+"f-traadiklubi",
+"elekter",
+"duo",
+"Elektritööd kodus ja ettevõttes.",
+733
+],
+[
+"f-suda-elekter",
+"elekter",
+"pool",
+"Juhtmestik, kilbid ja valgustus Tallinnas.",
+734
+],
+[
+"f-antti-mannik",
+"elekter",
+"aasta",
+"Elektritööd Tartumaal.",
+735
+],
+[
+"f-elsa-ap",
+"elekter",
+"riba",
+"Elektrik Pärnus.",
+736
+],
+[
+"f-haskeldaja",
+"elekter",
+"print",
+"Elektripaigaldus ja remont Pärnumaal.",
+737
+],
+[
+"f-elektrivark",
+"elekter",
+"kaar",
+"Elektritööd kodus ja ettevõttes.",
+738
+],
+[
+"f-hasti-elektri",
+"elekter",
+"taust",
+"Juhtmestik, kilbid ja valgustus Tallinnas.",
+739
+],
+[
+"f-riigerm",
+"elekter",
+"kolm",
+"Elektritööd Viljandimaal.",
+740
+],
+[
+"f-ricoran",
+"elekter",
+"kaart",
+"Elektrik Lääne-Virumaal.",
+741
+],
+[
+"f-electa-solution",
+"elekter",
+"diag",
+"Elektripaigaldus ja remont Raplamaal.",
+742
+],
+[
+"f-elerton",
+"elekter",
+"raam",
+"Elektritööd kodus ja ettevõttes.",
+743
+],
+[
+"f-j-j-elekter",
+"elekter",
+"ring",
+"Juhtmestik, kilbid ja valgustus Raplamaal.",
+744
+],
+[
+"f-terken",
+"elekter",
+"duo",
+"Elektritööd Haapsalus.",
+745
+],
+[
+"f-priitel",
+"elekter",
+"pool",
+"Elektrik Lääne-Virumaal.",
+746
+],
+[
+"f-elstorm",
+"elekter",
+"aasta",
+"Elektripaigaldus ja remont Tallinnas.",
+747
+],
+[
+"f-istaco",
+"elekter",
+"riba",
+"Elektritööd kodus ja ettevõttes.",
+748
+],
+[
+"f-garantpro",
+"elekter",
+"print",
+"Juhtmestik, kilbid ja valgustus Tartumaal.",
+749
+],
+[
+"f-sulfuras",
+"elekter",
+"kaar",
+"Elektritööd Harjumaal.",
+750
+],
+[
+"f-randes",
+"elekter",
+"taust",
+"Elektrik Järvamaal.",
+751
+],
+[
+"f-euro-elektro-service",
+"elekter",
+"kolm",
+"Elektripaigaldus ja remont Kohtla-Järvel.",
+752
+],
+[
+"f-elromelecter",
+"elekter",
+"kaart",
+"Elektritööd kodus ja ettevõttes.",
+753
+],
+[
+"f-encast",
+"elekter",
+"diag",
+"Juhtmestik, kilbid ja valgustus Saaremaal.",
+754
+],
+[
+"f-virteks-projekt",
+"elekter",
+"raam",
+"Elektritööd Rakveres.",
+755
+],
+[
+"f-riest",
+"elekter",
+"ring",
+"Elektrik Tartumaal.",
+756
+],
+[
+"f-sintra-group",
+"elekter",
+"duo",
+"Elektripaigaldus ja remont Läänemaal.",
+757
+],
+[
+"f-corally",
+"elekter",
+"pool",
+"Elektritööd kodus ja ettevõttes.",
+758
+],
+[
+"f-kindel-grupp",
+"elekter",
+"aasta",
+"Juhtmestik, kilbid ja valgustus Tartumaal.",
+759
+]
+]
+
+for _r in ELEKTERLEHED:
+    lisa(*_r)

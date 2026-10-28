@@ -1,0 +1,24 @@
+{
+  "nimi": "VELSI Service OÜ",
+  "lyhinimi": "VELSI Service",
+  "vorm": "OÜ",
+  "registrikood": "14551732",
+  "emtak": "43211",
+  "telefonid": [
+    "+372 53302046"
+  ],
+  "email": "vetservice0@gmail.com",
+  "piirkond": "Ida-Virumaa",
+  "piirkond_kus": "Ida-Virumaal",
+  "linn_kus": "Ida-Virumaal",
+  "aasta": "2018",
+  "tootajaid": 2,
+  "sissejuhatus": "Teeme elektritöid Ida-Virumaal: juhtmestik, kilbid, valgustus ja rikked. Enne tööd vaatame objekti üle ja ütleme hinna.",
+  "pakett": "500",
+  "kategooria": "elekter",
+  "teenused_voti": "43211",
+  "kujundus": "f-velsi-service",
+  "domeen": "velsiservice.ee",
+  "kaive": "109218",
+  "h1": "Juhtmestik, kilbid ja valgustus Ida-Virumaal."
+}
