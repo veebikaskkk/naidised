@@ -14,14 +14,14 @@ FOTOD = {
                "ehitus-pahtel", "ehitus-katus2", "ehitus-seinad", "ehitus-tuba"],
     "kaeve": ["kaeve-kraav", "kaeve-kopp", "kaeve-kopp2", "kaeve-udu"],
     "haljastus": ["haljastus-muru", "haljastus-aed", "haljastus-hoov", "haljastus-rohi"],
-    "koristus": ["koristus-pudel", "koristus-tolm", "koristus-aken", "koristus-pesu"],
+    "koristus": ["koristus-pudel", "koristus-tolm", "koristus-pesu"],
     "juuksur": ["juuksur-foon", "juuksur-salong", "juuksur-pesu", "juuksur-toolid", "juuksur-lokid"],
     "juuksur-m": ["juuksur-habe2", "juuksur-habe", "juuksur-salong", "juuksur-toolid"],
-    "elekter": ["elekter-kilp", "elekter-moot", "elekter-pirnid", "elekter-liin", "elekter-kilp2"],
+    "elekter": ["elekter-pistik", "elekter-moot", "elekter-pirnid", "elekter-kinnas", "elekter-liin"],
     "toru": ["toru-valamu", "toru-katlaruum", "toru-vannituba", "toru-kraan", "toru-valamu2", "toru-soojuspump"],
     "toru-kliima": ["toru-soojuspump", "toru-katlaruum", "toru-valamu"],
     "toru-ahi": ["ahi-kamin", "ahi-tuli"],
-    "viimistlus": ["viim-rull", "viim-varv", "ehitus-pahtel", "ehitus-remont"],
+    "viimistlus": ["viim-rull", "ehitus-pahtel", "ehitus-remont"],
     "auto": ["auto-padrun", "auto-alt", "auto-mutrivoti", "auto-pidur"],
     "auto-rehv": ["auto-rehvid", "auto-pidur", "auto-padrun"],
     "auto-detail": ["auto-pesu", "auto-armatuur", "auto-padrun"],
@@ -38,12 +38,21 @@ def _img(nimi, cls="", lazy=False):
             f'{" loading=\"lazy\"" if lazy else ""} decoding="async">')
 
 
-def _silt(cls):
-    return ""
+# Fotod, millel on näha konkreetne salong või töökoda või töötaja nägu. Neile käib silt "Näidisfoto",
+# et lehe saaja ei arvaks, et talle esitletakse kellegi teise salongi või töötajat tema omana.
+SILDIGA = {"juuksur-salong", "juuksur-toolid", "juuksur-foon", "juuksur-habe", "juuksur-habe2", "auto-alt",
+           "toru-valamu", "ehitus-katus2", "koristus-tolm", "elekter-liin"}
 
 
-def _silt_css(cls, P, kus="right:16px;bottom:16px"):
-    return f".{cls}-silt{{position:absolute;{kus};z-index:2;font-size:12px;font-weight:600;letter-spacing:.04em;padding:4px 8px;border-radius:4px;color:#FFFFFF;background:#1A1A1A}}"
+def _silt(cls, *fotod):
+    return f'<span class="{cls}-silt">Näidisfoto</span>' if SILDIGA.intersection(fotod) else ""
+
+
+def _silt_css(cls, P, kus="right:16px;bottom:16px", mob=""):
+    css = f".{cls}-silt{{position:absolute;{kus};z-index:2;font-size:12px;font-weight:600;letter-spacing:.04em;padding:4px 8px;border-radius:4px;color:#FFFFFF;background:#1A1A1A}}"
+    if mob:
+        css += f"@media (max-width:820px){{.{cls}-silt{{{mob}}}}}"
+    return css
 
 
 def _aasta(a):
@@ -54,12 +63,12 @@ def hero_taust(a, d):
     """Foto üle kogu avaploki, vasakult tihe värvikiht teksti all."""
     P, f, c = d["p"], d["foto"], "h-ftaust"
     h = f"""<section class="{c}" aria-labelledby="pk">{_img(f, c + "-img")}<div class="{c}-kiht" aria-hidden="true"></div>
-  <div class="wrap {c}-sisu">{_sisu(a, d)}{_aasta(a)}</div>{_silt(c)}
+  <div class="wrap {c}-sisu">{_sisu(a, d)}{_aasta(a)}</div>{_silt(c, f)}
 </section>"""
     css = baas(c, P, "120px 0 128px", "clamp(36px,5.6vw,84px)") + f""".{c}-img{{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}}
 .{c}-kiht{{position:absolute;inset:0;background:linear-gradient(90deg,{P['hb']} 0%,{P['hb']}F2 38%,{P['hb']}99 62%,{P['hb']}26 100%)}}
 .{c}-sisu{{position:relative;z-index:1}}.{c}-sisu>*{{max-width:min(620px,60%)}}.{c} .aasta-rida{{color:{P['hl']};font-size:14px;margin:28px 0 0}}
-@media (max-width:760px){{.{c}{{padding:0 0 72px}}.{c}-img{{position:relative;display:block;height:240px}}.{c}-kiht{{display:none}}.{c}-sisu{{padding-top:40px}}.{c}-sisu>*{{max-width:none}}}}{_silt_css(c, P)}"""
+@media (max-width:760px){{.{c}{{padding:0 0 72px}}.{c}-img{{position:relative;display:block;height:240px}}.{c}-kiht{{display:none}}.{c}-sisu{{padding-top:40px}}.{c}-sisu>*{{max-width:none}}}}{_silt_css(c, P, mob="top:204px;bottom:auto")}"""
     return h, css
 
 
@@ -68,7 +77,7 @@ def hero_pool(a, d):
     P, f, c = d["p"], d["foto"], "h-fpool"
     h = f"""<section class="{c}" aria-labelledby="pk">
   <div class="{c}-tekst"><div class="{c}-sisu">{_sisu(a, d)}{_aasta(a)}</div></div>
-  <div class="{c}-foto">{_img(f)}{_silt(c)}</div>
+  <div class="{c}-foto">{_img(f)}{_silt(c, f)}</div>
 </section>"""
     css = baas(c, P, "0", "clamp(34px,4.6vw,72px)") + f""".{c}{{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);min-height:560px}}
 .{c}-tekst{{display:flex;align-items:center;padding:88px max(24px,calc((100vw - 1180px)/2 + 24px)) 96px}}.{c}-tekst .{c}-sisu{{padding-right:40px}}
@@ -82,7 +91,7 @@ def hero_kaart(a, d):
     """Suur foto, tekst tahke kaardi sees foto peal."""
     P, f, c = d["p"], d["foto"], "h-fkaart"
     h = f"""<section class="{c}" aria-labelledby="pk">
-  <div class="{c}-foto">{_img(f)}{_silt(c)}</div>
+  <div class="{c}-foto">{_img(f)}{_silt(c, f)}</div>
   <div class="wrap {c}-wrap"><div class="{c}-kaart">{_sisu(a, d)}</div></div>
 </section>"""
     css = baas(c, P, "0 0 72px", "clamp(32px,4.4vw,64px)") + f""".{c}{{background:{P['bg']}}}
@@ -98,7 +107,7 @@ def hero_riba(a, d):
     fakt = "".join(f"<li><b>{E(x)}</b><span>{E(y)}</span></li>" for x, y in (
         (a.get("aasta") or "", "asutatud"), (a["piirkond"], "tööpiirkond"), (str(a["tootajaid"]) if a.get("tootajaid") else "", "töötajat")) if x)
     h = f"""<section class="{c}" aria-labelledby="pk">
-  <div class="{c}-foto">{_img(f)}{_silt(c)}</div>
+  <div class="{c}-foto">{_img(f)}{_silt(c, f)}</div>
   <div class="wrap {c}-sisu"><div>{_sisu(a, d)}</div><ul class="{c}-faktid">{fakt}</ul></div>
 </section>"""
     css = baas(c, P, "0 0 96px", "clamp(34px,5vw,76px)") + f""".{c}-foto{{position:relative;height:clamp(220px,34vw,380px)}}.{c}-foto img{{width:100%;height:100%;object-fit:cover;display:block}}
@@ -114,7 +123,7 @@ def hero_raam(a, d):
     P, f, c = d["p"], d["foto"], "h-fraam"
     h = f"""<section class="{c}" aria-labelledby="pk">
   <div class="wrap {c}-sisu"><div>{_sisu(a, d)}{_aasta(a)}</div>
-  <div class="{c}-foto"><div class="{c}-plokk" aria-hidden="true"></div>{_img(f)}{_silt(c)}</div></div>
+  <div class="{c}-foto"><div class="{c}-plokk" aria-hidden="true"></div>{_img(f)}{_silt(c, f)}</div></div>
 </section>"""
     css = baas(c, P, "96px 0 104px", "clamp(34px,5vw,76px)") + f""".{c}-sisu{{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:64px;align-items:center}}
 .{c}-foto{{position:relative;transform:rotate(-2deg)}}.{c}-foto img{{position:relative;display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border:10px solid {P['hf']}}}
@@ -127,7 +136,7 @@ def hero_kaar(a, d):
     """Foto kaare kujul paremal."""
     P, f, c = d["p"], d["foto"], "h-fkaar"
     h = f"""<section class="{c}" aria-labelledby="pk">
-  <div class="wrap {c}-sisu"><div>{_sisu(a, d)}{_aasta(a)}</div><div class="{c}-foto">{_img(f)}{_silt(c)}</div></div>
+  <div class="wrap {c}-sisu"><div>{_sisu(a, d)}{_aasta(a)}</div><div class="{c}-foto">{_img(f)}{_silt(c, f)}</div></div>
 </section>"""
     css = baas(c, P, "88px 0 0", "clamp(34px,5vw,76px)") + f""".{c}-sisu{{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:56px;align-items:end}}
 .{c}-sisu>div:first-child{{padding-bottom:96px}}.{c}-foto{{position:relative;border-radius:999px 999px 0 0;overflow:hidden;aspect-ratio:4/5;max-height:560px}}
@@ -140,12 +149,12 @@ def hero_duo(a, d):
     """Mustvalge foto värvitooniga, tekst keskel."""
     P, f, c = d["p"], d["foto"], "h-fduo"
     h = f"""<section class="{c}" aria-labelledby="pk">{_img(f, c + "-img")}<div class="{c}-kiht" aria-hidden="true"></div>
-  <div class="wrap {c}-sisu">{_sisu(a, d)}</div>{_silt(c)}
+  <div class="wrap {c}-sisu">{_sisu(a, d)}</div>{_silt(c, f)}
 </section>"""
     css = baas(c, P, "136px 0 144px", "clamp(38px,6vw,92px)") + f""".{c}-img{{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.1)}}
 .{c}-kiht{{position:absolute;inset:0;background:{P['hb']};opacity:{'.86' if P['hf'] == '#FFFFFF' else '.8'}}}.{c}-sisu{{position:relative;z-index:1;text-align:center}}
 .{c} h1{{max-width:13em;margin-left:auto;margin-right:auto}}.{c} .lead{{margin-left:auto;margin-right:auto}}.{c} .nupud{{justify-content:center}}
-@media (max-width:760px){{.{c}{{padding:0 0 72px}}.{c}-img{{position:relative;display:block;height:240px;filter:none}}.{c}-kiht{{display:none}}.{c}-sisu{{padding-top:40px}}}}{_silt_css(c, P)}"""
+@media (max-width:760px){{.{c}{{padding:0 0 72px}}.{c}-img{{position:relative;display:block;height:240px;filter:none}}.{c}-kiht{{display:none}}.{c}-sisu{{padding-top:40px}}}}{_silt_css(c, P, mob="top:204px;bottom:auto")}"""
     return h, css
 
 
@@ -155,7 +164,7 @@ def hero_kolm(a, d):
     fotod = d["fotod3"]
     h = f"""<section class="{c}" aria-labelledby="pk">
   <div class="wrap {c}-sisu"><div>{_sisu(a, d)}{_aasta(a)}</div>
-  <div class="{c}-mos">{_img(fotod[0], c + "-a")}{_img(fotod[1], c + "-b")}{_img(fotod[2], c + "-c")}{_silt(c)}</div></div>
+  <div class="{c}-mos">{_img(fotod[0], c + "-a")}{_img(fotod[1], c + "-b")}{_img(fotod[2], c + "-c")}{_silt(c, *fotod)}</div></div>
 </section>"""
     css = baas(c, P, "88px 0 96px", "clamp(34px,4.8vw,72px)") + f""".{c}-sisu{{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:56px;align-items:center}}
 .{c}-mos{{position:relative;display:grid;grid-template-columns:1.3fr 1fr;grid-template-rows:1fr 1fr;gap:10px;height:440px}}
@@ -170,7 +179,7 @@ def hero_aasta(a, d):
     P, f, c = d["p"], d["foto"], "h-faasta"
     aasta = E(a.get("aasta") or "")
     h = f"""<section class="{c}" aria-labelledby="pk">
-  <div class="{c}-foto">{_img(f)}{_silt(c)}</div>
+  <div class="{c}-foto">{_img(f)}{_silt(c, f)}</div>
   <div class="wrap {c}-sisu"><p class="{c}-arv" aria-hidden="true">{aasta}</p>{_sisu(a, d)}</div>
 </section>"""
     css = baas(c, P, "104px 0 112px", "clamp(34px,4.8vw,72px)") + f""".{c}-foto{{position:absolute;top:0;right:0;bottom:0;width:46%;clip-path:polygon(22% 0,100% 0,100% 100%,0 100%)}}
@@ -184,12 +193,12 @@ def hero_diag(a, d):
     """Foto taustaks, värviline paneel diagonaaliga üle vasaku poole."""
     P, f, c = d["p"], d["foto"], "h-fdiag"
     h = f"""<section class="{c}" aria-labelledby="pk">{_img(f, c + "-img")}<div class="{c}-paneel" aria-hidden="true"></div>
-  <div class="wrap {c}-sisu">{_sisu(a, d)}{_aasta(a)}</div>{_silt(c)}
+  <div class="wrap {c}-sisu">{_sisu(a, d)}{_aasta(a)}</div>{_silt(c, f)}
 </section>"""
     css = baas(c, P, "112px 0 120px", "clamp(34px,5vw,76px)") + f""".{c}-img{{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}}
 .{c}-paneel{{position:absolute;inset:0;background:{P['hb']};clip-path:polygon(0 0,62% 0,48% 100%,0 100%)}}
 .{c}-sisu{{position:relative;z-index:1}}.{c}-sisu>*{{max-width:min(560px,46%)}}.{c} .aasta-rida{{color:{P['hl']};font-size:14px;margin:28px 0 0}}
-@media (max-width:820px){{.{c}{{padding:0 0 72px}}.{c}-img{{position:relative;display:block;height:240px}}.{c}-paneel{{display:none}}.{c}-sisu{{padding-top:40px}}.{c}-sisu>*{{max-width:none}}}}{_silt_css(c, P)}"""
+@media (max-width:820px){{.{c}{{padding:0 0 72px}}.{c}-img{{position:relative;display:block;height:240px}}.{c}-paneel{{display:none}}.{c}-sisu{{padding-top:40px}}.{c}-sisu>*{{max-width:none}}}}{_silt_css(c, P, mob="top:204px;bottom:auto")}"""
     return h, css
 
 
@@ -199,7 +208,7 @@ def hero_print(a, d):
     f1, f2 = d["fotod3"][0], d["fotod3"][1]
     h = f"""<section class="{c}" aria-labelledby="pk">
   <div class="wrap {c}-sisu"><div>{_sisu(a, d)}{_aasta(a)}</div>
-  <div class="{c}-pildid"><figure class="{c}-1">{_img(f1)}</figure><figure class="{c}-2">{_img(f2)}</figure>{_silt(c)}</div></div>
+  <div class="{c}-pildid"><figure class="{c}-1">{_img(f1)}</figure><figure class="{c}-2">{_img(f2)}</figure>{_silt(c, f1, f2)}</div></div>
 </section>"""
     css = baas(c, P, "96px 0 104px", "clamp(34px,4.8vw,72px)") + f""".{c}-sisu{{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:center}}
 .{c}-pildid{{position:relative;height:420px}}.{c} figure{{position:absolute;margin:0;background:#FFFFFF;padding:10px 10px 36px;box-shadow:0 18px 40px rgba(0,0,0,.25);width:68%}}
@@ -213,7 +222,7 @@ def hero_ring(a, d):
     """Ümmargune foto aktsendirõngaga."""
     P, f, c = d["p"], d["foto"], "h-fring"
     h = f"""<section class="{c}" aria-labelledby="pk">
-  <div class="wrap {c}-sisu"><div>{_sisu(a, d)}{_aasta(a)}</div><div class="{c}-foto">{_img(f)}{_silt(c)}</div></div>
+  <div class="wrap {c}-sisu"><div>{_sisu(a, d)}{_aasta(a)}</div><div class="{c}-foto">{_img(f)}{_silt(c, f)}</div></div>
 </section>"""
     css = baas(c, P, "88px 0 96px", "clamp(34px,5vw,76px)") + f""".{c}-sisu{{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:56px;align-items:center}}
 .{c}-foto{{position:relative;aspect-ratio:1;max-width:440px;justify-self:end;width:100%}}
