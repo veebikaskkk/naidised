@@ -1,0 +1,24 @@
+{
+  "nimi": "Järve Auto Viljandi OÜ",
+  "lyhinimi": "Järve Auto Viljandi",
+  "vorm": "OÜ",
+  "registrikood": "12572948",
+  "emtak": "95311",
+  "telefonid": [
+    "+372 5107959"
+  ],
+  "email": "jarveautoviljandi@gmail.com",
+  "piirkond": "Viljandi ja Viljandimaa",
+  "piirkond_kus": "Viljandis ja Viljandimaal",
+  "linn_kus": "Viljandis",
+  "aasta": "2013",
+  "tootajaid": 3,
+  "sissejuhatus": "Hooldame ja remondime autosid Viljandis ja Viljandimaal. Enne tööd vaatame auto üle ja ütleme, mida on vaja teha ja mis see maksab.",
+  "pakett": "500",
+  "kategooria": "auto",
+  "teenused_voti": "95311",
+  "kujundus": "f-jarve-auto-viljandi",
+  "domeen": "jarveautoviljandi.ee",
+  "kaive": "170717",
+  "h1": "Autoteenindus Viljandis."
+}

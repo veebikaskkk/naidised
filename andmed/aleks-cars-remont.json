@@ -1,0 +1,24 @@
+{
+  "nimi": "Aleks Cars Remont OÜ",
+  "lyhinimi": "Aleks Cars Remont",
+  "vorm": "OÜ",
+  "registrikood": "14852072",
+  "emtak": "95311",
+  "telefonid": [
+    "+372 57848855"
+  ],
+  "email": "sasha.kostin.aleks87@gmail.com",
+  "piirkond": "Tallinn ja Harjumaa",
+  "piirkond_kus": "Tallinnas ja Harjumaal",
+  "linn_kus": "Tallinnas",
+  "aasta": "2019",
+  "tootajaid": 4,
+  "sissejuhatus": "Hooldame ja remondime autosid Tallinnas ja Harjumaal. Enne tööd vaatame auto üle ja ütleme, mida on vaja teha ja mis see maksab.",
+  "pakett": "500",
+  "kategooria": "auto",
+  "teenused_voti": "95311",
+  "kujundus": "f-aleks-cars-remont",
+  "domeen": "alekscarsremont.ee",
+  "kaive": "146986",
+  "h1": "Autoremont Tallinnas."
+}

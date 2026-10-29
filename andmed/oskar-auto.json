@@ -1,0 +1,25 @@
+{
+  "nimi": "Oskar Auto OÜ",
+  "lyhinimi": "Oskar Auto",
+  "vorm": "OÜ",
+  "registrikood": "12139803",
+  "emtak": "95311",
+  "telefonid": [
+    "+372 5027812",
+    "+372 5227066"
+  ],
+  "email": "oskarremont@gmail.com",
+  "piirkond": "Valgamaa",
+  "piirkond_kus": "Valgamaal",
+  "linn_kus": "Valgamaal",
+  "aasta": "2011",
+  "tootajaid": 1,
+  "sissejuhatus": "Hooldame ja remondime autosid Valgamaal. Enne tööd vaatame auto üle ja ütleme, mida on vaja teha ja mis see maksab.",
+  "pakett": "500",
+  "kategooria": "auto",
+  "teenused_voti": "95311",
+  "kujundus": "f-oskar-auto",
+  "domeen": "oskarauto.ee",
+  "kaive": "105370",
+  "h1": "Teie auto remont Valgamaal."
+}

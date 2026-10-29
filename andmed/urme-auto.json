@@ -1,0 +1,24 @@
+{
+  "nimi": "Osaühing Urme Auto",
+  "lyhinimi": "Urme Auto",
+  "vorm": "OÜ",
+  "registrikood": "10385337",
+  "emtak": "95311",
+  "telefonid": [
+    "+372 55588774"
+  ],
+  "email": "urmeauto@gmail.com",
+  "piirkond": "Jõgeva ja Jõgevamaa",
+  "piirkond_kus": "Jõgeval ja Jõgevamaal",
+  "linn_kus": "Jõgeval",
+  "aasta": "1998",
+  "tootajaid": 2,
+  "sissejuhatus": "Hooldame ja remondime autosid Jõgeval ja Jõgevamaal. Enne tööd vaatame auto üle ja ütleme, mida on vaja teha ja mis see maksab.",
+  "pakett": "500",
+  "kategooria": "auto",
+  "teenused_voti": "95311",
+  "kujundus": "f-urme-auto",
+  "domeen": "urmeauto.ee",
+  "kaive": "139379",
+  "h1": "Auto hooldus ja remont Jõgeval."
+}

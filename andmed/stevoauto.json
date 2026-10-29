@@ -1,0 +1,24 @@
+{
+  "nimi": "StevoAuto OÜ",
+  "lyhinimi": "StevoAuto",
+  "vorm": "OÜ",
+  "registrikood": "14392512",
+  "emtak": "95311",
+  "telefonid": [
+    "+372 55587428"
+  ],
+  "email": "stevoauto@mail.ee",
+  "piirkond": "Ida-Virumaa",
+  "piirkond_kus": "Ida-Virumaal",
+  "linn_kus": "Ida-Virumaal",
+  "aasta": "2017",
+  "tootajaid": 2,
+  "sissejuhatus": "Hooldame ja remondime autosid Ida-Virumaal. Enne tööd vaatame auto üle ja ütleme, mida on vaja teha ja mis see maksab.",
+  "pakett": "500",
+  "kategooria": "auto",
+  "teenused_voti": "95311",
+  "kujundus": "f-stevoauto",
+  "domeen": "stevoauto.ee",
+  "kaive": "106226",
+  "h1": "Auto hooldus ja remont Ida-Virumaal."
+}

@@ -1,0 +1,24 @@
+{
+  "nimi": "Osaühing Lepiku Auto",
+  "lyhinimi": "Lepiku Auto",
+  "vorm": "OÜ",
+  "registrikood": "11131633",
+  "emtak": "95311",
+  "telefonid": [
+    "+372 5058683"
+  ],
+  "email": "lepikuauto@gmail.com",
+  "piirkond": "Lääne-Virumaa",
+  "piirkond_kus": "Lääne-Virumaal",
+  "linn_kus": "Lääne-Virumaal",
+  "aasta": "2005",
+  "tootajaid": 1,
+  "sissejuhatus": "Hooldame ja remondime autosid Lääne-Virumaal. Enne tööd vaatame auto üle ja ütleme, mida on vaja teha ja mis see maksab.",
+  "pakett": "500",
+  "kategooria": "auto",
+  "teenused_voti": "95311",
+  "kujundus": "f-lepiku-auto",
+  "domeen": "lepikuauto.ee",
+  "kaive": "143886",
+  "h1": "Autoteenindus Lääne-Virumaal."
+}

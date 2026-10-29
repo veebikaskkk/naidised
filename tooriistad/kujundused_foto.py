@@ -4328,3 +4328,669 @@ ELEKTERLEHED = [
 
 for _r in ELEKTERLEHED:
     lisa(*_r)
+
+
+# Autoteenindused neljandalt kontolt (veebikask.lehed, alates 30.10).
+AUTOLEHED4 = [
+[
+"f-lesvenauto",
+"auto",
+"pool",
+"Autoremont Tallinnas.",
+800
+],
+[
+"f-rm-auto",
+"auto",
+"duo",
+"Auto hooldus ja remont Harjumaal.",
+801
+],
+[
+"f-plaviteks",
+"auto",
+"ring",
+"Hooldus ja diagnostika Rakveres.",
+802
+],
+[
+"f-savana-auto",
+"auto",
+"raam",
+"Teie auto remont Tallinnas.",
+803
+],
+[
+"f-nester-pluss",
+"auto",
+"diag",
+"Autoteenindus Tartus.",
+804
+],
+[
+"f-a-trans-service",
+"auto",
+"kaart",
+"Autoremont Harjumaal.",
+805
+],
+[
+"f-romuveski",
+"auto",
+"kolm",
+"Auto hooldus ja remont Tartumaal.",
+806
+],
+[
+"f-o-h-servis",
+"auto",
+"taust",
+"Hooldus ja diagnostika Tartumaal.",
+807
+],
+[
+"f-aleklena",
+"auto",
+"kaar",
+"Teie auto remont Tallinnas.",
+808
+],
+[
+"f-volfor-at",
+"auto",
+"print",
+"Autoteenindus Harjumaal.",
+809
+],
+[
+"f-myrtos",
+"auto",
+"riba",
+"Autoremont Järvamaal.",
+810
+],
+[
+"f-carsave-tehnik",
+"auto",
+"aasta",
+"Auto hooldus ja remont Tallinnas.",
+811
+],
+[
+"f-autoteenindus-r-z",
+"auto",
+"pool",
+"Hooldus ja diagnostika Tallinnas.",
+812
+],
+[
+"f-tehnikateenindus",
+"auto",
+"duo",
+"Teie auto remont Harjumaal.",
+813
+],
+[
+"f-kummix",
+"auto-rehv",
+"ring",
+"Rehvivahetus Tartumaal.",
+816
+],
+[
+"f-spirit-autoteenindus",
+"auto",
+"raam",
+"Autoremont Tartus.",
+815
+],
+[
+"f-o-a-s-service",
+"auto",
+"diag",
+"Auto hooldus ja remont Maardus.",
+816
+],
+[
+"f-svp-grupp",
+"auto",
+"kaart",
+"Hooldus ja diagnostika Pärnus.",
+817
+],
+[
+"f-a-osa",
+"auto",
+"kolm",
+"Teie auto remont Tallinnas.",
+818
+],
+[
+"f-jarve-auto-viljandi",
+"auto",
+"taust",
+"Autoteenindus Viljandis.",
+819
+],
+[
+"f-carland-grupp",
+"auto",
+"kaar",
+"Autoremont Pärnumaal.",
+820
+],
+[
+"f-trostinauto",
+"auto",
+"print",
+"Auto hooldus ja remont Tallinnas.",
+821
+],
+[
+"f-teriva",
+"auto",
+"riba",
+"Hooldus ja diagnostika Saaremaal.",
+822
+],
+[
+"f-antraton-grupp",
+"auto",
+"aasta",
+"Teie auto remont Järvamaal.",
+823
+],
+[
+"f-innmer",
+"auto",
+"pool",
+"Autoteenindus Harjumaal.",
+824
+],
+[
+"f-aleks-cars-remont",
+"auto",
+"duo",
+"Autoremont Tallinnas.",
+825
+],
+[
+"f-urmenn",
+"auto",
+"ring",
+"Auto hooldus ja remont Pärnumaal.",
+826
+],
+[
+"f-autoremondi-tookoda",
+"auto",
+"raam",
+"Hooldus ja diagnostika Ida-Virumaal.",
+827
+],
+[
+"f-veotehnika",
+"auto",
+"diag",
+"Teie auto remont Tallinnas.",
+828
+],
+[
+"f-lepiku-auto",
+"auto",
+"kaart",
+"Autoteenindus Lääne-Virumaal.",
+829
+],
+[
+"f-brimar-servis",
+"auto",
+"kolm",
+"Autoremont Põlvamaal.",
+830
+],
+[
+"f-derek",
+"auto",
+"taust",
+"Auto hooldus ja remont Tallinnas.",
+831
+],
+[
+"f-auto-elek-grupp",
+"auto",
+"kaar",
+"Hooldus ja diagnostika Narvas.",
+832
+],
+[
+"f-liise-auto",
+"auto",
+"print",
+"Teie auto remont Raplamaal.",
+833
+],
+[
+"f-paikeseauto",
+"auto",
+"riba",
+"Autoteenindus Tallinnas.",
+834
+],
+[
+"f-tlauto",
+"auto",
+"aasta",
+"Autoremont Pärnus.",
+835
+],
+[
+"f-urme-auto",
+"auto",
+"pool",
+"Auto hooldus ja remont Jõgeval.",
+836
+],
+[
+"f-tocar-motors",
+"auto",
+"duo",
+"Hooldus ja diagnostika Lääne-Virumaal.",
+837
+],
+[
+"f-elips-k",
+"auto",
+"ring",
+"Teie auto remont Harjumaal.",
+838
+],
+[
+"f-kalmat",
+"auto",
+"raam",
+"Autoteenindus Lääne-Virumaal.",
+839
+],
+[
+"f-avotex-service",
+"auto",
+"diag",
+"Autoremont Järvamaal.",
+840
+],
+[
+"f-kardaani-expert",
+"auto",
+"kaart",
+"Auto hooldus ja remont Kohtla-Järvel.",
+841
+],
+[
+"f-angry-orange-autod",
+"auto",
+"kolm",
+"Hooldus ja diagnostika Pärnumaal.",
+842
+],
+[
+"f-rt-autoremont",
+"auto",
+"taust",
+"Teie auto remont Tartus.",
+843
+],
+[
+"f-mkm-autod",
+"auto",
+"kaar",
+"Autoteenindus Pärnumaal.",
+844
+],
+[
+"f-asoli-auto",
+"auto",
+"print",
+"Autoremont Keilas.",
+845
+],
+[
+"f-novoral",
+"auto",
+"riba",
+"Auto hooldus ja remont Harjumaal.",
+846
+],
+[
+"f-carmax-estonia",
+"auto",
+"aasta",
+"Hooldus ja diagnostika Lääne-Virumaal.",
+847
+],
+[
+"f-byl-swed-service",
+"auto",
+"pool",
+"Teie auto remont Tallinnas.",
+848
+],
+[
+"f-toru-autoremont",
+"auto",
+"duo",
+"Autoteenindus Tartumaal.",
+849
+],
+[
+"f-hk-rehvikeskus",
+"auto-rehv",
+"ring",
+"Rehvivahetus Tartus.",
+852
+],
+[
+"f-urkna",
+"auto",
+"raam",
+"Auto hooldus ja remont Harjumaal.",
+851
+],
+[
+"f-kaasiku-auto",
+"auto",
+"diag",
+"Hooldus ja diagnostika Jõgevamaal.",
+852
+],
+[
+"f-holmvik",
+"auto",
+"kaart",
+"Teie auto remont Pärnumaal.",
+853
+],
+[
+"f-airol",
+"auto",
+"kolm",
+"Autoteenindus Pärnus.",
+854
+],
+[
+"f-carton",
+"auto",
+"taust",
+"Autoremont Rakveres.",
+855
+],
+[
+"f-villiservice",
+"auto",
+"kaar",
+"Auto hooldus ja remont Tallinnas.",
+856
+],
+[
+"f-kalsim",
+"auto",
+"print",
+"Hooldus ja diagnostika Tartumaal.",
+857
+],
+[
+"f-jr-auto",
+"auto",
+"riba",
+"Teie auto remont Ida-Virumaal.",
+858
+],
+[
+"f-heifix",
+"auto",
+"aasta",
+"Autoteenindus Valgas.",
+859
+],
+[
+"f-tabani-hg",
+"auto",
+"pool",
+"Autoremont Tallinnas.",
+860
+],
+[
+"f-maveric-motors",
+"auto",
+"duo",
+"Auto hooldus ja remont Lääne-Virumaal.",
+861
+],
+[
+"f-rif-auto",
+"auto",
+"ring",
+"Hooldus ja diagnostika Jõgevamaal.",
+862
+],
+[
+"f-viksess",
+"auto",
+"raam",
+"Teie auto remont Jõgevamaal.",
+863
+],
+[
+"f-ks-trak",
+"auto",
+"diag",
+"Autoteenindus Võrumaal.",
+864
+],
+[
+"f-jo-racing-solutions",
+"auto",
+"kaart",
+"Autoremont Saaremaal.",
+865
+],
+[
+"f-stevoauto",
+"auto",
+"kolm",
+"Auto hooldus ja remont Ida-Virumaal.",
+866
+],
+[
+"f-maxiton-grupp",
+"auto",
+"taust",
+"Hooldus ja diagnostika Harjumaal.",
+867
+],
+[
+"f-oskar-auto",
+"auto",
+"kaar",
+"Teie auto remont Valgamaal.",
+868
+],
+[
+"f-kannu-ari",
+"auto",
+"print",
+"Autoteenindus Pärnumaal.",
+869
+],
+[
+"f-oiluk-grupp",
+"auto",
+"riba",
+"Autoremont Tallinnas.",
+870
+],
+[
+"f-octoport",
+"auto",
+"aasta",
+"Auto hooldus ja remont Tallinnas.",
+871
+],
+[
+"f-nordic-classiccars",
+"auto",
+"pool",
+"Hooldus ja diagnostika Tartumaal.",
+872
+],
+[
+"f-pritech",
+"auto",
+"duo",
+"Teie auto remont Võrumaal.",
+873
+],
+[
+"f-veermikuproff",
+"auto",
+"ring",
+"Autoteenindus Lääne-Virumaal.",
+874
+],
+[
+"f-gardi-elektroonika",
+"auto",
+"raam",
+"Autoremont Rakveres.",
+875
+],
+[
+"f-klapivedru",
+"auto",
+"diag",
+"Auto hooldus ja remont Tallinnas.",
+876
+],
+[
+"f-duubzu-motors",
+"auto",
+"kaart",
+"Hooldus ja diagnostika Tallinnas.",
+877
+],
+[
+"f-tartrev",
+"auto",
+"kolm",
+"Teie auto remont Tallinnas.",
+878
+],
+[
+"f-nnb-union",
+"auto",
+"taust",
+"Autoteenindus Tallinnas.",
+879
+],
+[
+"f-peritex-auto",
+"auto",
+"kaar",
+"Autoremont Lääne-Virumaal.",
+880
+],
+[
+"f-eriprojekt",
+"auto",
+"print",
+"Auto hooldus ja remont Raplamaal.",
+881
+],
+[
+"f-a-t-autoremont",
+"auto",
+"riba",
+"Hooldus ja diagnostika Lääne-Virumaal.",
+882
+],
+[
+"f-kiiskar",
+"auto",
+"aasta",
+"Teie auto remont Saaremaal.",
+883
+],
+[
+"f-iper-autoremont",
+"auto",
+"pool",
+"Autoteenindus Tallinnas.",
+884
+],
+[
+"f-aabestcar-autokeskus",
+"auto",
+"duo",
+"Autoremont Harjumaal.",
+885
+],
+[
+"f-varviks",
+"auto",
+"ring",
+"Kereremont ja värvimine Pärnus.",
+886
+],
+[
+"f-test-rem-diisel",
+"auto",
+"raam",
+"Hooldus ja diagnostika Tallinnas.",
+887
+],
+[
+"f-raini-auto",
+"auto",
+"diag",
+"Teie auto remont Pärnumaal.",
+888
+],
+[
+"f-vaabvarv",
+"auto",
+"kaart",
+"Auto värvimine Tartumaal.",
+889
+],
+[
+"f-valserhooldus",
+"auto",
+"kolm",
+"Autoremont Harjumaal.",
+890
+],
+[
+"f-sportan-auto",
+"auto",
+"taust",
+"Auto hooldus ja remont Tallinnas.",
+891
+],
+[
+"f-rein-vello",
+"auto",
+"kaar",
+"Hooldus ja diagnostika Tallinnas.",
+892
+],
+[
+"f-ahula-auto",
+"auto",
+"print",
+"Teie auto remont Järvamaal.",
+893
+]
+]
+
+for _r in AUTOLEHED4:
+    lisa(*_r)

@@ -1,0 +1,24 @@
+{
+  "nimi": "Osaühing SVP Grupp",
+  "lyhinimi": "SVP Grupp",
+  "vorm": "OÜ",
+  "registrikood": "10216669",
+  "emtak": "95311",
+  "telefonid": [
+    "+372 5026112"
+  ],
+  "email": "svpgrupp@gmail.com",
+  "piirkond": "Pärnu ja Pärnumaa",
+  "piirkond_kus": "Pärnus ja Pärnumaal",
+  "linn_kus": "Pärnus",
+  "aasta": "1997",
+  "tootajaid": 1,
+  "sissejuhatus": "Hooldame ja remondime autosid Pärnus ja Pärnumaal. Enne tööd vaatame auto üle ja ütleme, mida on vaja teha ja mis see maksab.",
+  "pakett": "500",
+  "kategooria": "auto",
+  "teenused_voti": "95311",
+  "kujundus": "f-svp-grupp",
+  "domeen": "svpgrupp.ee",
+  "kaive": "172042",
+  "h1": "Hooldus ja diagnostika Pärnus."
+}

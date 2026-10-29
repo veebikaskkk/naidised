@@ -1,0 +1,24 @@
+{
+  "nimi": "Veotehnika OÜ",
+  "lyhinimi": "Veotehnika",
+  "vorm": "OÜ",
+  "registrikood": "12003498",
+  "emtak": "95311",
+  "telefonid": [
+    "+372 55569411"
+  ],
+  "email": "apo_tuuling@hotmail.com",
+  "piirkond": "Tallinn ja Harjumaa",
+  "piirkond_kus": "Tallinnas ja Harjumaal",
+  "linn_kus": "Tallinnas",
+  "aasta": "2010",
+  "tootajaid": 1,
+  "sissejuhatus": "Hooldame ja remondime autosid Tallinnas ja Harjumaal. Enne tööd vaatame auto üle ja ütleme, mida on vaja teha ja mis see maksab.",
+  "pakett": "500",
+  "kategooria": "auto",
+  "teenused_voti": "95311",
+  "kujundus": "f-veotehnika",
+  "domeen": "veotehnika.ee",
+  "kaive": "144364",
+  "h1": "Teie auto remont Tallinnas."
+}

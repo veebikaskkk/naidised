@@ -1,0 +1,24 @@
+{
+  "nimi": "MKM Autod OÜ",
+  "lyhinimi": "MKM Autod",
+  "vorm": "OÜ",
+  "registrikood": "12695160",
+  "emtak": "95311",
+  "telefonid": [
+    "+372 56844901"
+  ],
+  "email": "martin.madisson@mail.ee",
+  "piirkond": "Pärnumaa",
+  "piirkond_kus": "Pärnumaal",
+  "linn_kus": "Pärnumaal",
+  "aasta": "2014",
+  "tootajaid": 2,
+  "sissejuhatus": "Hooldame ja remondime autosid Pärnumaal. Enne tööd vaatame auto üle ja ütleme, mida on vaja teha ja mis see maksab.",
+  "pakett": "500",
+  "kategooria": "auto",
+  "teenused_voti": "95311",
+  "kujundus": "f-mkm-autod",
+  "domeen": "mkmautod.ee",
+  "kaive": "127058",
+  "h1": "Autoteenindus Pärnumaal."
+}

@@ -1,0 +1,24 @@
+{
+  "nimi": "Avotex Service OÜ",
+  "lyhinimi": "Avotex Service",
+  "vorm": "OÜ",
+  "registrikood": "16262328",
+  "emtak": "95311",
+  "telefonid": [
+    "+372 53612303"
+  ],
+  "email": "avotexservice@gmail.com",
+  "piirkond": "Järvamaa",
+  "piirkond_kus": "Järvamaal",
+  "linn_kus": "Järvamaal",
+  "aasta": "2021",
+  "tootajaid": 1,
+  "sissejuhatus": "Hooldame ja remondime autosid Järvamaal. Enne tööd vaatame auto üle ja ütleme, mida on vaja teha ja mis see maksab.",
+  "pakett": "500",
+  "kategooria": "auto",
+  "teenused_voti": "95311",
+  "kujundus": "f-avotex-service",
+  "domeen": "avotexservice.ee",
+  "kaive": "135230",
+  "h1": "Autoremont Järvamaal."
+}

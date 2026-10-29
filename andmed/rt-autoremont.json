@@ -1,0 +1,24 @@
+{
+  "nimi": "RT Autoremont OÜ",
+  "lyhinimi": "RT Autoremont",
+  "vorm": "OÜ",
+  "registrikood": "16514882",
+  "emtak": "95311",
+  "telefonid": [
+    "+372 51926655"
+  ],
+  "email": "tarmorootslane@hotmail.com",
+  "piirkond": "Tartu ja Tartumaa",
+  "piirkond_kus": "Tartus ja Tartumaal",
+  "linn_kus": "Tartus",
+  "aasta": "2022",
+  "tootajaid": 1,
+  "sissejuhatus": "Hooldame ja remondime autosid Tartus ja Tartumaal. Enne tööd vaatame auto üle ja ütleme, mida on vaja teha ja mis see maksab.",
+  "pakett": "500",
+  "kategooria": "auto",
+  "teenused_voti": "95311",
+  "kujundus": "f-rt-autoremont",
+  "domeen": "rtautoremont.ee",
+  "kaive": "130318",
+  "h1": "Teie auto remont Tartus."
+}

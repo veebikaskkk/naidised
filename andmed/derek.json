@@ -1,0 +1,26 @@
+{
+  "nimi": "osaühing DEREK",
+  "lyhinimi": "Derek",
+  "vorm": "OÜ",
+  "registrikood": "10396985",
+  "emtak": "95311",
+  "telefonid": [
+    "+372 6575522",
+    "+372 5011475",
+    "+372 6575511"
+  ],
+  "email": "rein.derek@neti.ee",
+  "piirkond": "Tallinn ja Harjumaa",
+  "piirkond_kus": "Tallinnas ja Harjumaal",
+  "linn_kus": "Tallinnas",
+  "aasta": "1998",
+  "tootajaid": 4,
+  "sissejuhatus": "Hooldame ja remondime autosid Tallinnas ja Harjumaal. Enne tööd vaatame auto üle ja ütleme, mida on vaja teha ja mis see maksab.",
+  "pakett": "500",
+  "kategooria": "auto",
+  "teenused_voti": "95311",
+  "kujundus": "f-derek",
+  "domeen": "derek.ee",
+  "kaive": "143379",
+  "h1": "Auto hooldus ja remont Tallinnas."
+}

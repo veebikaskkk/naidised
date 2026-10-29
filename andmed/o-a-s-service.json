@@ -1,0 +1,25 @@
+{
+  "nimi": "O.A.S. Service OÜ",
+  "lyhinimi": "O.A.S. Service",
+  "vorm": "OÜ",
+  "registrikood": "12109481",
+  "emtak": "95311",
+  "telefonid": [
+    "+372 5072537",
+    "+372 6003647"
+  ],
+  "email": "sulev.lomp@hotmail.com",
+  "piirkond": "Maardu ja Harjumaa",
+  "piirkond_kus": "Maardus ja Harjumaal",
+  "linn_kus": "Maardus",
+  "aasta": "2011",
+  "tootajaid": 5,
+  "sissejuhatus": "Hooldame ja remondime autosid Maardus ja Harjumaal. Enne tööd vaatame auto üle ja ütleme, mida on vaja teha ja mis see maksab.",
+  "pakett": "500",
+  "kategooria": "auto",
+  "teenused_voti": "95311",
+  "kujundus": "f-o-a-s-service",
+  "domeen": "oasservice.ee",
+  "kaive": "173907",
+  "h1": "Auto hooldus ja remont Maardus."
+}

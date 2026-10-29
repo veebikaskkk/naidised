@@ -1,0 +1,24 @@
+{
+  "nimi": "Osaühing VILLISERVICE",
+  "lyhinimi": "Villiservice",
+  "vorm": "OÜ",
+  "registrikood": "10864055",
+  "emtak": "95311",
+  "telefonid": [
+    "+372 5223068"
+  ],
+  "email": "villiservice@gmail.com",
+  "piirkond": "Tallinn ja Harjumaa",
+  "piirkond_kus": "Tallinnas ja Harjumaal",
+  "linn_kus": "Tallinnas",
+  "aasta": "2002",
+  "tootajaid": 3,
+  "sissejuhatus": "Hooldame ja remondime autosid Tallinnas ja Harjumaal. Enne tööd vaatame auto üle ja ütleme, mida on vaja teha ja mis see maksab.",
+  "pakett": "500",
+  "kategooria": "auto",
+  "teenused_voti": "95311",
+  "kujundus": "f-villiservice",
+  "domeen": "villiservice.ee",
+  "kaive": "110936",
+  "h1": "Auto hooldus ja remont Tallinnas."
+}

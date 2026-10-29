@@ -1,0 +1,24 @@
+{
+  "nimi": "OÜ Valserhooldus",
+  "lyhinimi": "Valserhooldus",
+  "vorm": "OÜ",
+  "registrikood": "16704358",
+  "emtak": "95311",
+  "telefonid": [
+    "+372 58532455"
+  ],
+  "email": "valserhooldus@gmail.com",
+  "piirkond": "Harjumaa",
+  "piirkond_kus": "Harjumaal",
+  "linn_kus": "Harjumaal",
+  "aasta": "2023",
+  "tootajaid": 1,
+  "sissejuhatus": "Hooldame ja remondime autosid Harjumaal. Enne tööd vaatame auto üle ja ütleme, mida on vaja teha ja mis see maksab.",
+  "pakett": "500",
+  "kategooria": "auto",
+  "teenused_voti": "95311",
+  "kujundus": "f-valserhooldus",
+  "domeen": "valserhooldus.ee",
+  "kaive": "92892",
+  "h1": "Autoremont Harjumaal."
+}

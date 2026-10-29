@@ -1,0 +1,24 @@
+{
+  "nimi": "Ahula Auto OÜ",
+  "lyhinimi": "Ahula Auto",
+  "vorm": "OÜ",
+  "registrikood": "16308734",
+  "emtak": "95311",
+  "telefonid": [
+    "+372 51936770"
+  ],
+  "email": "ahulaauto@gmail.com",
+  "piirkond": "Järvamaa",
+  "piirkond_kus": "Järvamaal",
+  "linn_kus": "Järvamaal",
+  "aasta": "2021",
+  "tootajaid": 1,
+  "sissejuhatus": "Hooldame ja remondime autosid Järvamaal. Enne tööd vaatame auto üle ja ütleme, mida on vaja teha ja mis see maksab.",
+  "pakett": "500",
+  "kategooria": "auto",
+  "teenused_voti": "95311",
+  "kujundus": "f-ahula-auto",
+  "domeen": "ahulaauto.ee",
+  "kaive": "91398",
+  "h1": "Teie auto remont Järvamaal."
+}
