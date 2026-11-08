@@ -1,0 +1,23 @@
+{
+  "nimi": "JOHN DOE BARBERSHOP OÜ",
+  "lyhinimi": "JOHN DOE Barbershop",
+  "vorm": "OÜ",
+  "registrikood": "10482431",
+  "emtak": "96211",
+  "telefonid": [
+    "+372 5269074"
+  ],
+  "email": "azabwork@gmail.com",
+  "piirkond": "Tallinn ja Harjumaa",
+  "piirkond_kus": "Tallinnas ja Harjumaal",
+  "linn_kus": "Tallinnas",
+  "aasta": "1998",
+  "tootajaid": 1,
+  "sissejuhatus": "Meeste juukselõikus ja habe Tallinnas ja Harjumaal. Broneeri aeg otse kalendrist või helista.",
+  "pakett": "400",
+  "kategooria": "juuksur",
+  "teenused_voti": "96211-meeste",
+  "kujundus": "f-john-doe-barbershop",
+  "domeen": "johndoebarbershop.ee",
+  "kaive": "33276"
+}

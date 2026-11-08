@@ -1,0 +1,23 @@
+{
+  "nimi": "TFS Service OÜ",
+  "lyhinimi": "TFS Service",
+  "vorm": "OÜ",
+  "registrikood": "14786636",
+  "emtak": "45201",
+  "telefonid": [
+    "+372 5126467"
+  ],
+  "email": "apetrosjan1@gmail.com",
+  "piirkond": "Tallinn ja Harjumaa",
+  "piirkond_kus": "Tallinnas ja Harjumaal",
+  "linn_kus": "Tallinnas",
+  "aasta": "2019",
+  "tootajaid": 2,
+  "sissejuhatus": "Hooldame ja remondime autosid Tallinnas ja Harjumaal. Enne tööd vaatame auto üle ja ütleme, mida on vaja teha ja mis see maksab.",
+  "pakett": "250",
+  "kategooria": "auto",
+  "teenused_voti": "95311",
+  "kujundus": "f-tfs-service",
+  "domeen": "tfsservice.ee",
+  "kaive": "39985"
+}

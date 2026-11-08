@@ -1,0 +1,23 @@
+{
+  "nimi": "Osaühing BIO Ehitus Grupp",
+  "lyhinimi": "BIO Ehitus Grupp",
+  "vorm": "OÜ",
+  "registrikood": "10361325",
+  "emtak": "4322",
+  "telefonid": [
+    "+372 5076714"
+  ],
+  "email": "bioehitusgrupp@gmail.com",
+  "piirkond": "Tallinn ja Harjumaa",
+  "piirkond_kus": "Tallinnas ja Harjumaal",
+  "linn_kus": "Tallinnas",
+  "aasta": "1998",
+  "tootajaid": 1,
+  "sissejuhatus": "Teeme torutöid ja küttetöid Tallinnas ja Harjumaal: vesi, kanalisatsioon, küte ja sanitaartehnika.",
+  "pakett": "250",
+  "kategooria": "toru",
+  "teenused_voti": "4322",
+  "kujundus": "f-bio-ehitus-grupp",
+  "domeen": "bioehitusgrupp.ee",
+  "kaive": "56704"
+}

@@ -1,0 +1,25 @@
+{
+  "nimi": "VIHMAVARJU Osaühing",
+  "lyhinimi": "Vihmavarju",
+  "vorm": "OÜ",
+  "registrikood": "10293486",
+  "emtak": "81221",
+  "telefonid": [
+    "+372 5068949",
+    "+372 3224649",
+    "+372 53900530"
+  ],
+  "email": "vihmavarju@gmail.com",
+  "piirkond": "Rakvere ja Lääne-Virumaa",
+  "piirkond_kus": "Rakveres ja Lääne-Virumaal",
+  "linn_kus": "Rakveres",
+  "aasta": "1997",
+  "tootajaid": 1,
+  "sissejuhatus": "Koristame kodusid, kontoreid ja äripindu Rakveres ja Lääne-Virumaal. Ühekordselt või regulaarselt, nagu teile sobib.",
+  "pakett": "250",
+  "kategooria": "koristus",
+  "teenused_voti": "81211",
+  "kujundus": "f-vihmavarju",
+  "domeen": "vihmavarju.ee",
+  "kaive": "35126"
+}

@@ -1,0 +1,23 @@
+{
+  "nimi": "Osaühing Vooluvärk",
+  "lyhinimi": "Vooluvärk",
+  "vorm": "OÜ",
+  "registrikood": "10931248",
+  "emtak": "43211",
+  "telefonid": [
+    "+372 56914122"
+  ],
+  "email": "vooluvark@gmail.com",
+  "piirkond": "Viljandi ja Viljandimaa",
+  "piirkond_kus": "Viljandis ja Viljandimaal",
+  "linn_kus": "Viljandis",
+  "aasta": "2003",
+  "tootajaid": 1,
+  "sissejuhatus": "Teeme elektritöid Viljandis ja Viljandimaal: juhtmestik, kilbid, valgustus ja rikked. Enne tööd vaatame objekti üle ja ütleme hinna.",
+  "pakett": "250",
+  "kategooria": "elekter",
+  "teenused_voti": "43211",
+  "kujundus": "f-vooluvark",
+  "domeen": "vooluvark.ee",
+  "kaive": "37735"
+}

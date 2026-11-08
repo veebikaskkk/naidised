@@ -1,0 +1,24 @@
+{
+  "nimi": "OÜ Pintex Building",
+  "lyhinimi": "Pintex Building",
+  "vorm": "OÜ",
+  "registrikood": "10671480",
+  "emtak": "41001",
+  "telefonid": [
+    "+372 6101180",
+    "+372 5287788"
+  ],
+  "email": "pintex.building@gmail.com",
+  "piirkond": "Tallinn ja Harjumaa",
+  "piirkond_kus": "Tallinnas ja Harjumaal",
+  "linn_kus": "Tallinnas",
+  "aasta": "2000",
+  "tootajaid": 2,
+  "sissejuhatus": "Ehitame ja renoveerime maju Tallinnas ja Harjumaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "250",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-pintex-building",
+  "domeen": "pintexbuilding.ee",
+  "kaive": "120678"
+}

@@ -1,0 +1,23 @@
+{
+  "nimi": "KASAF EHITUS OÜ",
+  "lyhinimi": "Kasaf Ehitus",
+  "vorm": "OÜ",
+  "registrikood": "16415677",
+  "emtak": "41001",
+  "telefonid": [
+    "+372 56817585"
+  ],
+  "email": "kasafehitus@gmail.com",
+  "piirkond": "Kohtla-Järve ja Ida-Virumaa",
+  "piirkond_kus": "Kohtla-Järvel ja Ida-Virumaal",
+  "linn_kus": "Kohtla-Järvel",
+  "aasta": "2022",
+  "tootajaid": 2,
+  "sissejuhatus": "Ehitame ja renoveerime maju Kohtla-Järvel ja Ida-Virumaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "250",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-kasaf-ehitus",
+  "domeen": "kasafehitus.ee",
+  "kaive": "74276"
+}

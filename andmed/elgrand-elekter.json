@@ -1,0 +1,23 @@
+{
+  "nimi": "Elgrand Elekter OÜ",
+  "lyhinimi": "Elgrand Elekter",
+  "vorm": "OÜ",
+  "registrikood": "16778285",
+  "emtak": "43211",
+  "telefonid": [
+    "+372 55908555"
+  ],
+  "email": "elgrand.elekter@gmail.com",
+  "piirkond": "Tallinn ja Harjumaa",
+  "piirkond_kus": "Tallinnas ja Harjumaal",
+  "linn_kus": "Tallinnas",
+  "aasta": "2023",
+  "tootajaid": 1,
+  "sissejuhatus": "Teeme elektritöid Tallinnas ja Harjumaal: juhtmestik, kilbid, valgustus ja rikked. Enne tööd vaatame objekti üle ja ütleme hinna.",
+  "pakett": "250",
+  "kategooria": "elekter",
+  "teenused_voti": "43211",
+  "kujundus": "f-elgrand-elekter",
+  "domeen": "elgrandelekter.ee",
+  "kaive": "39970"
+}

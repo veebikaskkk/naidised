@@ -1,0 +1,23 @@
+{
+  "nimi": "Andelekt OÜ",
+  "lyhinimi": "Andelekt",
+  "vorm": "OÜ",
+  "registrikood": "12796091",
+  "emtak": "4321",
+  "telefonid": [
+    "+372 5115432"
+  ],
+  "email": "andrusmaisla@gmail.com",
+  "piirkond": "Viljandimaa",
+  "piirkond_kus": "Viljandimaal",
+  "linn_kus": "Viljandimaal",
+  "aasta": "2015",
+  "tootajaid": 1,
+  "sissejuhatus": "Teeme elektritöid Viljandimaal: juhtmestik, kilbid, valgustus ja rikked. Enne tööd vaatame objekti üle ja ütleme hinna.",
+  "pakett": "250",
+  "kategooria": "elekter",
+  "teenused_voti": "43211",
+  "kujundus": "f-andelekt",
+  "domeen": "andelekt.ee",
+  "kaive": "73989"
+}

@@ -1,0 +1,23 @@
+{
+  "nimi": "Aarne Teenus osaühing",
+  "lyhinimi": "Aarne Teenus",
+  "vorm": "OÜ",
+  "registrikood": "11554960",
+  "emtak": "43321",
+  "telefonid": [
+    "+372 5183061"
+  ],
+  "email": "aarne.kilter@mail.ee",
+  "piirkond": "Jõgevamaa",
+  "piirkond_kus": "Jõgevamaal",
+  "linn_kus": "Jõgevamaal",
+  "aasta": "2008",
+  "tootajaid": 1,
+  "sissejuhatus": "Teeme siseviimistlust Jõgevamaal: pahteldame, värvime, plaaditame ja paigaldame põrandaid. Võid tellida kogu remondi või ainult ühe etapi.",
+  "pakett": "250",
+  "kategooria": "viimistlus",
+  "teenused_voti": "43321",
+  "kujundus": "f-aarne-teenus",
+  "domeen": "aarneteenus.ee",
+  "kaive": "40221"
+}

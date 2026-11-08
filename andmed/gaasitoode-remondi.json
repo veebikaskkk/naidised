@@ -1,0 +1,24 @@
+{
+  "nimi": "Gaasitööde Remondi Osaühing",
+  "lyhinimi": "Gaasitööde Remondi",
+  "vorm": "OÜ",
+  "registrikood": "10761898",
+  "emtak": "43221",
+  "telefonid": [
+    "+372 5273205",
+    "+372 6213020"
+  ],
+  "email": "gaasiremont@hot.ee",
+  "piirkond": "Tallinn ja Harjumaa",
+  "piirkond_kus": "Tallinnas ja Harjumaal",
+  "linn_kus": "Tallinnas",
+  "aasta": "2001",
+  "tootajaid": 2,
+  "sissejuhatus": "Paigaldame ja hooldame kütte- ja ventilatsioonisüsteeme Tallinnas ja Harjumaal: radiaatorid, põrandaküte, soojuspumbad ja ventilatsioon.",
+  "pakett": "250",
+  "kategooria": "toru",
+  "teenused_voti": "43221",
+  "kujundus": "f-gaasitoode-remondi",
+  "domeen": "gaasitooderemondi.ee",
+  "kaive": "31147"
+}

@@ -1,0 +1,23 @@
+{
+  "nimi": "BGB GRUPP OÜ",
+  "lyhinimi": "BGB Grupp",
+  "vorm": "OÜ",
+  "registrikood": "16610189",
+  "emtak": "43222",
+  "telefonid": [
+    "+372 55598673"
+  ],
+  "email": "gbvirugrupp@gmail.com",
+  "piirkond": "Kohtla-Järve ja Ida-Virumaa",
+  "piirkond_kus": "Kohtla-Järvel ja Ida-Virumaal",
+  "linn_kus": "Kohtla-Järvel",
+  "aasta": "2022",
+  "tootajaid": 1,
+  "sissejuhatus": "Teeme torutöid Kohtla-Järvel ja Ida-Virumaal: veetorustik, kanalisatsioon ja sanitaartehnika. Enne tööd vaatame objekti üle ja ütleme hinna.",
+  "pakett": "250",
+  "kategooria": "toru",
+  "teenused_voti": "43222",
+  "kujundus": "f-bgb-grupp",
+  "domeen": "bgbgrupp.ee",
+  "kaive": "39526"
+}

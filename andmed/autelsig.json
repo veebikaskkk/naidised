@@ -1,0 +1,23 @@
+{
+  "nimi": "Osaühing AUTELSIG",
+  "lyhinimi": "Autelsig",
+  "vorm": "OÜ",
+  "registrikood": "10741565",
+  "emtak": "4321",
+  "telefonid": [
+    "+372 5185028"
+  ],
+  "email": "autelsig@gmail.com",
+  "piirkond": "Viljandimaa",
+  "piirkond_kus": "Viljandimaal",
+  "linn_kus": "Viljandimaal",
+  "aasta": "2001",
+  "tootajaid": 1,
+  "sissejuhatus": "Teeme elektritöid Viljandimaal: juhtmestik, kilbid, valgustus ja rikked. Enne tööd vaatame objekti üle ja ütleme hinna.",
+  "pakett": "250",
+  "kategooria": "elekter",
+  "teenused_voti": "43211",
+  "kujundus": "f-autelsig",
+  "domeen": "autelsig.ee",
+  "kaive": "39893"
+}

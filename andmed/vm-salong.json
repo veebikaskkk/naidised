@@ -1,0 +1,23 @@
+{
+  "nimi": "VM Salong OÜ",
+  "lyhinimi": "VM Salong",
+  "vorm": "OÜ",
+  "registrikood": "14142212",
+  "emtak": "96211",
+  "telefonid": [
+    "+372 5658099"
+  ],
+  "email": "marika.liik@gmail.com",
+  "piirkond": "Tartu ja Tartumaa",
+  "piirkond_kus": "Tartus ja Tartumaal",
+  "linn_kus": "Tartus",
+  "aasta": "2016",
+  "tootajaid": 1,
+  "sissejuhatus": "Lõikame, värvime ja teeme soenguid Tartus ja Tartumaal. Broneeri aeg otse kalendrist või helista.",
+  "pakett": "400",
+  "kategooria": "juuksur",
+  "teenused_voti": "96211",
+  "kujundus": "f-vm-salong",
+  "domeen": "vmsalong.ee",
+  "kaive": "35151"
+}

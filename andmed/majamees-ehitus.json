@@ -1,0 +1,23 @@
+{
+  "nimi": "OÜ Majamees ehitus",
+  "lyhinimi": "Majamees ehitus",
+  "vorm": "OÜ",
+  "registrikood": "14611115",
+  "emtak": "41201",
+  "telefonid": [
+    "+372 51960938"
+  ],
+  "email": "s1234@mail.ee",
+  "piirkond": "Pärnu ja Pärnumaa",
+  "piirkond_kus": "Pärnus ja Pärnumaal",
+  "linn_kus": "Pärnus",
+  "aasta": "2018",
+  "tootajaid": 2,
+  "sissejuhatus": "Ehitame ja renoveerime maju Pärnus ja Pärnumaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "250",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-majamees-ehitus",
+  "domeen": "majameesehitus.ee",
+  "kaive": "147562"
+}

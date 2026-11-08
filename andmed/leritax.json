@@ -1,0 +1,23 @@
+{
+  "nimi": "Osaühing LERITAX",
+  "lyhinimi": "Leritax",
+  "vorm": "OÜ",
+  "registrikood": "10964443",
+  "emtak": "95311",
+  "telefonid": [
+    "+372 5024056"
+  ],
+  "email": "leritax@hot.ee",
+  "piirkond": "Tallinn ja Harjumaa",
+  "piirkond_kus": "Tallinnas ja Harjumaal",
+  "linn_kus": "Tallinnas",
+  "aasta": "2003",
+  "tootajaid": 2,
+  "sissejuhatus": "Hooldame ja remondime autosid Tallinnas ja Harjumaal. Enne tööd vaatame auto üle ja ütleme, mida on vaja teha ja mis see maksab.",
+  "pakett": "250",
+  "kategooria": "auto",
+  "teenused_voti": "95311",
+  "kujundus": "f-leritax",
+  "domeen": "leritax.ee",
+  "kaive": "86868"
+}

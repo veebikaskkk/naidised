@@ -1,0 +1,23 @@
+{
+  "nimi": "Osaühing Ankon Autoremont",
+  "lyhinimi": "Ankon Autoremont",
+  "vorm": "OÜ",
+  "registrikood": "10492228",
+  "emtak": "95311",
+  "telefonid": [
+    "+372 5515861"
+  ],
+  "email": "net.da@bk.ru",
+  "piirkond": "Tallinn ja Harjumaa",
+  "piirkond_kus": "Tallinnas ja Harjumaal",
+  "linn_kus": "Tallinnas",
+  "aasta": "1998",
+  "tootajaid": 4,
+  "sissejuhatus": "Hooldame ja remondime autosid Tallinnas ja Harjumaal. Enne tööd vaatame auto üle ja ütleme, mida on vaja teha ja mis see maksab.",
+  "pakett": "250",
+  "kategooria": "auto",
+  "teenused_voti": "95311",
+  "kujundus": "f-ankon-autoremont",
+  "domeen": "ankonautoremont.ee",
+  "kaive": "57130"
+}

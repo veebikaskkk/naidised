@@ -1,0 +1,23 @@
+{
+  "nimi": "Kingu Elekter OÜ",
+  "lyhinimi": "Kingu Elekter",
+  "vorm": "OÜ",
+  "registrikood": "14503779",
+  "emtak": "4321",
+  "telefonid": [
+    "+372 56921526"
+  ],
+  "email": "kinguelekter@gmail.com",
+  "piirkond": "Viljandimaa",
+  "piirkond_kus": "Viljandimaal",
+  "linn_kus": "Viljandimaal",
+  "aasta": "2018",
+  "tootajaid": 3,
+  "sissejuhatus": "Teeme elektritöid Viljandimaal: juhtmestik, kilbid, valgustus ja rikked. Enne tööd vaatame objekti üle ja ütleme hinna.",
+  "pakett": "500",
+  "kategooria": "elekter",
+  "teenused_voti": "43211",
+  "kujundus": "f-kingu-elekter",
+  "domeen": "kinguelekter.ee",
+  "kaive": "329940"
+}

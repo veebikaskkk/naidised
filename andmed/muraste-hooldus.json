@@ -1,0 +1,23 @@
+{
+  "nimi": "Muraste Hooldus OÜ",
+  "lyhinimi": "Muraste Hooldus",
+  "vorm": "OÜ",
+  "registrikood": "12108872",
+  "emtak": "81301",
+  "telefonid": [
+    "+372 53410347"
+  ],
+  "email": "tarmo.ola@mail.ee",
+  "piirkond": "Harjumaa",
+  "piirkond_kus": "Harjumaal",
+  "linn_kus": "Harjumaal",
+  "aasta": "2011",
+  "tootajaid": 1,
+  "sissejuhatus": "Teeme haljastus- ja aiatöid Harjumaal: muru, hekid, puude hooldus ja hooajaline korrastus.",
+  "pakett": "250",
+  "kategooria": "haljastus",
+  "teenused_voti": "81301",
+  "kujundus": "f-muraste-hooldus",
+  "domeen": "murastehooldus.ee",
+  "kaive": "32847"
+}

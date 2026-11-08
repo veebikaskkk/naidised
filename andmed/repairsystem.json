@@ -1,0 +1,23 @@
+{
+  "nimi": "Repairsystem OÜ",
+  "lyhinimi": "Repairsystem",
+  "vorm": "OÜ",
+  "registrikood": "12445032",
+  "emtak": "43221",
+  "telefonid": [
+    "+372 5050541"
+  ],
+  "email": "info.repairsystem@gmail.com",
+  "piirkond": "Tallinn ja Harjumaa",
+  "piirkond_kus": "Tallinnas ja Harjumaal",
+  "linn_kus": "Tallinnas",
+  "aasta": "2013",
+  "tootajaid": 1,
+  "sissejuhatus": "Paigaldame ja hooldame ventilatsioonisüsteeme Tallinnas ja Harjumaal: eramutes, korterites ja äripindadel.",
+  "pakett": "250",
+  "kategooria": "toru",
+  "teenused_voti": "43221-vent",
+  "kujundus": "f-repairsystem",
+  "domeen": "repairsystem.ee",
+  "kaive": "131418"
+}

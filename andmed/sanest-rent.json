@@ -1,0 +1,23 @@
+{
+  "nimi": "Sanest rent OÜ",
+  "lyhinimi": "Sanest rent",
+  "vorm": "OÜ",
+  "registrikood": "14454513",
+  "emtak": "4321",
+  "telefonid": [
+    "+372 55957883"
+  ],
+  "email": "sander.algo@gmail.com",
+  "piirkond": "Pärnu ja Pärnumaa",
+  "piirkond_kus": "Pärnus ja Pärnumaal",
+  "linn_kus": "Pärnus",
+  "aasta": "2018",
+  "tootajaid": 1,
+  "sissejuhatus": "Teeme elektritöid Pärnus ja Pärnumaal: juhtmestik, kilbid, valgustus ja rikked. Enne tööd vaatame objekti üle ja ütleme hinna.",
+  "pakett": "250",
+  "kategooria": "elekter",
+  "teenused_voti": "43211",
+  "kujundus": "f-sanest-rent",
+  "domeen": "sanestrent.ee",
+  "kaive": "57379"
+}

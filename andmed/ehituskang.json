@@ -1,0 +1,23 @@
+{
+  "nimi": "OÜ Ehituskang",
+  "lyhinimi": "Ehituskang",
+  "vorm": "OÜ",
+  "registrikood": "16520003",
+  "emtak": "41201",
+  "telefonid": [
+    "+372 56679266"
+  ],
+  "email": "ehituskang@gmail.com",
+  "piirkond": "Lääne-Virumaa",
+  "piirkond_kus": "Lääne-Virumaal",
+  "linn_kus": "Lääne-Virumaal",
+  "aasta": "2022",
+  "tootajaid": 1,
+  "sissejuhatus": "Ehitame ja renoveerime maju Lääne-Virumaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "250",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-ehituskang",
+  "domeen": "ehituskang.ee",
+  "kaive": "61586"
+}

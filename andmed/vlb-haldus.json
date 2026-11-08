@@ -1,0 +1,23 @@
+{
+  "nimi": "VLB Haldus OÜ",
+  "lyhinimi": "VLB Haldus",
+  "vorm": "OÜ",
+  "registrikood": "12922058",
+  "emtak": "41001",
+  "telefonid": [
+    "+372 55614837"
+  ],
+  "email": "vb.haldus@gmail.com",
+  "piirkond": "Harjumaa",
+  "piirkond_kus": "Harjumaal",
+  "linn_kus": "Harjumaal",
+  "aasta": "2015",
+  "tootajaid": 2,
+  "sissejuhatus": "Ehitame ja renoveerime maju Harjumaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "500",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-vlb-haldus",
+  "domeen": "vlbhaldus.ee",
+  "kaive": "230503"
+}

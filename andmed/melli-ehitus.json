@@ -1,0 +1,23 @@
+{
+  "nimi": "osaühing Melli Ehitus",
+  "lyhinimi": "Melli Ehitus",
+  "vorm": "OÜ",
+  "registrikood": "12431716",
+  "emtak": "41001",
+  "telefonid": [
+    "+372 56506243"
+  ],
+  "email": "melli.ehitus@mail.ee",
+  "piirkond": "Saaremaa",
+  "piirkond_kus": "Saaremaal",
+  "linn_kus": "Saaremaal",
+  "aasta": "2013",
+  "tootajaid": 3,
+  "sissejuhatus": "Ehitame ja renoveerime maju Saaremaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "500",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-melli-ehitus",
+  "domeen": "melliehitus.ee",
+  "kaive": "301583"
+}

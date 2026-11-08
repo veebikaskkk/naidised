@@ -1,0 +1,24 @@
+{
+  "nimi": "Osaühing E-Ruudus",
+  "lyhinimi": "E-Ruudus",
+  "vorm": "OÜ",
+  "registrikood": "12181248",
+  "emtak": "43351",
+  "telefonid": [
+    "+372 51941220",
+    "+372 5099890"
+  ],
+  "email": "e.ruudus@gmail.com",
+  "piirkond": "Tallinn ja Harjumaa",
+  "piirkond_kus": "Tallinnas ja Harjumaal",
+  "linn_kus": "Tallinnas",
+  "aasta": "2011",
+  "tootajaid": 1,
+  "sissejuhatus": "Teeme siseviimistlust Tallinnas ja Harjumaal: pahteldame, värvime, plaaditame ja paigaldame põrandaid. Võid tellida kogu remondi või ainult ühe etapi.",
+  "pakett": "250",
+  "kategooria": "viimistlus",
+  "teenused_voti": "43351",
+  "kujundus": "f-e-ruudus",
+  "domeen": "eruudus.ee",
+  "kaive": "37009"
+}

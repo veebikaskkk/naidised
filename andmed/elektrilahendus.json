@@ -1,0 +1,24 @@
+{
+  "nimi": "Elektrilahendus OÜ",
+  "lyhinimi": "Elektrilahendus",
+  "vorm": "OÜ",
+  "registrikood": "12092616",
+  "emtak": "4321",
+  "telefonid": [
+    "+372 53363872",
+    "+372 58181863"
+  ],
+  "email": "elektrilahendus@gmail.com",
+  "piirkond": "Maardu ja Harjumaa",
+  "piirkond_kus": "Maardus ja Harjumaal",
+  "linn_kus": "Maardus",
+  "aasta": "2011",
+  "tootajaid": 3,
+  "sissejuhatus": "Teeme elektritöid Maardus ja Harjumaal: juhtmestik, kilbid, valgustus ja rikked. Enne tööd vaatame objekti üle ja ütleme hinna.",
+  "pakett": "500",
+  "kategooria": "elekter",
+  "teenused_voti": "43211",
+  "kujundus": "f-elektrilahendus",
+  "domeen": "elektrilahendus.ee",
+  "kaive": "322713"
+}

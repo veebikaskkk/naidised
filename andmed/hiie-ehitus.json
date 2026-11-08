@@ -1,0 +1,23 @@
+{
+  "nimi": "Hiie Ehitus OÜ",
+  "lyhinimi": "Hiie Ehitus",
+  "vorm": "OÜ",
+  "registrikood": "16581045",
+  "emtak": "41001",
+  "telefonid": [
+    "+372 55996641"
+  ],
+  "email": "erkiott@icloud.com",
+  "piirkond": "Harjumaa",
+  "piirkond_kus": "Harjumaal",
+  "linn_kus": "Harjumaal",
+  "aasta": "2022",
+  "tootajaid": 1,
+  "sissejuhatus": "Ehitame ja renoveerime maju Harjumaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "250",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-hiie-ehitus",
+  "domeen": "hiieehitus.ee",
+  "kaive": "38194"
+}

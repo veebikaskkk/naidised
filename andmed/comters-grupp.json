@@ -1,0 +1,24 @@
+{
+  "nimi": "Osaühing Comters Grupp",
+  "lyhinimi": "Comters Grupp",
+  "vorm": "OÜ",
+  "registrikood": "10423196",
+  "emtak": "41001",
+  "telefonid": [
+    "+372 5510481",
+    "+372 56634667"
+  ],
+  "email": "comtersgrupp17@gmail.com",
+  "piirkond": "Kohtla-Järve ja Ida-Virumaa",
+  "piirkond_kus": "Kohtla-Järvel ja Ida-Virumaal",
+  "linn_kus": "Kohtla-Järvel",
+  "aasta": "1998",
+  "tootajaid": 1,
+  "sissejuhatus": "Ehitame ja renoveerime maju Kohtla-Järvel ja Ida-Virumaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "250",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-comters-grupp",
+  "domeen": "comtersgrupp.ee",
+  "kaive": "46266"
+}

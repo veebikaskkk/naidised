@@ -1,0 +1,23 @@
+{
+  "nimi": "OÜ ElComSys",
+  "lyhinimi": "ElComSys",
+  "vorm": "OÜ",
+  "registrikood": "11518510",
+  "emtak": "4321",
+  "telefonid": [
+    "+372 5120330"
+  ],
+  "email": "elcomsys@mail.ee",
+  "piirkond": "Tallinn ja Harjumaa",
+  "piirkond_kus": "Tallinnas ja Harjumaal",
+  "linn_kus": "Tallinnas",
+  "aasta": "2008",
+  "tootajaid": 1,
+  "sissejuhatus": "Teeme elektritöid Tallinnas ja Harjumaal: juhtmestik, kilbid, valgustus ja rikked. Enne tööd vaatame objekti üle ja ütleme hinna.",
+  "pakett": "250",
+  "kategooria": "elekter",
+  "teenused_voti": "43211",
+  "kujundus": "f-elcomsys",
+  "domeen": "elcomsys.ee",
+  "kaive": "45249"
+}

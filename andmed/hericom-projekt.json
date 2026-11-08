@@ -1,0 +1,23 @@
+{
+  "nimi": "Osaühing HERICOM PROJEKT",
+  "lyhinimi": "Hericom Projekt",
+  "vorm": "OÜ",
+  "registrikood": "11002930",
+  "emtak": "4321",
+  "telefonid": [
+    "+372 5115653"
+  ],
+  "email": "hericom.projekt@mail.ee",
+  "piirkond": "Viljandimaa",
+  "piirkond_kus": "Viljandimaal",
+  "linn_kus": "Viljandimaal",
+  "aasta": "2004",
+  "tootajaid": 2,
+  "sissejuhatus": "Teeme elektritöid Viljandimaal: juhtmestik, kilbid, valgustus ja rikked. Enne tööd vaatame objekti üle ja ütleme hinna.",
+  "pakett": "250",
+  "kategooria": "elekter",
+  "teenused_voti": "43211",
+  "kujundus": "f-hericom-projekt",
+  "domeen": "hericomprojekt.ee",
+  "kaive": "96332"
+}

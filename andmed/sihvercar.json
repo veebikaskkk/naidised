@@ -1,0 +1,23 @@
+{
+  "nimi": "OÜ SihverCar",
+  "lyhinimi": "SihverCar",
+  "vorm": "OÜ",
+  "registrikood": "14625809",
+  "emtak": "95311",
+  "telefonid": [
+    "+372 53912070"
+  ],
+  "email": "hannes.tisler@gmail.com",
+  "piirkond": "Viljandimaa",
+  "piirkond_kus": "Viljandimaal",
+  "linn_kus": "Viljandimaal",
+  "aasta": "2018",
+  "tootajaid": 1,
+  "sissejuhatus": "Hooldame ja remondime autosid Viljandimaal. Enne tööd vaatame auto üle ja ütleme, mida on vaja teha ja mis see maksab.",
+  "pakett": "250",
+  "kategooria": "auto",
+  "teenused_voti": "95311",
+  "kujundus": "f-sihvercar",
+  "domeen": "sihvercar.ee",
+  "kaive": "52752"
+}

@@ -1,0 +1,23 @@
+{
+  "nimi": "ADS Auto OÜ",
+  "lyhinimi": "ADS Auto",
+  "vorm": "OÜ",
+  "registrikood": "16251201",
+  "emtak": "95311",
+  "telefonid": [
+    "+372 56971993"
+  ],
+  "email": "info.adsauto@gmail.com",
+  "piirkond": "Harjumaa",
+  "piirkond_kus": "Harjumaal",
+  "linn_kus": "Harjumaal",
+  "aasta": "2021",
+  "tootajaid": 2,
+  "sissejuhatus": "Hooldame ja remondime autosid Harjumaal. Enne tööd vaatame auto üle ja ütleme, mida on vaja teha ja mis see maksab.",
+  "pakett": "250",
+  "kategooria": "auto",
+  "teenused_voti": "95311",
+  "kujundus": "f-ads-auto",
+  "domeen": "adsauto.ee",
+  "kaive": "135715"
+}

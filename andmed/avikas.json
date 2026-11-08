@@ -1,0 +1,24 @@
+{
+  "nimi": "Avikas OÜ",
+  "lyhinimi": "Avikas",
+  "vorm": "OÜ",
+  "registrikood": "14247922",
+  "emtak": "41001",
+  "telefonid": [
+    "+372 56485970",
+    "+372 55523312"
+  ],
+  "email": "info.avikas@gmail.com",
+  "piirkond": "Läänemaa",
+  "piirkond_kus": "Läänemaal",
+  "linn_kus": "Läänemaal",
+  "aasta": "2017",
+  "tootajaid": 3,
+  "sissejuhatus": "Ehitame ja renoveerime maju Läänemaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "500",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-avikas",
+  "domeen": "avikas.ee",
+  "kaive": "260863"
+}

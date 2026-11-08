@@ -1,0 +1,23 @@
+{
+  "nimi": "Multi Haldus OÜ",
+  "lyhinimi": "Multi Haldus",
+  "vorm": "OÜ",
+  "registrikood": "16016598",
+  "emtak": "41201",
+  "telefonid": [
+    "+372 56453045"
+  ],
+  "email": "martin.kasearu@gmail.com",
+  "piirkond": "Tallinn ja Harjumaa",
+  "piirkond_kus": "Tallinnas ja Harjumaal",
+  "linn_kus": "Tallinnas",
+  "aasta": "2020",
+  "tootajaid": 1,
+  "sissejuhatus": "Ehitame ja renoveerime maju Tallinnas ja Harjumaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "250",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-multi-haldus",
+  "domeen": "multihaldus.ee",
+  "kaive": "128952"
+}

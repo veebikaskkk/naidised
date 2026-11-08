@@ -1,0 +1,24 @@
+{
+  "nimi": "Osaühing Pärnu Autopesulad",
+  "lyhinimi": "Pärnu Autopesulad",
+  "vorm": "OÜ",
+  "registrikood": "10868254",
+  "emtak": "95311",
+  "telefonid": [
+    "+372 56470370",
+    "+372 4437900"
+  ],
+  "email": "reimann.anti@gmail.com",
+  "piirkond": "Pärnu ja Pärnumaa",
+  "piirkond_kus": "Pärnus ja Pärnumaal",
+  "linn_kus": "Pärnus",
+  "aasta": "2002",
+  "tootajaid": 4,
+  "sissejuhatus": "Peseme, poleerime ja puhastame autosid Pärnus ja Pärnumaal, nii seest kui väljast.",
+  "pakett": "250",
+  "kategooria": "auto",
+  "teenused_voti": "95311-detail",
+  "kujundus": "f-parnu-autopesulad",
+  "domeen": "parnuautopesulad.ee",
+  "kaive": "55340"
+}
