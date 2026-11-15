@@ -1,0 +1,23 @@
+{
+  "nimi": "GVM Ehitus OÜ",
+  "lyhinimi": "GVM Ehitus",
+  "vorm": "OÜ",
+  "registrikood": "16682254",
+  "emtak": "41001",
+  "telefonid": [
+    "+372 56651517"
+  ],
+  "email": "guidoverrevmagi@gmail.com",
+  "piirkond": "Harjumaa",
+  "piirkond_kus": "Harjumaal",
+  "linn_kus": "Harjumaal",
+  "aasta": "2023",
+  "tootajaid": 1,
+  "sissejuhatus": "Ehitame ja renoveerime maju Harjumaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "250",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-gvm-ehitus",
+  "domeen": "gvmehitus.ee",
+  "kaive": "28118"
+}

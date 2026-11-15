@@ -1,0 +1,23 @@
+{
+  "nimi": "LINPRO Ehitus OÜ",
+  "lyhinimi": "LINPRO Ehitus",
+  "vorm": "OÜ",
+  "registrikood": "14040612",
+  "emtak": "41001",
+  "telefonid": [
+    "+372 5177365"
+  ],
+  "email": "linproehitus@gmail.com",
+  "piirkond": "Tartu ja Tartumaa",
+  "piirkond_kus": "Tartus ja Tartumaal",
+  "linn_kus": "Tartus",
+  "aasta": "2016",
+  "tootajaid": 4,
+  "sissejuhatus": "Ehitame ja renoveerime maju Tartus ja Tartumaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "500",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-linpro-ehitus",
+  "domeen": "linproehitus.ee",
+  "kaive": "338032"
+}

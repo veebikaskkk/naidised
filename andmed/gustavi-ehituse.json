@@ -1,0 +1,23 @@
+{
+  "nimi": "Gustavi Ehituse Osaühing",
+  "lyhinimi": "Gustavi Ehituse",
+  "vorm": "OÜ",
+  "registrikood": "10309845",
+  "emtak": "41001",
+  "telefonid": [
+    "+372 6485863"
+  ],
+  "email": "gustavi.ehitus@hot.ee",
+  "piirkond": "Tallinn ja Harjumaa",
+  "piirkond_kus": "Tallinnas ja Harjumaal",
+  "linn_kus": "Tallinnas",
+  "aasta": "1997",
+  "tootajaid": 3,
+  "sissejuhatus": "Ehitame ja renoveerime maju Tallinnas ja Harjumaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "250",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-gustavi-ehituse",
+  "domeen": "gustaviehituse.ee",
+  "kaive": "132830"
+}

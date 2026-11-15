@@ -1,0 +1,23 @@
+{
+  "nimi": "Novo Auto OÜ",
+  "lyhinimi": "Novo Auto",
+  "vorm": "OÜ",
+  "registrikood": "14546808",
+  "emtak": "45201",
+  "telefonid": [
+    "+372 56886549"
+  ],
+  "email": "novoauto@bk.ru",
+  "piirkond": "Kohtla-Järve ja Ida-Virumaa",
+  "piirkond_kus": "Kohtla-Järvel ja Ida-Virumaal",
+  "linn_kus": "Kohtla-Järvel",
+  "aasta": "2018",
+  "tootajaid": 5,
+  "sissejuhatus": "Hooldame ja remondime autosid Kohtla-Järvel ja Ida-Virumaal. Enne tööd vaatame auto üle ja ütleme, mida on vaja teha ja mis see maksab.",
+  "pakett": "250",
+  "kategooria": "auto",
+  "teenused_voti": "95311",
+  "kujundus": "f-novo-auto",
+  "domeen": "novoauto.ee",
+  "kaive": "91154"
+}

@@ -1,0 +1,23 @@
+{
+  "nimi": "Autod Korda OÜ",
+  "lyhinimi": "Autod Korda",
+  "vorm": "OÜ",
+  "registrikood": "16589271",
+  "emtak": "95311",
+  "telefonid": [
+    "+372 56626099"
+  ],
+  "email": "autodkorda@hot.ee",
+  "piirkond": "Maardu ja Harjumaa",
+  "piirkond_kus": "Maardus ja Harjumaal",
+  "linn_kus": "Maardus",
+  "aasta": "2022",
+  "tootajaid": 1,
+  "sissejuhatus": "Hooldame ja remondime autosid Maardus ja Harjumaal. Enne tööd vaatame auto üle ja ütleme, mida on vaja teha ja mis see maksab.",
+  "pakett": "250",
+  "kategooria": "auto",
+  "teenused_voti": "95311",
+  "kujundus": "f-autod-korda",
+  "domeen": "autodkorda.ee",
+  "kaive": "53383"
+}

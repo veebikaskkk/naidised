@@ -1,0 +1,24 @@
+{
+  "nimi": "ALVIGER EHITUS OÜ",
+  "lyhinimi": "Alviger Ehitus",
+  "vorm": "OÜ",
+  "registrikood": "14827720",
+  "emtak": "41001",
+  "telefonid": [
+    "+372 53461118",
+    "+372 55559281"
+  ],
+  "email": "molodoi@inbox.ru",
+  "piirkond": "Tallinn ja Harjumaa",
+  "piirkond_kus": "Tallinnas ja Harjumaal",
+  "linn_kus": "Tallinnas",
+  "aasta": "2019",
+  "tootajaid": 3,
+  "sissejuhatus": "Ehitame ja renoveerime maju Tallinnas ja Harjumaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "250",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-alviger-ehitus",
+  "domeen": "alvigerehitus.ee",
+  "kaive": "25771"
+}

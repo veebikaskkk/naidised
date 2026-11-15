@@ -1,0 +1,23 @@
+{
+  "nimi": "HKM Majad OÜ",
+  "lyhinimi": "HKM Majad",
+  "vorm": "OÜ",
+  "registrikood": "16010176",
+  "emtak": "41001",
+  "telefonid": [
+    "+372 58515954"
+  ],
+  "email": "hkm@mail.ee",
+  "piirkond": "Tallinn ja Harjumaa",
+  "piirkond_kus": "Tallinnas ja Harjumaal",
+  "linn_kus": "Tallinnas",
+  "aasta": "2020",
+  "tootajaid": 1,
+  "sissejuhatus": "Ehitame ja renoveerime maju Tallinnas ja Harjumaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "500",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-hkm-majad",
+  "domeen": "hkmmajad.ee",
+  "kaive": "371815"
+}

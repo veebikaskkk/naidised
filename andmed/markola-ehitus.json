@@ -1,0 +1,23 @@
+{
+  "nimi": "Markola Ehitus OÜ",
+  "lyhinimi": "Markola Ehitus",
+  "vorm": "OÜ",
+  "registrikood": "12259482",
+  "emtak": "41201",
+  "telefonid": [
+    "+372 53992362"
+  ],
+  "email": "marko.latt@mail.ee",
+  "piirkond": "Raplamaa",
+  "piirkond_kus": "Raplamaal",
+  "linn_kus": "Raplamaal",
+  "aasta": "2012",
+  "tootajaid": 1,
+  "sissejuhatus": "Ehitame ja renoveerime maju Raplamaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "250",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-markola-ehitus",
+  "domeen": "markolaehitus.ee",
+  "kaive": "29070"
+}

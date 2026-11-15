@@ -1,0 +1,23 @@
+{
+  "nimi": "MRT Ehitus OÜ",
+  "lyhinimi": "MRT Ehitus",
+  "vorm": "OÜ",
+  "registrikood": "12761678",
+  "emtak": "41001",
+  "telefonid": [
+    "+372 55672904"
+  ],
+  "email": "mart.peedoson@mail.ee",
+  "piirkond": "Harjumaa",
+  "piirkond_kus": "Harjumaal",
+  "linn_kus": "Harjumaal",
+  "aasta": "2014",
+  "tootajaid": 1,
+  "sissejuhatus": "Ehitame ja renoveerime maju Harjumaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "250",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-mrt-ehitus",
+  "domeen": "mrtehitus.ee",
+  "kaive": "106678"
+}

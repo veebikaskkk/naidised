@@ -1,0 +1,24 @@
+{
+  "nimi": "Simmel Ehitus OÜ",
+  "lyhinimi": "Simmel Ehitus",
+  "vorm": "OÜ",
+  "registrikood": "14052393",
+  "emtak": "41001",
+  "telefonid": [
+    "+372 5142238",
+    "+372 5148766"
+  ],
+  "email": "simmelehitus@gmail.com",
+  "piirkond": "Lääne-Virumaa",
+  "piirkond_kus": "Lääne-Virumaal",
+  "linn_kus": "Lääne-Virumaal",
+  "aasta": "2016",
+  "tootajaid": 14,
+  "sissejuhatus": "Ehitame ja renoveerime maju Lääne-Virumaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "500",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-simmel-ehitus",
+  "domeen": "simmelehitus.ee",
+  "kaive": "271388"
+}

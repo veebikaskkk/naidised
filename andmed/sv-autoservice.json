@@ -1,0 +1,23 @@
+{
+  "nimi": "SV Autoservice OÜ",
+  "lyhinimi": "SV Autoservice",
+  "vorm": "OÜ",
+  "registrikood": "11948742",
+  "emtak": "95311",
+  "telefonid": [
+    "+372 55979293"
+  ],
+  "email": "svautoserv@gmail.com",
+  "piirkond": "Jõgevamaa",
+  "piirkond_kus": "Jõgevamaal",
+  "linn_kus": "Jõgevamaal",
+  "aasta": "2010",
+  "tootajaid": 1,
+  "sissejuhatus": "Hooldame ja remondime autosid Jõgevamaal. Enne tööd vaatame auto üle ja ütleme, mida on vaja teha ja mis see maksab.",
+  "pakett": "250",
+  "kategooria": "auto",
+  "teenused_voti": "95311",
+  "kujundus": "f-sv-autoservice",
+  "domeen": "svautoservice.ee",
+  "kaive": "31625"
+}

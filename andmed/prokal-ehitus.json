@@ -1,0 +1,23 @@
+{
+  "nimi": "ProkAL Ehitus OÜ",
+  "lyhinimi": "ProkAL Ehitus",
+  "vorm": "OÜ",
+  "registrikood": "16034461",
+  "emtak": "41001",
+  "telefonid": [
+    "+372 56085125"
+  ],
+  "email": "prokokofjev.aleksandr@gmail.com",
+  "piirkond": "Kohtla-Järve ja Ida-Virumaa",
+  "piirkond_kus": "Kohtla-Järvel ja Ida-Virumaal",
+  "linn_kus": "Kohtla-Järvel",
+  "aasta": "2020",
+  "tootajaid": 10,
+  "sissejuhatus": "Ehitame ja renoveerime maju Kohtla-Järvel ja Ida-Virumaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "500",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-prokal-ehitus",
+  "domeen": "prokalehitus.ee",
+  "kaive": "281662"
+}

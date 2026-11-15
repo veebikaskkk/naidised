@@ -1,0 +1,23 @@
+{
+  "nimi": "Trebor Ehitus OÜ",
+  "lyhinimi": "Trebor Ehitus",
+  "vorm": "OÜ",
+  "registrikood": "16240427",
+  "emtak": "41201",
+  "telefonid": [
+    "+372 53838860"
+  ],
+  "email": "treborehitus@gmail.com",
+  "piirkond": "Raplamaa",
+  "piirkond_kus": "Raplamaal",
+  "linn_kus": "Raplamaal",
+  "aasta": "2021",
+  "tootajaid": 1,
+  "sissejuhatus": "Ehitame ja renoveerime maju Raplamaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "250",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-trebor-ehitus",
+  "domeen": "treborehitus.ee",
+  "kaive": "99301"
+}

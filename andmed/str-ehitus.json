@@ -1,0 +1,24 @@
+{
+  "nimi": "Osaühing STR EHITUS",
+  "lyhinimi": "STR Ehitus",
+  "vorm": "OÜ",
+  "registrikood": "11096948",
+  "emtak": "41001",
+  "telefonid": [
+    "+372 5211295",
+    "+372 5157189"
+  ],
+  "email": "raigostr@gmail.com",
+  "piirkond": "Tallinn ja Harjumaa",
+  "piirkond_kus": "Tallinnas ja Harjumaal",
+  "linn_kus": "Tallinnas",
+  "aasta": "2005",
+  "tootajaid": 1,
+  "sissejuhatus": "Ehitame ja renoveerime maju Tallinnas ja Harjumaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "250",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-str-ehitus",
+  "domeen": "strehitus.ee",
+  "kaive": "27991"
+}

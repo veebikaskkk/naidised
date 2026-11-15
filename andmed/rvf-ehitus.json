@@ -1,0 +1,23 @@
+{
+  "nimi": "RVF Ehitus OÜ",
+  "lyhinimi": "RVF Ehitus",
+  "vorm": "OÜ",
+  "registrikood": "14673228",
+  "emtak": "41001",
+  "telefonid": [
+    "+372 56665125"
+  ],
+  "email": "rvfehitus@gmail.com",
+  "piirkond": "Tallinn ja Harjumaa",
+  "piirkond_kus": "Tallinnas ja Harjumaal",
+  "linn_kus": "Tallinnas",
+  "aasta": "2019",
+  "tootajaid": 1,
+  "sissejuhatus": "Ehitame ja renoveerime maju Tallinnas ja Harjumaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "250",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-rvf-ehitus",
+  "domeen": "rvfehitus.ee",
+  "kaive": "80808"
+}

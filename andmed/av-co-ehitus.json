@@ -1,0 +1,23 @@
+{
+  "nimi": "AV-Co Ehitus OÜ",
+  "lyhinimi": "AV-Co Ehitus",
+  "vorm": "OÜ",
+  "registrikood": "12312101",
+  "emtak": "41001",
+  "telefonid": [
+    "+372 53345630"
+  ],
+  "email": "andovaikla@gmail.com",
+  "piirkond": "Pärnumaa",
+  "piirkond_kus": "Pärnumaal",
+  "linn_kus": "Pärnumaal",
+  "aasta": "2012",
+  "tootajaid": 1,
+  "sissejuhatus": "Ehitame ja renoveerime maju Pärnumaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "250",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-av-co-ehitus",
+  "domeen": "avcoehitus.ee",
+  "kaive": "65275"
+}

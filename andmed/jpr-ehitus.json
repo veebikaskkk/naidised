@@ -1,0 +1,23 @@
+{
+  "nimi": "JPR Ehitus OÜ",
+  "lyhinimi": "JPR Ehitus",
+  "vorm": "OÜ",
+  "registrikood": "16060493",
+  "emtak": "41001",
+  "telefonid": [
+    "+372 56666863"
+  ],
+  "email": "jjants@hotmail.com",
+  "piirkond": "Tartumaa",
+  "piirkond_kus": "Tartumaal",
+  "linn_kus": "Tartumaal",
+  "aasta": "2020",
+  "tootajaid": 1,
+  "sissejuhatus": "Ehitame ja renoveerime maju Tartumaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "250",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-jpr-ehitus",
+  "domeen": "jprehitus.ee",
+  "kaive": "37343"
+}

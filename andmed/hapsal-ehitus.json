@@ -1,0 +1,24 @@
+{
+  "nimi": "Hapsal Ehitus OÜ",
+  "lyhinimi": "Hapsal Ehitus",
+  "vorm": "OÜ",
+  "registrikood": "14735691",
+  "emtak": "41001",
+  "telefonid": [
+    "+372 55672797",
+    "+372 58500873"
+  ],
+  "email": "hapsalehitus@gmail.com",
+  "piirkond": "Haapsalu ja Läänemaa",
+  "piirkond_kus": "Haapsalus ja Läänemaal",
+  "linn_kus": "Haapsalus",
+  "aasta": "2019",
+  "tootajaid": 2,
+  "sissejuhatus": "Ehitame ja renoveerime maju Haapsalus ja Läänemaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "250",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-hapsal-ehitus",
+  "domeen": "hapsalehitus.ee",
+  "kaive": "32593"
+}

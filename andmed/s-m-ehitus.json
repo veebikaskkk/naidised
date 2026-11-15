@@ -1,0 +1,23 @@
+{
+  "nimi": "S&M Ehitus OÜ",
+  "lyhinimi": "S&M Ehitus",
+  "vorm": "OÜ",
+  "registrikood": "16809933",
+  "emtak": "41001",
+  "telefonid": [
+    "+372 55619533"
+  ],
+  "email": "sten.kabanen@mail.ee",
+  "piirkond": "Viljandimaa",
+  "piirkond_kus": "Viljandimaal",
+  "linn_kus": "Viljandimaal",
+  "aasta": "2023",
+  "tootajaid": 2,
+  "sissejuhatus": "Ehitame ja renoveerime maju Viljandimaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "500",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-s-m-ehitus",
+  "domeen": "smehitus.ee",
+  "kaive": "150256"
+}

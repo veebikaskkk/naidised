@@ -11372,3 +11372,2167 @@ NADALLEHED = [
 
 for _r in NADALLEHED:
     lisa(*_r)
+
+
+# Nädala 16.–20.11 lehed (i 2000+)
+NADAL2LEHED = [
+[
+"f-re-viimistlusgrupp",
+"viimistlus",
+"aasta",
+"Siseviimistlus Tallinnas.",
+2000
+],
+[
+"f-gdd-viimistlus",
+"viimistlus",
+"riba",
+"Värvimistööd Lääne-Virumaal.",
+2001
+],
+[
+"f-javiimistlus",
+"viimistlus",
+"print",
+"Krohvi- ja pahtlitööd Raplamaal.",
+2002
+],
+[
+"f-ok-plaatinum",
+"viimistlus",
+"kaar",
+"Plaatimine ja põrandad Harjumaal.",
+2003
+],
+[
+"f-puit-ja-porand",
+"viimistlus",
+"taust",
+"Plaatimine ja põrandad Harjumaal.",
+2004
+],
+[
+"f-jaana-maaler",
+"viimistlus",
+"kolm",
+"Värvimistööd Tallinnas.",
+2005
+],
+[
+"f-marjel-viimistlus",
+"viimistlus",
+"kaart",
+"Siseviimistlus Raplamaal.",
+2006
+],
+[
+"f-rm-plaat",
+"viimistlus",
+"diag",
+"Plaatimine ja põrandad Tallinnas.",
+2007
+],
+[
+"f-laed-porandad",
+"viimistlus",
+"raam",
+"Siseviimistlus Tartus.",
+2008
+],
+[
+"f-demia-viimistlus",
+"viimistlus",
+"ring",
+"Värvimistööd Pärnus.",
+2009
+],
+[
+"f-marpak-viimistlus",
+"viimistlus",
+"duo",
+"Siseviimistlus Tartumaal.",
+2010
+],
+[
+"f-iivari-viimistlus",
+"viimistlus",
+"pool",
+"Värvimistööd Järvamaal.",
+2011
+],
+[
+"f-a-klass-viimistlus",
+"viimistlus",
+"aasta",
+"Siseviimistlus Tallinnas.",
+2012
+],
+[
+"f-mere-viimistlus",
+"viimistlus",
+"riba",
+"Värvimistööd Tallinnas.",
+2013
+],
+[
+"f-hh-viimistlus",
+"viimistlus",
+"print",
+"Plaatimine ja põrandad Harjumaal.",
+2014
+],
+[
+"f-porandate-hooldus",
+"viimistlus",
+"kaar",
+"Plaatimine ja põrandad Tartus.",
+2015
+],
+[
+"f-plaatruum",
+"viimistlus",
+"taust",
+"Plaatimine ja põrandad Harjumaal.",
+2016
+],
+[
+"f-mk-viimistlus",
+"viimistlus",
+"kolm",
+"Remonditööd Tartumaal.",
+2017
+],
+[
+"f-st-ehitusviimistlus",
+"viimistlus",
+"kaart",
+"Siseviimistlus Pärnus.",
+2018
+],
+[
+"f-parnu-maaler",
+"viimistlus",
+"diag",
+"Remonditööd Pärnumaal.",
+2019
+],
+[
+"f-reson-viimistlus",
+"viimistlus",
+"raam",
+"Siseviimistlus Rakveres.",
+2020
+],
+[
+"f-art-plaatimistood",
+"viimistlus",
+"ring",
+"Plaatimine ja põrandad Harjumaal.",
+2021
+],
+[
+"f-plaat-looduskivi",
+"viimistlus",
+"duo",
+"Plaatimine ja põrandad Tartus.",
+2022
+],
+[
+"f-e-ehitus-viimistlus",
+"viimistlus",
+"pool",
+"Remonditööd Valgas.",
+2023
+],
+[
+"f-anka-viimistlus",
+"viimistlus",
+"aasta",
+"Siseviimistlus Tartumaal.",
+2024
+],
+[
+"f-varvimikk",
+"viimistlus",
+"riba",
+"Remonditööd Pärnumaal.",
+2025
+],
+[
+"f-remar-viimistlus",
+"viimistlus",
+"print",
+"Siseviimistlus Pärnus.",
+2026
+],
+[
+"f-autoaed-grupp",
+"auto",
+"kaar",
+"Teie auto remont Tallinnas.",
+2027
+],
+[
+"f-miami-garage",
+"auto",
+"taust",
+"Autoremont Tallinnas.",
+2028
+],
+[
+"f-rp-autoremont",
+"auto",
+"kolm",
+"Auto hooldus ja remont Lääne-Virumaal.",
+2029
+],
+[
+"f-rehviservis",
+"auto-rehv",
+"kaart",
+"Rehvivahetus Narvas.",
+2030
+],
+[
+"f-kv-autorem-baltic",
+"auto",
+"diag",
+"Teie auto remont Kohtla-Järvel.",
+2031
+],
+[
+"f-allmotors",
+"auto",
+"raam",
+"Autoremont Rakveres.",
+2032
+],
+[
+"f-l-s-autod",
+"auto",
+"ring",
+"Auto hooldus ja remont Jõgevamaal.",
+2033
+],
+[
+"f-ag-autopesulad",
+"auto-detail",
+"duo",
+"Autopesu ja puhastus Tallinnas.",
+2034
+],
+[
+"f-mtautohooldus",
+"auto",
+"pool",
+"Teie auto remont Pärnumaal.",
+2035
+],
+[
+"f-oru-motors",
+"auto",
+"aasta",
+"Autoremont Tallinnas.",
+2036
+],
+[
+"f-eagle-motors",
+"auto",
+"riba",
+"Auto hooldus ja remont Pärnumaal.",
+2037
+],
+[
+"f-er-auto-workshop",
+"auto",
+"print",
+"Hooldus ja diagnostika Tartumaal.",
+2038
+],
+[
+"f-gsa-auto-expert",
+"auto",
+"kaar",
+"Teie auto remont Tallinnas.",
+2039
+],
+[
+"f-vautoabi",
+"auto",
+"taust",
+"Autoremont Lääne-Virumaal.",
+2040
+],
+[
+"f-autoravi",
+"auto",
+"kolm",
+"Auto hooldus ja remont Tallinnas.",
+2041
+],
+[
+"f-eck-auto",
+"auto",
+"kaart",
+"Hooldus ja diagnostika Viljandimaal.",
+2042
+],
+[
+"f-sv-autoservice",
+"auto",
+"diag",
+"Teie auto remont Jõgevamaal.",
+2043
+],
+[
+"f-novo-auto",
+"auto",
+"raam",
+"Autoremont Kohtla-Järvel.",
+2044
+],
+[
+"f-3xm-car-service",
+"auto",
+"ring",
+"Auto hooldus ja remont Tartumaal.",
+2045
+],
+[
+"f-mn-luxcars",
+"auto",
+"duo",
+"Hooldus ja diagnostika Tallinnas.",
+2046
+],
+[
+"f-viimsi-autopesula",
+"auto-detail",
+"pool",
+"Auto puhastus Harjumaal.",
+2047
+],
+[
+"f-autohooldus-kentauris",
+"auto",
+"aasta",
+"Autoremont Harjumaal.",
+2048
+],
+[
+"f-paju-auto",
+"auto",
+"riba",
+"Auto hooldus ja remont Tartumaal.",
+2049
+],
+[
+"f-rk-autodiagnostika",
+"auto",
+"print",
+"Hooldus ja diagnostika Võrus.",
+2050
+],
+[
+"f-egr-autohooldus",
+"auto",
+"kaar",
+"Teie auto remont Tartumaal.",
+2051
+],
+[
+"f-autovira",
+"auto",
+"taust",
+"Autoremont Tallinnas.",
+2052
+],
+[
+"f-ht-autoremont",
+"auto",
+"kolm",
+"Auto hooldus ja remont Kuressaares.",
+2053
+],
+[
+"f-firstcar",
+"auto",
+"kaart",
+"Hooldus ja diagnostika Ida-Virumaal.",
+2054
+],
+[
+"f-keretehas",
+"auto",
+"diag",
+"Keretööd Pärnumaal.",
+2055
+],
+[
+"f-tuisk-motors",
+"auto",
+"raam",
+"Autoremont Harjumaal.",
+2056
+],
+[
+"f-autoelu",
+"auto",
+"ring",
+"Auto hooldus ja remont Tallinnas.",
+2057
+],
+[
+"f-autostaap-lasnamae",
+"auto",
+"duo",
+"Hooldus ja diagnostika Tallinnas.",
+2058
+],
+[
+"f-metskassi-garaaz",
+"auto",
+"pool",
+"Teie auto remont Läänemaal.",
+2059
+],
+[
+"f-autoangaar",
+"auto",
+"aasta",
+"Autoremont Harjumaal.",
+2060
+],
+[
+"f-ska-auto-gios",
+"auto",
+"riba",
+"Auto hooldus ja remont Narvas.",
+2061
+],
+[
+"f-autobond",
+"auto",
+"print",
+"Hooldus ja diagnostika Ida-Virumaal.",
+2062
+],
+[
+"f-sandrak-auto",
+"auto",
+"kaar",
+"Teie auto remont Lääne-Virumaal.",
+2063
+],
+[
+"f-kevvai-autoteenindus",
+"auto",
+"taust",
+"Autoremont Tartumaal.",
+2064
+],
+[
+"f-angelar-garaaz",
+"auto",
+"kolm",
+"Auto hooldus ja remont Tallinnas.",
+2065
+],
+[
+"f-autod-korda",
+"auto",
+"kaart",
+"Hooldus ja diagnostika Maardus.",
+2066
+],
+[
+"f-cormest-auto",
+"auto",
+"diag",
+"Teie auto remont Tartumaal.",
+2067
+],
+[
+"f-santovento",
+"toru",
+"raam",
+"Ventilatsioon Harjumaal.",
+2068
+],
+[
+"f-kliimaintegra",
+"toru-kliima",
+"ring",
+"Kliimaseadmed Narvas.",
+2069
+],
+[
+"f-profvent-grupp",
+"toru",
+"duo",
+"Ventilatsioon Tallinnas.",
+2070
+],
+[
+"f-louna-eesti-torutood",
+"toru",
+"pool",
+"Küttetööd Tartumaal.",
+2071
+],
+[
+"f-torudeabi-ja-elektritood",
+"toru",
+"aasta",
+"Torutööd Tallinnas.",
+2072
+],
+[
+"f-eurotoru",
+"toru",
+"riba",
+"Torutööd Tallinnas.",
+2073
+],
+[
+"f-virumaa-torutood",
+"toru",
+"print",
+"Küte ja ventilatsioon Lääne-Virumaal.",
+2074
+],
+[
+"f-ventair",
+"toru",
+"kaar",
+"Ventilatsioonitööd Tallinnas.",
+2075
+],
+[
+"f-ehitusark-santehnika",
+"toru",
+"taust",
+"Torutööd Narvas.",
+2076
+],
+[
+"f-torusaurus",
+"toru",
+"kolm",
+"Santehnik Pärnumaal.",
+2077
+],
+[
+"f-isvent",
+"toru",
+"kaart",
+"Ventilatsioon Tartus.",
+2078
+],
+[
+"f-eesti-ahi",
+"toru-ahi",
+"diag",
+"Pottsepatööd Tallinnas.",
+2079
+],
+[
+"f-ske-torutood",
+"toru",
+"raam",
+"Torutööd ja küte Tallinnas.",
+2080
+],
+[
+"f-a-r-vent",
+"toru",
+"ring",
+"Ventilatsioonitööd Tallinnas.",
+2081
+],
+[
+"f-ksvent",
+"toru",
+"duo",
+"Ventilatsioon Harjumaal.",
+2082
+],
+[
+"f-allup-elekter",
+"elekter",
+"pool",
+"Elektrik Viljandimaal.",
+2083
+],
+[
+"f-imperelekter",
+"elekter",
+"aasta",
+"Elektripaigaldus Kohtla-Järvel.",
+2084
+],
+[
+"f-manni-elekter",
+"elekter",
+"riba",
+"Elektritööd Raplamaal.",
+2085
+],
+[
+"f-jmelekter",
+"elekter",
+"print",
+"Elektrik Viljandimaal.",
+2086
+],
+[
+"f-elekter-me",
+"elekter",
+"kaar",
+"Elektripaigaldus Võrumaal.",
+2087
+],
+[
+"f-lastof-elekter",
+"elekter",
+"taust",
+"Elektritööd Harjumaal.",
+2088
+],
+[
+"f-relekter",
+"elekter",
+"kolm",
+"Elektrik Harjumaal.",
+2089
+],
+[
+"f-mirelektra",
+"elekter",
+"kaart",
+"Elektripaigaldus Harjumaal.",
+2090
+],
+[
+"f-wilkoits-elektritood",
+"elekter",
+"diag",
+"Elektritööd Pärnus.",
+2091
+],
+[
+"f-jurr-elekter",
+"elekter",
+"raam",
+"Elektrik Tartus.",
+2092
+],
+[
+"f-kaabeldusekspert",
+"elekter",
+"ring",
+"Elektripaigaldus Tartus.",
+2093
+],
+[
+"f-city-elekter",
+"elekter",
+"duo",
+"Elektritööd Tallinnas.",
+2094
+],
+[
+"f-galahad-elekter",
+"elekter",
+"pool",
+"Elektrik Sauel.",
+2095
+],
+[
+"f-ac-dc-elekter",
+"elekter",
+"aasta",
+"Elektripaigaldus Tartus.",
+2096
+],
+[
+"f-elekter-side-lahendused",
+"elekter",
+"riba",
+"Elektritööd Harjumaal.",
+2097
+],
+[
+"f-volttex",
+"elekter",
+"print",
+"Elektrik Kohtla-Järvel.",
+2098
+],
+[
+"f-yllar-elekter",
+"elekter",
+"kaar",
+"Elektripaigaldus Rakveres.",
+2099
+],
+[
+"f-haapsalu-elektritood",
+"elekter",
+"taust",
+"Elektritööd Läänemaal.",
+2100
+],
+[
+"f-grandelectro",
+"elekter",
+"kolm",
+"Elektrik Tallinnas.",
+2101
+],
+[
+"f-shatar-elekter",
+"elekter",
+"kaart",
+"Elektripaigaldus Tallinnas.",
+2102
+],
+[
+"f-k-p-salong",
+"juuksur",
+"diag",
+"Juuksur Jõgevamaal.",
+2103
+],
+[
+"f-grand-juuksur",
+"juuksur",
+"raam",
+"Juuksurisalong Tallinnas.",
+2104
+],
+[
+"f-hairhunt",
+"juuksur",
+"ring",
+"Soengud ja värvid Tallinnas.",
+2105
+],
+[
+"f-hairsalon",
+"juuksur",
+"duo",
+"Juuksur Võrumaal.",
+2106
+],
+[
+"f-glamour-hairstyle",
+"juuksur",
+"pool",
+"Juuksurisalong Jõgevamaal.",
+2107
+],
+[
+"f-ak-hair",
+"juuksur",
+"aasta",
+"Soengud ja värvid Harjumaal.",
+2108
+],
+[
+"f-hairwizard",
+"juuksur",
+"riba",
+"Juuksur Maardus.",
+2109
+],
+[
+"f-barberian-barbershop",
+"juuksur-m",
+"print",
+"Meeste juuksur Tallinnas.",
+2110
+],
+[
+"f-nele-hair",
+"juuksur",
+"kaar",
+"Soengud ja värvid Tallinnas.",
+2111
+],
+[
+"f-m-a-ilusalong",
+"juuksur",
+"taust",
+"Juuksur Tallinnas.",
+2112
+],
+[
+"f-simplicity-hair",
+"juuksur",
+"kolm",
+"Juuksurisalong Tallinnas.",
+2113
+],
+[
+"f-di-juuksed",
+"juuksur",
+"kaart",
+"Soengud ja värvid Tallinnas.",
+2114
+],
+[
+"f-merle-perejuuksur",
+"juuksur",
+"diag",
+"Juuksur Tallinnas.",
+2115
+],
+[
+"f-telliskivi-juuksur",
+"juuksur",
+"raam",
+"Juuksurisalong Tallinnas.",
+2116
+],
+[
+"f-wow-hair",
+"juuksur",
+"ring",
+"Soengud ja värvid Kohtla-Järvel.",
+2117
+],
+[
+"f-tinnu-ilusalong",
+"juuksur",
+"duo",
+"Juuksur Lääne-Virumaal.",
+2118
+],
+[
+"f-vipsalong",
+"juuksur",
+"pool",
+"Juuksurisalong Kuressaares.",
+2119
+],
+[
+"f-barberella",
+"juuksur-m",
+"aasta",
+"Meeste juuksur Harjumaal.",
+2120
+],
+[
+"f-celebrity-ilusalong",
+"juuksur",
+"riba",
+"Juuksur Tallinnas.",
+2121
+],
+[
+"f-hairmess",
+"juuksur",
+"print",
+"Juuksurisalong Harjumaal.",
+2122
+],
+[
+"f-h-ojase-ilusalong",
+"juuksur",
+"kaar",
+"Soengud ja värvid Pärnus.",
+2123
+],
+[
+"f-juuksur-kairi",
+"juuksur",
+"taust",
+"Juuksur Võrumaal.",
+2124
+],
+[
+"f-tallinnhair",
+"juuksur",
+"kolm",
+"Juuksurisalong Tallinnas.",
+2125
+],
+[
+"f-sanre-hair",
+"juuksur",
+"kaart",
+"Soengud ja värvid Tallinnas.",
+2126
+],
+[
+"f-hairytale",
+"juuksur",
+"diag",
+"Juuksur Jõgevamaal.",
+2127
+],
+[
+"f-indigo-ilusalong",
+"juuksur",
+"raam",
+"Juuksurisalong Tallinnas.",
+2128
+],
+[
+"f-valchibarber",
+"juuksur-m",
+"ring",
+"Juukselõikus ja habe Maardus.",
+2129
+],
+[
+"f-hairstream",
+"juuksur",
+"duo",
+"Juuksur Tallinnas.",
+2130
+],
+[
+"f-kairi-perejuuksur",
+"juuksur",
+"pool",
+"Juuksurisalong Harjumaal.",
+2131
+],
+[
+"f-kvartals-cuts-and-shaves-barbershop",
+"juuksur-m",
+"aasta",
+"Meeste juuksur Tallinnas.",
+2132
+],
+[
+"f-hele-salong",
+"juuksur",
+"riba",
+"Juuksur Raplamaal.",
+2133
+],
+[
+"f-o-v-f-hair",
+"juuksur",
+"print",
+"Juuksurisalong Lääne-Virumaal.",
+2134
+],
+[
+"f-juuksur-liisi-pood",
+"juuksur",
+"kaar",
+"Soengud ja värvid Tallinnas.",
+2135
+],
+[
+"f-lai-kaheksa-ilusalong",
+"juuksur",
+"taust",
+"Juuksur Rakveres.",
+2136
+],
+[
+"f-hair-stylist",
+"juuksur",
+"kolm",
+"Juuksurisalong Tallinnas.",
+2137
+],
+[
+"f-hanna-juukseremont",
+"juuksur",
+"kaart",
+"Soengud ja värvid Põlvamaal.",
+2138
+],
+[
+"f-ww-passaazi-ilusalong",
+"juuksur",
+"diag",
+"Juuksur Tallinnas.",
+2139
+],
+[
+"f-grete-salong",
+"juuksur",
+"raam",
+"Juuksurisalong Põlvas.",
+2140
+],
+[
+"f-hairtan",
+"juuksur",
+"ring",
+"Soengud ja värvid Maardus.",
+2141
+],
+[
+"f-merka-juuksurisalong",
+"juuksur",
+"duo",
+"Juuksur Tartumaal.",
+2142
+],
+[
+"f-ti-salon",
+"juuksur",
+"pool",
+"Juuksurisalong Valgamaal.",
+2143
+],
+[
+"f-easy-like-barbershop",
+"juuksur-m",
+"aasta",
+"Meeste juuksur Tallinnas.",
+2144
+],
+[
+"f-viktoria-ilusalong",
+"juuksur",
+"riba",
+"Juuksur Tallinnas.",
+2145
+],
+[
+"f-angel-hair",
+"juuksur",
+"print",
+"Juuksurisalong Tartumaal.",
+2146
+],
+[
+"f-hairflix",
+"juuksur",
+"kaar",
+"Soengud ja värvid Tartus.",
+2147
+],
+[
+"f-juuksed-kauniks",
+"juuksur",
+"taust",
+"Juuksur Tartus.",
+2148
+],
+[
+"f-juss-puhastus",
+"koristus",
+"kolm",
+"Puhastusteenused Tartus.",
+2149
+],
+[
+"f-rvk-puhastus",
+"koristus",
+"kaart",
+"Koristus Tallinnas.",
+2150
+],
+[
+"f-v-o-clean-team",
+"koristus",
+"diag",
+"Puhastusteenused Tallinnas.",
+2151
+],
+[
+"f-hiclean",
+"koristus",
+"raam",
+"Koristus Tallinnas.",
+2152
+],
+[
+"f-garantira-koristusteenused",
+"koristus",
+"ring",
+"Puhastusteenused Tallinnas.",
+2153
+],
+[
+"f-koristaja-tiia",
+"koristus",
+"duo",
+"Koristus Pärnumaal.",
+2154
+],
+[
+"f-puhasloor",
+"koristus",
+"pool",
+"Puhastusteenused Tallinnas.",
+2155
+],
+[
+"f-amt-koristus",
+"koristus",
+"aasta",
+"Koristus Tallinnas.",
+2156
+],
+[
+"f-kotenko-puhastus",
+"koristus",
+"riba",
+"Puhastusteenused Harjumaal.",
+2157
+],
+[
+"f-klaus-puhastusteenused",
+"koristus",
+"print",
+"Koristus Harjumaal.",
+2158
+],
+[
+"f-bestclean-ever",
+"koristus",
+"kaar",
+"Puhastusteenused Järvamaal.",
+2159
+],
+[
+"f-liiza-puhastus",
+"koristus",
+"taust",
+"Koristus Lääne-Virumaal.",
+2160
+],
+[
+"f-av-kaevetood",
+"kaeve",
+"kolm",
+"Pinnasetööd Pärnumaal.",
+2161
+],
+[
+"f-ekskaev",
+"kaeve",
+"kaart",
+"Kaevetööd Harjumaal.",
+2162
+],
+[
+"f-timmi-kaevetood",
+"kaeve",
+"diag",
+"Pinnasetööd Viljandimaal.",
+2163
+],
+[
+"f-murukratid",
+"haljastus",
+"raam",
+"Haljastus ja aiatööd Põlvas.",
+2164
+],
+[
+"f-sammalhabe-haljastus",
+"haljastus",
+"ring",
+"Aiatööd Pärnumaal.",
+2165
+],
+[
+"f-aiavana-hooldusteenused",
+"haljastus",
+"duo",
+"Haljastus ja aiatööd Jõgevamaal.",
+2166
+],
+[
+"f-muhu-kiviaiad",
+"haljastus",
+"pool",
+"Aiatööd Saaremaal.",
+2167
+],
+[
+"f-akelei-haljastus",
+"haljastus",
+"aasta",
+"Haljastus ja aiatööd Sauel.",
+2168
+],
+[
+"f-eremurus",
+"haljastus",
+"riba",
+"Aiatööd Tallinnas.",
+2169
+],
+[
+"f-kooli-aed",
+"haljastus",
+"print",
+"Haljastus ja aiatööd Saaremaal.",
+2170
+],
+[
+"f-aiavaim",
+"haljastus",
+"kaar",
+"Aiatööd Harjumaal.",
+2171
+],
+[
+"f-lohu-aed",
+"haljastus",
+"taust",
+"Haljastus ja aiatööd Viljandimaal.",
+2172
+],
+[
+"f-aasnurme-haljastus",
+"haljastus",
+"kolm",
+"Aiatööd Harjumaal.",
+2173
+],
+[
+"f-at-ehitus",
+"ehitus",
+"kaart",
+"Ehitustööd Võrumaal.",
+2174
+],
+[
+"f-kaumes-ehitus",
+"ehitus",
+"diag",
+"Ehitame ja renoveerime Tartumaal.",
+2175
+],
+[
+"f-auger-ehitus",
+"ehitus",
+"raam",
+"Ehitus ja renoveerimine Saaremaal.",
+2176
+],
+[
+"f-emerol-ehitus",
+"ehitus",
+"ring",
+"Maja ehitus Järvamaal.",
+2177
+],
+[
+"f-ehitusveli",
+"ehitus",
+"duo",
+"Ehitustööd Põlvamaal.",
+2178
+],
+[
+"f-brisko-ehitus",
+"ehitus",
+"pool",
+"Ehitame ja renoveerime Tallinnas.",
+2179
+],
+[
+"f-snitbygg",
+"ehitus",
+"aasta",
+"Ehitus ja renoveerimine Haapsalus.",
+2180
+],
+[
+"f-kirka-ehitus",
+"ehitus",
+"riba",
+"Maja ehitus Võrus.",
+2181
+],
+[
+"f-elmo-bygging",
+"ehitus",
+"print",
+"Ehitustööd Järvamaal.",
+2182
+],
+[
+"f-raven-ehitus",
+"ehitus",
+"kaar",
+"Ehitame ja renoveerime Tallinnas.",
+2183
+],
+[
+"f-bouw-ehitus",
+"ehitus",
+"taust",
+"Ehitus ja renoveerimine Tartumaal.",
+2184
+],
+[
+"f-akris-ehitus",
+"ehitus",
+"kolm",
+"Maja ehitus Tallinnas.",
+2185
+],
+[
+"f-simket-ehitus",
+"ehitus",
+"kaart",
+"Ehitustööd Tartumaal.",
+2186
+],
+[
+"f-best-ehitus",
+"ehitus",
+"diag",
+"Ehitame ja renoveerime Narvas.",
+2187
+],
+[
+"f-alviger-ehitus",
+"ehitus",
+"raam",
+"Ehitus ja renoveerimine Tallinnas.",
+2188
+],
+[
+"f-gustavi-ehituse",
+"ehitus",
+"ring",
+"Maja ehitus Tallinnas.",
+2189
+],
+[
+"f-aadler-ehitused",
+"ehitus",
+"duo",
+"Ehitustööd Raplamaal.",
+2190
+],
+[
+"f-mu-build",
+"ehitus",
+"pool",
+"Ehitame ja renoveerime Tartus.",
+2191
+],
+[
+"f-andretta-ehitus",
+"ehitus",
+"aasta",
+"Ehitus ja renoveerimine Tartus.",
+2192
+],
+[
+"f-rocky-ehitus",
+"ehitus",
+"riba",
+"Maja ehitus Harjumaal.",
+2193
+],
+[
+"f-ip-ehitus",
+"ehitus",
+"print",
+"Ehitustööd Tartus.",
+2194
+],
+[
+"f-nik-ehitus",
+"ehitus",
+"kaar",
+"Ehitame ja renoveerime Tallinnas.",
+2195
+],
+[
+"f-omar-ehitus",
+"ehitus",
+"taust",
+"Ehitus ja renoveerimine Raplamaal.",
+2196
+],
+[
+"f-ramivar-ehitus",
+"ehitus",
+"kolm",
+"Maja ehitus Viljandimaal.",
+2197
+],
+[
+"f-lauri-ehitus",
+"ehitus",
+"kaart",
+"Ehitustööd Jõgevamaal.",
+2198
+],
+[
+"f-str-ehitus",
+"ehitus",
+"diag",
+"Ehitame ja renoveerime Tallinnas.",
+2199
+],
+[
+"f-rhm-building",
+"ehitus",
+"raam",
+"Ehitus ja renoveerimine Kuressaares.",
+2200
+],
+[
+"f-bgx-ehitus",
+"ehitus",
+"ring",
+"Maja ehitus Tallinnas.",
+2201
+],
+[
+"f-stat-ehitus",
+"ehitus",
+"duo",
+"Ehitustööd Tallinnas.",
+2202
+],
+[
+"f-prokal-ehitus",
+"ehitus",
+"pool",
+"Ehitame ja renoveerime Kohtla-Järvel.",
+2203
+],
+[
+"f-onward-ehitus",
+"ehitus",
+"aasta",
+"Ehitus ja renoveerimine Tallinnas.",
+2204
+],
+[
+"f-emrek-ehitus",
+"ehitus",
+"riba",
+"Maja ehitus Saaremaal.",
+2205
+],
+[
+"f-kase-ehitus",
+"ehitus",
+"print",
+"Ehitustööd Jõgevamaal.",
+2206
+],
+[
+"f-construction-duo",
+"ehitus",
+"kaar",
+"Ehitame ja renoveerime Põlvamaal.",
+2207
+],
+[
+"f-este-ehitus",
+"ehitus",
+"taust",
+"Ehitus ja renoveerimine Viljandis.",
+2208
+],
+[
+"f-remi-katus",
+"ehitus",
+"kolm",
+"Maja ehitus Harjumaal.",
+2209
+],
+[
+"f-countryhouse-building",
+"ehitus",
+"kaart",
+"Ehitustööd Võrumaal.",
+2210
+],
+[
+"f-remera-ehitus",
+"ehitus",
+"diag",
+"Ehitame ja renoveerime Lääne-Virumaal.",
+2211
+],
+[
+"f-baltik-build",
+"ehitus",
+"raam",
+"Ehitus ja renoveerimine Tallinnas.",
+2212
+],
+[
+"f-constructa-international",
+"ehitus",
+"ring",
+"Maja ehitus Võrumaal.",
+2213
+],
+[
+"f-ahkra-palkmajad",
+"ehitus",
+"duo",
+"Ehitustööd Põlvamaal.",
+2214
+],
+[
+"f-taveron-ehitus",
+"ehitus",
+"pool",
+"Ehitame ja renoveerime Viljandimaal.",
+2215
+],
+[
+"f-luite-ehitus",
+"ehitus",
+"aasta",
+"Ehitus ja renoveerimine Tallinnas.",
+2216
+],
+[
+"f-starbuild-group",
+"ehitus",
+"riba",
+"Maja ehitus Kuressaares.",
+2217
+],
+[
+"f-larren-fassaadid",
+"ehitus",
+"print",
+"Ehitustööd Tartus.",
+2218
+],
+[
+"f-ofi-construction",
+"ehitus",
+"kaar",
+"Ehitame ja renoveerime Harjumaal.",
+2219
+],
+[
+"f-hmal24-ehitustood",
+"ehitus",
+"taust",
+"Ehitus ja renoveerimine Põlvamaal.",
+2220
+],
+[
+"f-avm-building",
+"ehitus",
+"kolm",
+"Maja ehitus Kohtla-Järvel.",
+2221
+],
+[
+"f-anko-ehitus",
+"ehitus",
+"kaart",
+"Ehitustööd Valgas.",
+2222
+],
+[
+"f-pika-ehitus",
+"ehitus",
+"diag",
+"Ehitame ja renoveerime Saaremaal.",
+2223
+],
+[
+"f-av-co-ehitus",
+"ehitus",
+"raam",
+"Ehitus ja renoveerimine Pärnumaal.",
+2224
+],
+[
+"f-ekofast-ehitus",
+"ehitus",
+"ring",
+"Maja ehitus Tartumaal.",
+2225
+],
+[
+"f-byggab",
+"ehitus",
+"duo",
+"Ehitustööd Tallinnas.",
+2226
+],
+[
+"f-vinder-ehitus",
+"ehitus",
+"pool",
+"Ehitame ja renoveerime Tallinnas.",
+2227
+],
+[
+"f-markola-ehitus",
+"ehitus",
+"aasta",
+"Ehitus ja renoveerimine Raplamaal.",
+2228
+],
+[
+"f-tamsec-ehitus",
+"ehitus",
+"riba",
+"Maja ehitus Raplamaal.",
+2229
+],
+[
+"f-rovi-ehitus",
+"ehitus",
+"print",
+"Ehitustööd Pärnus.",
+2230
+],
+[
+"f-e-a-build",
+"ehitus",
+"kaar",
+"Ehitame ja renoveerime Tallinnas.",
+2231
+],
+[
+"f-lange-ehitus",
+"ehitus",
+"taust",
+"Ehitus ja renoveerimine Võrumaal.",
+2232
+],
+[
+"f-apest-ehitus",
+"ehitus",
+"kolm",
+"Maja ehitus Jõgevamaal.",
+2233
+],
+[
+"f-enda-ehitus",
+"ehitus",
+"kaart",
+"Ehitustööd Põlvas.",
+2234
+],
+[
+"f-mp-building",
+"ehitus",
+"diag",
+"Ehitame ja renoveerime Lääne-Virumaal.",
+2235
+],
+[
+"f-mrt-ehitus",
+"ehitus",
+"raam",
+"Ehitus ja renoveerimine Harjumaal.",
+2236
+],
+[
+"f-1cap-ehitus",
+"ehitus",
+"ring",
+"Maja ehitus Harjumaal.",
+2237
+],
+[
+"f-rand-ja-meri-ehitus",
+"ehitus",
+"duo",
+"Ehitustööd Harjumaal.",
+2238
+],
+[
+"f-normand-ehitus",
+"ehitus",
+"pool",
+"Ehitame ja renoveerime Kuressaares.",
+2239
+],
+[
+"f-semel-ehitus",
+"ehitus",
+"aasta",
+"Ehitus ja renoveerimine Võrus.",
+2240
+],
+[
+"f-trebor-ehitus",
+"ehitus",
+"riba",
+"Maja ehitus Raplamaal.",
+2241
+],
+[
+"f-linpro-ehitus",
+"ehitus",
+"print",
+"Ehitustööd Tartus.",
+2242
+],
+[
+"f-a-garant-ehituse",
+"ehitus",
+"kaar",
+"Ehitame ja renoveerime Harjumaal.",
+2243
+],
+[
+"f-grif-ehitus",
+"ehitus",
+"taust",
+"Ehitus ja renoveerimine Tallinnas.",
+2244
+],
+[
+"f-hkm-majad",
+"ehitus",
+"kolm",
+"Maja ehitus Tallinnas.",
+2245
+],
+[
+"f-e-a-ehitus-ja-kaubandus",
+"ehitus",
+"kaart",
+"Ehitustööd Viljandis.",
+2246
+],
+[
+"f-arilehitus",
+"ehitus",
+"diag",
+"Ehitame ja renoveerime Viljandis.",
+2247
+],
+[
+"f-ivesk-ehitus",
+"ehitus",
+"raam",
+"Ehitus ja renoveerimine Harjumaal.",
+2248
+],
+[
+"f-stets-ehitus",
+"ehitus",
+"ring",
+"Maja ehitus Tallinnas.",
+2249
+],
+[
+"f-akiram-ehitus",
+"ehitus",
+"duo",
+"Ehitustööd Ida-Virumaal.",
+2250
+],
+[
+"f-saaremaa-ehitus",
+"ehitus",
+"pool",
+"Ehitame ja renoveerime Saaremaal.",
+2251
+],
+[
+"f-influx-ehitus",
+"ehitus",
+"aasta",
+"Ehitus ja renoveerimine Tallinnas.",
+2252
+],
+[
+"f-kmo-ehitus",
+"ehitus",
+"riba",
+"Maja ehitus Viljandimaal.",
+2253
+],
+[
+"f-aademart-ehitus",
+"ehitus",
+"print",
+"Ehitustööd Lääne-Virumaal.",
+2254
+],
+[
+"f-asmet-ehitus",
+"ehitus",
+"kaar",
+"Ehitame ja renoveerime Tallinnas.",
+2255
+],
+[
+"f-it-ehitustood",
+"ehitus",
+"taust",
+"Ehitus ja renoveerimine Harjumaal.",
+2256
+],
+[
+"f-rak-ehitused",
+"ehitus",
+"kolm",
+"Maja ehitus Raplamaal.",
+2257
+],
+[
+"f-pmp-constructions",
+"ehitus",
+"kaart",
+"Ehitustööd Narvas.",
+2258
+],
+[
+"f-kaksnurk-ehitus",
+"ehitus",
+"diag",
+"Ehitame ja renoveerime Tartus.",
+2259
+],
+[
+"f-frontrum-ehitus",
+"ehitus",
+"raam",
+"Ehitus ja renoveerimine Viljandis.",
+2260
+],
+[
+"f-s-m-ehitus",
+"ehitus",
+"ring",
+"Maja ehitus Viljandimaal.",
+2261
+],
+[
+"f-tkg-ehitus",
+"ehitus",
+"duo",
+"Ehitustööd Tartus.",
+2262
+],
+[
+"f-gvm-ehitus",
+"ehitus",
+"pool",
+"Ehitame ja renoveerime Harjumaal.",
+2263
+],
+[
+"f-r3-ehitus",
+"ehitus",
+"aasta",
+"Ehitus ja renoveerimine Harjumaal.",
+2264
+],
+[
+"f-simmel-ehitus",
+"ehitus",
+"riba",
+"Maja ehitus Lääne-Virumaal.",
+2265
+],
+[
+"f-jhlehitus",
+"ehitus",
+"print",
+"Ehitustööd Kohtla-Järvel.",
+2266
+],
+[
+"f-rp-ehitus",
+"ehitus",
+"kaar",
+"Ehitame ja renoveerime Tartus.",
+2267
+],
+[
+"f-silmar-ehitusmeister",
+"ehitus",
+"taust",
+"Ehitus ja renoveerimine Valgamaal.",
+2268
+],
+[
+"f-merklich-ehitus",
+"ehitus",
+"kolm",
+"Maja ehitus Tartus.",
+2269
+],
+[
+"f-kiilbygg",
+"ehitus",
+"kaart",
+"Ehitustööd Tartus.",
+2270
+],
+[
+"f-nevor-ehitus",
+"ehitus",
+"diag",
+"Ehitame ja renoveerime Jõgevamaal.",
+2271
+],
+[
+"f-combconstruction",
+"ehitus",
+"raam",
+"Ehitus ja renoveerimine Viljandis.",
+2272
+],
+[
+"f-sumer-ehitus",
+"ehitus",
+"ring",
+"Maja ehitus Harjumaal.",
+2273
+],
+[
+"f-jpr-ehitus",
+"ehitus",
+"duo",
+"Ehitustööd Tartumaal.",
+2274
+],
+[
+"f-pindisain-ehitus",
+"ehitus",
+"pool",
+"Ehitame ja renoveerime Tartus.",
+2275
+],
+[
+"f-bright-ehitus",
+"ehitus",
+"aasta",
+"Ehitus ja renoveerimine Pärnus.",
+2276
+],
+[
+"f-esmeko-ehitus",
+"ehitus",
+"riba",
+"Maja ehitus Lääne-Virumaal.",
+2277
+],
+[
+"f-rvovehitus",
+"ehitus",
+"print",
+"Ehitustööd Tallinnas.",
+2278
+],
+[
+"f-inframed-ehitus",
+"ehitus",
+"kaar",
+"Ehitame ja renoveerime Tallinnas.",
+2279
+],
+[
+"f-todi-ehitus",
+"ehitus",
+"taust",
+"Ehitus ja renoveerimine Haapsalus.",
+2280
+],
+[
+"f-lei-ehitusgrupp",
+"ehitus",
+"kolm",
+"Maja ehitus Harjumaal.",
+2281
+],
+[
+"f-univers-ehitus",
+"ehitus",
+"kaart",
+"Ehitustööd Tallinnas.",
+2282
+],
+[
+"f-rvf-ehitus",
+"ehitus",
+"diag",
+"Ehitame ja renoveerime Tallinnas.",
+2283
+],
+[
+"f-jk-ehitus",
+"ehitus",
+"raam",
+"Ehitus ja renoveerimine Tallinnas.",
+2284
+],
+[
+"f-room-ehitus",
+"ehitus",
+"ring",
+"Maja ehitus Valgamaal.",
+2285
+],
+[
+"f-lore-ehitus",
+"ehitus",
+"duo",
+"Ehitustööd Tallinnas.",
+2286
+],
+[
+"f-allra-ehitus",
+"ehitus",
+"pool",
+"Ehitame ja renoveerime Pärnus.",
+2287
+],
+[
+"f-finest-builders",
+"ehitus",
+"aasta",
+"Ehitus ja renoveerimine Rakveres.",
+2288
+],
+[
+"f-reinex-katused",
+"ehitus",
+"riba",
+"Maja ehitus Lääne-Virumaal.",
+2289
+],
+[
+"f-moisakivi-ehitus-ou",
+"ehitus",
+"print",
+"Ehitustööd Lääne-Virumaal.",
+2290
+],
+[
+"f-juxehitus",
+"ehitus",
+"kaar",
+"Ehitame ja renoveerime Saaremaal.",
+2291
+],
+[
+"f-valens-ehitus",
+"ehitus",
+"taust",
+"Ehitus ja renoveerimine Tallinnas.",
+2292
+],
+[
+"f-grandex-ehitus",
+"ehitus",
+"kolm",
+"Maja ehitus Tartumaal.",
+2293
+],
+[
+"f-ramsi-ehitus",
+"ehitus",
+"kaart",
+"Ehitustööd Viljandimaal.",
+2294
+],
+[
+"f-elfamera-ehitus",
+"ehitus",
+"diag",
+"Ehitame ja renoveerime Pärnus.",
+2295
+],
+[
+"f-saasu-ehitus",
+"ehitus",
+"raam",
+"Ehitus ja renoveerimine Lääne-Virumaal.",
+2296
+],
+[
+"f-meriferm-ehitus",
+"ehitus",
+"ring",
+"Maja ehitus Pärnus.",
+2297
+],
+[
+"f-remto-ehitus",
+"ehitus",
+"duo",
+"Ehitustööd Harjumaal.",
+2298
+],
+[
+"f-madar-ehitus",
+"ehitus",
+"pool",
+"Ehitame ja renoveerime Keilas.",
+2299
+],
+[
+"f-jaanoehitus",
+"ehitus",
+"aasta",
+"Ehitus ja renoveerimine Võrus.",
+2300
+],
+[
+"f-novalo-ehitus",
+"ehitus",
+"riba",
+"Maja ehitus Viljandimaal.",
+2301
+],
+[
+"f-airan-ehitus",
+"ehitus",
+"print",
+"Ehitustööd Pärnus.",
+2302
+],
+[
+"f-termes-ehitus",
+"ehitus",
+"kaar",
+"Ehitame ja renoveerime Võrumaal.",
+2303
+],
+[
+"f-sp-ehitus",
+"ehitus",
+"taust",
+"Ehitus ja renoveerimine Harjumaal.",
+2304
+],
+[
+"f-ainus-ehitus",
+"ehitus",
+"kolm",
+"Maja ehitus Võrus.",
+2305
+],
+[
+"f-kmk-construction",
+"ehitus",
+"kaart",
+"Ehitustööd Raplamaal.",
+2306
+],
+[
+"f-hapsal-ehitus",
+"ehitus",
+"diag",
+"Ehitame ja renoveerime Haapsalus.",
+2307
+]
+]
+
+for _r in NADAL2LEHED:
+    lisa(*_r)

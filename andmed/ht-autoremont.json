@@ -1,0 +1,23 @@
+{
+  "nimi": "HT Autoremont OÜ",
+  "lyhinimi": "HT Autoremont",
+  "vorm": "OÜ",
+  "registrikood": "12189936",
+  "emtak": "95311",
+  "telefonid": [
+    "+372 5290047"
+  ],
+  "email": "ats.torn@gmail.com",
+  "piirkond": "Kuressaare ja Saaremaa",
+  "piirkond_kus": "Kuressaares ja Saaremaal",
+  "linn_kus": "Kuressaares",
+  "aasta": "2011",
+  "tootajaid": 3,
+  "sissejuhatus": "Hooldame ja remondime autosid Kuressaares ja Saaremaal. Enne tööd vaatame auto üle ja ütleme, mida on vaja teha ja mis see maksab.",
+  "pakett": "500",
+  "kategooria": "auto",
+  "teenused_voti": "95311",
+  "kujundus": "f-ht-autoremont",
+  "domeen": "htautoremont.ee",
+  "kaive": "291590"
+}

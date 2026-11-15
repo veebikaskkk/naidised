@@ -1,0 +1,23 @@
+{
+  "nimi": "Grif Ehitus OÜ",
+  "lyhinimi": "Grif Ehitus",
+  "vorm": "OÜ",
+  "registrikood": "16422694",
+  "emtak": "41001",
+  "telefonid": [
+    "+372 56216666"
+  ],
+  "email": "grifin.ou@gmail.com",
+  "piirkond": "Tallinn ja Harjumaa",
+  "piirkond_kus": "Tallinnas ja Harjumaal",
+  "linn_kus": "Tallinnas",
+  "aasta": "2022",
+  "tootajaid": 1,
+  "sissejuhatus": "Ehitame ja renoveerime maju Tallinnas ja Harjumaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "250",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-grif-ehitus",
+  "domeen": "grifehitus.ee",
+  "kaive": "51180"
+}

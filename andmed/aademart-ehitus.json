@@ -1,0 +1,23 @@
+{
+  "nimi": "Aademart Ehitus OÜ",
+  "lyhinimi": "Aademart Ehitus",
+  "vorm": "OÜ",
+  "registrikood": "12121269",
+  "emtak": "41001",
+  "telefonid": [
+    "+372 5187131"
+  ],
+  "email": "janek.hubert@mail.ee",
+  "piirkond": "Lääne-Virumaa",
+  "piirkond_kus": "Lääne-Virumaal",
+  "linn_kus": "Lääne-Virumaal",
+  "aasta": "2011",
+  "tootajaid": 1,
+  "sissejuhatus": "Ehitame ja renoveerime maju Lääne-Virumaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "250",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-aademart-ehitus",
+  "domeen": "aademartehitus.ee",
+  "kaive": "22315"
+}

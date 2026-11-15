@@ -1,0 +1,23 @@
+{
+  "nimi": "Osaühing RHM Building",
+  "lyhinimi": "RHM Building",
+  "vorm": "OÜ",
+  "registrikood": "11657039",
+  "emtak": "41001",
+  "telefonid": [
+    "+372 5235362"
+  ],
+  "email": "rain.uussaar@mail.ee",
+  "piirkond": "Kuressaare ja Saaremaa",
+  "piirkond_kus": "Kuressaares ja Saaremaal",
+  "linn_kus": "Kuressaares",
+  "aasta": "2009",
+  "tootajaid": 6,
+  "sissejuhatus": "Ehitame ja renoveerime maju Kuressaares ja Saaremaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "500",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-rhm-building",
+  "domeen": "rhmbuilding.ee",
+  "kaive": "281329"
+}

@@ -1,0 +1,23 @@
+{
+  "nimi": "Viimsi Autopesula OÜ",
+  "lyhinimi": "Viimsi Autopesula",
+  "vorm": "OÜ",
+  "registrikood": "11465044",
+  "emtak": "95311",
+  "telefonid": [
+    "+372 5050073"
+  ],
+  "email": "viimsipesula@gmail.com",
+  "piirkond": "Harjumaa",
+  "piirkond_kus": "Harjumaal",
+  "linn_kus": "Harjumaal",
+  "aasta": "2008",
+  "tootajaid": 1,
+  "sissejuhatus": "Peseme, poleerime ja puhastame autosid Harjumaal, nii seest kui väljast.",
+  "pakett": "250",
+  "kategooria": "auto",
+  "teenused_voti": "95311-detail",
+  "kujundus": "f-viimsi-autopesula",
+  "domeen": "viimsiautopesula.ee",
+  "kaive": "58906"
+}

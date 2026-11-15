@@ -1,0 +1,24 @@
+{
+  "nimi": "Rand ja Meri Ehitus OÜ",
+  "lyhinimi": "Rand ja Meri Ehitus",
+  "vorm": "OÜ",
+  "registrikood": "14683250",
+  "emtak": "41001",
+  "telefonid": [
+    "+372 53417974",
+    "+372 5517594"
+  ],
+  "email": "randmeriehitus@mail.ee",
+  "piirkond": "Harjumaa",
+  "piirkond_kus": "Harjumaal",
+  "linn_kus": "Harjumaal",
+  "aasta": "2019",
+  "tootajaid": 4,
+  "sissejuhatus": "Ehitame ja renoveerime maju Harjumaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "500",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-rand-ja-meri-ehitus",
+  "domeen": "randjameriehitus.ee",
+  "kaive": "160095"
+}

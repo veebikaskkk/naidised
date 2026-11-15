@@ -1,0 +1,24 @@
+{
+  "nimi": "EGR Autohooldus OÜ",
+  "lyhinimi": "EGR Autohooldus",
+  "vorm": "OÜ",
+  "registrikood": "12998587",
+  "emtak": "95311",
+  "telefonid": [
+    "+372 5248408",
+    "+372 53464494"
+  ],
+  "email": "raido.kummix@gmail.com",
+  "piirkond": "Tartumaa",
+  "piirkond_kus": "Tartumaal",
+  "linn_kus": "Tartumaal",
+  "aasta": "2016",
+  "tootajaid": 1,
+  "sissejuhatus": "Hooldame ja remondime autosid Tartumaal. Enne tööd vaatame auto üle ja ütleme, mida on vaja teha ja mis see maksab.",
+  "pakett": "250",
+  "kategooria": "auto",
+  "teenused_voti": "95311",
+  "kujundus": "f-egr-autohooldus",
+  "domeen": "egrautohooldus.ee",
+  "kaive": "27874"
+}

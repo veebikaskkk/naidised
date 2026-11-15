@@ -1,0 +1,23 @@
+{
+  "nimi": "Inframed ehitus OÜ",
+  "lyhinimi": "Inframed ehitus",
+  "vorm": "OÜ",
+  "registrikood": "16719070",
+  "emtak": "41001",
+  "telefonid": [
+    "+372 55682468"
+  ],
+  "email": "inframed.ehitus@gmail.com",
+  "piirkond": "Tallinn ja Harjumaa",
+  "piirkond_kus": "Tallinnas ja Harjumaal",
+  "linn_kus": "Tallinnas",
+  "aasta": "2023",
+  "tootajaid": 1,
+  "sissejuhatus": "Ehitame ja renoveerime maju Tallinnas ja Harjumaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "250",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-inframed-ehitus",
+  "domeen": "inframedehitus.ee",
+  "kaive": "31222"
+}

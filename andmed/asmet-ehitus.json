@@ -1,0 +1,23 @@
+{
+  "nimi": "ASMET Ehitus OÜ",
+  "lyhinimi": "ASMET Ehitus",
+  "vorm": "OÜ",
+  "registrikood": "14493609",
+  "emtak": "41001",
+  "telefonid": [
+    "+372 5029102"
+  ],
+  "email": "asmetehitus@gmail.com",
+  "piirkond": "Tallinn ja Harjumaa",
+  "piirkond_kus": "Tallinnas ja Harjumaal",
+  "linn_kus": "Tallinnas",
+  "aasta": "2018",
+  "tootajaid": 1,
+  "sissejuhatus": "Ehitame ja renoveerime maju Tallinnas ja Harjumaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "250",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-asmet-ehitus",
+  "domeen": "asmetehitus.ee",
+  "kaive": "98962"
+}

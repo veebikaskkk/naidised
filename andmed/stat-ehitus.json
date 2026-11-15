@@ -1,0 +1,23 @@
+{
+  "nimi": "STAT Ehitus OÜ",
+  "lyhinimi": "STAT Ehitus",
+  "vorm": "OÜ",
+  "registrikood": "14005627",
+  "emtak": "41001",
+  "telefonid": [
+    "+372 58066153"
+  ],
+  "email": "stat.ehitus@mail.ee",
+  "piirkond": "Tallinn ja Harjumaa",
+  "piirkond_kus": "Tallinnas ja Harjumaal",
+  "linn_kus": "Tallinnas",
+  "aasta": "2016",
+  "tootajaid": 2,
+  "sissejuhatus": "Ehitame ja renoveerime maju Tallinnas ja Harjumaal: uued hooned, katused, fassaadid ja siseviimistlus.",
+  "pakett": "250",
+  "kategooria": "ehitus",
+  "teenused_voti": "41001",
+  "kujundus": "f-stat-ehitus",
+  "domeen": "statehitus.ee",
+  "kaive": "77650"
+}

@@ -1,0 +1,23 @@
+{
+  "nimi": "ECK Auto OÜ",
+  "lyhinimi": "ECK Auto",
+  "vorm": "OÜ",
+  "registrikood": "12088388",
+  "emtak": "95311",
+  "telefonid": [
+    "+372 5271904"
+  ],
+  "email": "eckauto@mail.ee",
+  "piirkond": "Viljandimaa",
+  "piirkond_kus": "Viljandimaal",
+  "linn_kus": "Viljandimaal",
+  "aasta": "2011",
+  "tootajaid": 1,
+  "sissejuhatus": "Hooldame ja remondime autosid Viljandimaal. Enne tööd vaatame auto üle ja ütleme, mida on vaja teha ja mis see maksab.",
+  "pakett": "250",
+  "kategooria": "auto",
+  "teenused_voti": "95311",
+  "kujundus": "f-eck-auto",
+  "domeen": "eckauto.ee",
+  "kaive": "21423"
+}
